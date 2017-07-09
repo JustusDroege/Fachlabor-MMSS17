@@ -1,4 +1,4 @@
-\chapter{Characterising}
+\chapter{Characterising (Justus)}
 \label{sec:Characterising}
 
 
@@ -8,14 +8,30 @@
 Nachdem am ersten Labortag der Sensor mit Hilfe von SolidWorks designt und auf theoretischer Grundlage mit verschiedenen Simulationen berechnet wurde, musste am darauffolgenden Labortag eine Charakterisierung erfolgen. Aufgrund von Fertigungsabweichungen, die nie vermieden werden können, verhalten sich Sensoren immer unterschiedlich. Dies spiegelt sich unter Anderem in der Sensitivität, dem Offset oder auch in der Messgenauigkeit wider. Um den Abweichungen entgegenzuwirken, müssen bestimmte Eigenschaften des entsprechenden Sensors also zunächst ermittelt werden.
 Das IMT stellte jedem Laborteilnehmer einen vorgefertigten Sensor zur Verfügung, der dem erstellten Design vom vorherigen Labortag entsprach. Lediglich bei der Betrachtung unter dem Mikroskop ließen sich Differenzen feststellen. Der Unterschied zwischen den Drucksensoren ergab sich aus der Anordnung der jeweiligen Resistoren, die stellenweise in die Sensormembran eingearbeitet sind und der piezoresistiven Spannungsmessung dienen.
 %INCLUDE SENSORBILDER UNTER MIKROSKOP
-Abbildung XX zeigt eine t-förmige Anordnung der Resistoren, Abbildung YX und YY eine longitudinale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erfolgte durch Überlegung. %WARUM ??
+Abbildung 5.1 a) zeigt eine t-förmige Anordnung der Resistoren, Abbildung 5.1 b) eine longitudinale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erfolgte durch Überlegung. %WARUM ??
+\\
+\begin{figure}[h]
+    \subfigure[Messbrücke mit t-förmiger Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/M_11_sensor.jpg}}
+    \subfigure[Messbrücke mit longitudinaler Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/Justus_Sensor-13_200.jpg}}
+\caption{Sensordesigns im Überblick}
+\end{figure}\\
+
 Anschließend begann die eigentliche Charakterisierung in Form eines Versuchs.
 %Viele Einheiten lassen sich schöner darstellen mit dem "`Tag"' \verb|\unit[]{}| beziehungsweise \verb|\unitfrac[]{}{}|. Siehe den Vergleich: ohne 1~m oder mit \unit[1]{m} bzw. ohne 1~m/sec oder mit \unitfrac[1]{m}{sec}.
 
 \section{Versuchsaufbau und -durchführung}
 \label{sec:Quelltext}
-Der Sensor wurde auf eine Steckplatine mit entsprechenden Ein- und Ausgängen gesetzt. Die Versorgungsspannung von 1V wurde durch eine externe Spannungsquelle bewerkstelligt. Zur Messung der Ausgangsspannung stand ein Potentiometer zur Verfügung, das ebenfalls mit der Steckplatine verbunden wurde. Bevor die Verbindungen angebracht wurden, mussten zunächst die Leiterbahnen der Platine betrachtet werden, um Ein- und Ausgänge nicht zu verwechseln. Der Druck wurde mit Hilfe eines Druckreglers aufgegeben, welcher den Gasdruck von Stickstoff exakt aufbringen konnte. Da jede der vier zum Sensor gehörenden Wheatstone'schen Messbrücken charakterisiert werden mussten, wurden entsprechende Jumper verwendet, mit denen die einzelnen Messbrücken angesteuert werden konnten. Zu jeder Brücke wurde die Ausgangsspannung für die Drücke 0bar, 0,2bar, 0,4bar, 0,6bar, 0,8bar und 1bar gemessen und festgehalten. Außerdem wurde je eine Messung ohne Anschluss an die Druckversorgung durchgeführt, um einen Messwert unter atmosphärischem Druck zu erhalten. 
+Der Sensor wurde auf eine Steckplatine mit entsprechenden Ein- und Ausgängen gesetzt. Die Versorgungsspannung von 1V wurde durch eine externe Spannungsquelle bewerkstelligt. Zur Messung der Ausgangsspannung stand ein Potentiometer zur Verfügung, das ebenfalls mit der Steckplatine verbunden wurde. Bevor die Verbindungen angebracht wurden, mussten zunächst die Leiterbahnen der Platine betrachtet werden, um Ein- und Ausgänge nicht zu verwechseln. Der Druck wurde mit Hilfe eines Druckreglers aufgegeben, welcher den Gasdruck von Stickstoff exakt aufbringen konnte. Abbildung 5.2 zeigt den gesamten Versuchsaufbau.
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.7\textwidth]{figures/Versuchsaufbau1.jpg}
+  \caption{Versuchsaufbau zur Charakterisierung}
+  \label{fig:singlepicture}
+\end{figure}
+
+Da jede der vier zum Sensor gehörenden Wheatstone'schen Messbrücken charakterisiert werden mussten, wurden entsprechende Jumper verwendet, mit denen die einzelnen Messbrücken angesteuert werden konnten. Zu jeder Brücke wurde die Ausgangsspannung für die Drücke 0bar, 0,2bar, 0,4bar, 0,6bar, 0,8bar und 1bar gemessen und festgehalten. Außerdem wurde je eine Messung ohne Anschluss an die Druckversorgung durchgeführt, um einen Messwert unter atmosphärischem Druck zu erhalten. 
+Da eine folgende Aufgabe darin bestand, die gemessenen Werte mit denen einer anderen Laborgruppe zu vergleichen, wurde der Versuch noch mit einem weiteren Sensor durchgeführt. 
 \section{Auswertung}
 \label{sec:pictures}
 Die gemessenen Werte wurden anschließend mit Hilfe von Microsoft Excel ausgewertet.

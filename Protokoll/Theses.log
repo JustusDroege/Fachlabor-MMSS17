@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.28)  9 JUL 2017 19:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.28)  9 JUL 2017 22:30
 entering extended mode
 **./Theses.tex
 (Theses.tex
@@ -518,13 +518,36 @@ File: pppdftex.def 2017/06/14 v0.5i Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks23
 \c@AM@survey=\count124
 \AM@templatesizebox=\box31
-)) (Theses.aux
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip66
+\subfigcapskip=\skip67
+\subfigcaptopadj=\dimen123
+\subfigbottomskip=\skip68
+\subfigcapmargin=\dimen124
+\subfiglabelskip=\skip69
+\c@subfigure=\count125
+\c@lofdepth=\count126
+\c@subtable=\count127
+\c@lotdepth=\count128
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip70
+\subfig@bottom=\skip71
+) (Theses.aux
 (chapters/frontpage.aux)
 
 LaTeX Warning: Label `sec:Unit' multiply defined.
 
 
 LaTeX Warning: Label `sec:Quelltext' multiply defined.
+
+
+LaTeX Warning: Label `fig:singlepicture' multiply defined.
 
 
 LaTeX Warning: Label `sec:Unit' multiply defined.
@@ -580,7 +603,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count125
+\c@section@level=\count129
 )
 LaTeX Info: Redefining \ref on input line 17.
 LaTeX Info: Redefining \pageref on input line 17.
@@ -593,16 +616,16 @@ LaTeX Info: Redefining \nameref on input line 17.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count126
-\scratchdimen=\dimen123
+\scratchcounter=\count130
+\scratchdimen=\dimen125
 \scratchbox=\box33
-\nofMPsegments=\count127
-\nofMParguments=\count128
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count129
-\MPscratchDim=\dimen124
-\MPnumerator=\count130
-\makeMPintoPDFobject=\count131
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen126
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks25
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -727,67 +750,92 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ]) (chapters/characterising.tex [6]
 chapter 5.
-<figures/empty.jpg, id=217, 179.7114pt x 121.4136pt>
-File: figures/empty.jpg Graphic file (type jpg)
- <use figures/empty.jpg>
-Package pdftex.def Info: figures/empty.jpg used on input line 26.
-(pdftex.def)             Requested size: 179.71094pt x 121.4133pt.
+<figures/microscope_sensor/M_11_sensor.jpg, id=217, 1606.0pt x 1204.5pt>
+File: figures/microscope_sensor/M_11_sensor.jpg Graphic file (type jpg)
+
+<use figures/microscope_sensor/M_11_sensor.jpg>
+Package pdftex.def Info: figures/microscope_sensor/M_11_sensor.jpg used on inpu
+t line 14.
+(pdftex.def)             Requested size: 219.08871pt x 164.30974pt.
+
+<figures/microscope_sensor/Justus_Sensor-13_200.jpg, id=218, 1606.0pt x 1204.5p
+t>
+File: figures/microscope_sensor/Justus_Sensor-13_200.jpg Graphic file (type jpg
+)
+ <use figures/microscope_sensor/Justus_Sensor-13_200.jpg>
+Package pdftex.def Info: figures/microscope_sensor/Justus_Sensor-13_200.jpg use
+d on input line 15.
+(pdftex.def)             Requested size: 219.08871pt x 164.30974pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--18
+
+ []
 
 [7
 
-]) (chapters/circuit-layout.tex [8 <./figures/empty.jpg>]
+ <./figures/microscope_sensor/M_11_sensor.jpg> <./figures/microscope_sensor/Jus
+tus_Sensor-13_200.jpg>]
+<figures/Versuchsaufbau1.jpg, id=227, 4047.12pt x 3035.34pt>
+File: figures/Versuchsaufbau1.jpg Graphic file (type jpg)
+
+<use figures/Versuchsaufbau1.jpg>
+Package pdftex.def Info: figures/Versuchsaufbau1.jpg used on input line 28.
+(pdftex.def)             Requested size: 312.979pt x 234.72694pt.
+
+<figures/empty.jpg, id=228, 179.7114pt x 121.4136pt>
+File: figures/empty.jpg Graphic file (type jpg)
+ <use figures/empty.jpg>
+Package pdftex.def Info: figures/empty.jpg used on input line 42.
+(pdftex.def)             Requested size: 179.71094pt x 121.4133pt.
+)
+(chapters/circuit-layout.tex [8 <./figures/Versuchsaufbau1.jpg>] [9 <./figures/
+empty.jpg>]
 chapter 6.
 File: figures/empty.jpg Graphic file (type jpg)
 <use figures/empty.jpg>
 Package pdftex.def Info: figures/empty.jpg used on input line 21.
 (pdftex.def)             Requested size: 179.71094pt x 121.4133pt.
- [9
+ [10
 
-]) (chapters/evaluation-circuit.tex [10]
+]) (chapters/evaluation-circuit.tex [11]
 chapter 7.
 File: figures/empty.jpg Graphic file (type jpg)
 <use figures/empty.jpg>
 Package pdftex.def Info: figures/empty.jpg used on input line 21.
 (pdftex.def)             Requested size: 179.71094pt x 121.4133pt.
- [11
+ [12
 
-]) (chapters/Zusammenfassung.tex [12]
+]) (chapters/Zusammenfassung.tex [13]
 chapter 8.
-) (Theses.bbl [13
+) (Theses.bbl [14
 
 ]
 chapter without number
-) [14
+) [15
 
 ] (chapters/appendix.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 72.
- [15
+ [16
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 72.
  (Theses.aux (chapters/frontpage.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
+Package rerunfilecheck Info: File `Theses.out' has not changed.
+(rerunfilecheck)             Checksum: 3786B4173E91D9FE32BBC0D3793AFF33;1940.
 
-
-Package rerunfilecheck Warning: File `Theses.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Theses.out':
-(rerunfilecheck)             Before: 6E120CED3CCB0065426BBE3088B8EA90;1924
-(rerunfilecheck)             After:  85B71D4892850C90E4440F4250BAAEDD;1929.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 10562 strings out of 493333
- 164697 string characters out of 3139191
- 351090 words of memory out of 3000000
- 13809 multiletter control sequences out of 15000+200000
- 74809 words of font info for 56 fonts, out of 3000000 for 9000
+ 10744 strings out of 493333
+ 167655 string characters out of 3139191
+ 352772 words of memory out of 3000000
+ 13975 multiletter control sequences out of 15000+200000
+ 77799 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  45i,11n,66p,8909b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/M
@@ -798,18 +846,19 @@ Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmcsc10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb>
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb
-><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/lm/lmtt12.pfb>
-Output written on Theses.pdf (17 pages, 425581 bytes).
+MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr
+6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/lm/lmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/l
+mtt12.pfb>
+Output written on Theses.pdf (18 pages, 2802391 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 69 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
