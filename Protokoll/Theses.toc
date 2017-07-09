@@ -11,9 +11,9 @@
 \contentsline {subsection}{\numberline {3.2.1}Einfluss der Bossgr\"o\IeC {\ss }e (Viviane Bremer)}{3}{subsection.3.2.1}
 \contentsline {chapter}{\numberline {4}Etching Process}{5}{chapter.4}
 \contentsline {chapter}{\numberline {5}Characterising}{7}{chapter.5}
-\contentsline {section}{\numberline {5.1}Wert und Einheit}{7}{section.5.1}
-\contentsline {section}{\numberline {5.2}\"Uberschrift}{7}{section.5.2}
-\contentsline {section}{\numberline {5.3}Abbildungen einbinden}{7}{section.5.3}
+\contentsline {section}{\numberline {5.1}Allgemeines}{7}{section.5.1}
+\contentsline {section}{\numberline {5.2}Versuchsaufbau und -durchf\"uhrung}{7}{section.5.2}
+\contentsline {section}{\numberline {5.3}Auswertung}{7}{section.5.3}
 \contentsline {chapter}{\numberline {6}Circuit Layout}{9}{chapter.6}
 \contentsline {section}{\numberline {6.1}Wert und Einheit}{9}{section.6.1}
 \contentsline {section}{\numberline {6.2}\"Uberschrift}{9}{section.6.2}
