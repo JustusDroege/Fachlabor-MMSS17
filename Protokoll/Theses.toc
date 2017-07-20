@@ -13,17 +13,18 @@
 \contentsline {chapter}{\numberline {5}Characterising (Justus)}{7}{chapter.5}
 \contentsline {section}{\numberline {5.1}Allgemeines}{7}{section.5.1}
 \contentsline {section}{\numberline {5.2}Versuchsaufbau und -durchf\"uhrung}{8}{section.5.2}
-\contentsline {section}{\numberline {5.3}Auswertung}{8}{section.5.3}
-\contentsline {chapter}{\numberline {6}Circuit Layout}{10}{chapter.6}
-\contentsline {section}{\numberline {6.1}Wert und Einheit}{10}{section.6.1}
-\contentsline {section}{\numberline {6.2}\"Uberschrift}{10}{section.6.2}
-\contentsline {section}{\numberline {6.3}Abbildungen einbinden}{10}{section.6.3}
-\contentsline {chapter}{\numberline {7}Evaluation Circuit}{12}{chapter.7}
-\contentsline {section}{\numberline {7.1}Wert und Einheit}{12}{section.7.1}
-\contentsline {section}{\numberline {7.2}\"Uberschrift}{12}{section.7.2}
-\contentsline {section}{\numberline {7.3}including pictures}{12}{section.7.3}
-\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{14}{chapter.8}
-\contentsline {chapter}{\nonumberline Literaturverzeichnis}{15}{chapter*.2}
-\contentsline {chapter}{appendix}{16}{chapter*.3}
-\contentsline {section}{\numberline {A.1}Erster Anhang}{16}{section.A.1}
-\contentsline {section}{\numberline {A.2}Zweiter Anhang}{16}{section.A.2}
+\contentsline {section}{\numberline {5.3}Auswertung (Viviane Bremer)}{8}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sensitivit\"atabsch\"atzung f\"ur longitudinales und transversales Sensordesign (Viviane Bremer)}{9}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Comparing calculated sensitivity with measured sensitivity}{11}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {6}Circuit Layout}{12}{chapter.6}
+\contentsline {section}{\numberline {6.1}Wert und Einheit}{12}{section.6.1}
+\contentsline {section}{\numberline {6.2}\"Uberschrift}{12}{section.6.2}
+\contentsline {section}{\numberline {6.3}Abbildungen einbinden}{12}{section.6.3}
+\contentsline {chapter}{\numberline {7}Evaluation Circuit}{14}{chapter.7}
+\contentsline {section}{\numberline {7.1}Wert und Einheit}{14}{section.7.1}
+\contentsline {section}{\numberline {7.2}\"Uberschrift}{14}{section.7.2}
+\contentsline {section}{\numberline {7.3}including pictures}{14}{section.7.3}
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{16}{chapter.8}
+\contentsline {chapter}{appendix}{17}{chapter*.2}
+\contentsline {section}{\numberline {A.1}Erster Anhang}{17}{section.A.1}
+\contentsline {section}{\numberline {A.2}Zweiter Anhang}{17}{section.A.2}

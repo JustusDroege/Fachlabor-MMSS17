@@ -8,12 +8,12 @@
 Nachdem am ersten Labortag der Sensor mit Hilfe von SolidWorks designt und auf theoretischer Grundlage mit verschiedenen Simulationen berechnet wurde, musste am darauffolgenden Labortag eine Charakterisierung erfolgen. Aufgrund von Fertigungsabweichungen, die nie vermieden werden können, verhalten sich Sensoren immer unterschiedlich. Dies spiegelt sich unter Anderem in der Sensitivität, dem Offset oder auch in der Messgenauigkeit wider. Um den Abweichungen entgegenzuwirken, müssen bestimmte Eigenschaften des entsprechenden Sensors also zunächst ermittelt werden.
 Das IMT stellte jedem Laborteilnehmer einen vorgefertigten Sensor zur Verfügung, der dem erstellten Design vom vorherigen Labortag entsprach. Lediglich bei der Betrachtung unter dem Mikroskop ließen sich Differenzen feststellen. Der Unterschied zwischen den Drucksensoren ergab sich aus der Anordnung der jeweiligen Resistoren, die stellenweise in die Sensormembran eingearbeitet sind und der piezoresistiven Spannungsmessung dienen.
 %INCLUDE SENSORBILDER UNTER MIKROSKOP
-Abbildung 5.1 a) zeigt eine t-förmige Anordnung der Resistoren, Abbildung 5.1 b) eine longitudinale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erfolgte durch Überlegung. %WARUM ??
+Abbildung \ref{fig:Sensordesign} a) zeigt eine t-förmige Anordnung der Resistoren, Abbildung \ref{fig:Sensordesign} b) eine transversale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erfolgte durch Überlegung. %WARUM ??
 \\
 \begin{figure}[h]
-    \subfigure[Messbrücke mit t-förmiger Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/M_11_sensor.jpg}}
-    \subfigure[Messbrücke mit longitudinaler Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/Justus_Sensor-13_200.jpg}}
-\caption{Sensordesigns im Überblick}
+    \subfigure[Messbrücke mit t-förmiger Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/M_11_sensor.jpg}} 
+    \subfigure[Messbrücke mit transversaler Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/Justus_Sensor-13_200.jpg}}
+\caption{Sensordesigns im Überblick}\label{fig:Sensordesign}
 \end{figure}\\
 
 Anschließend begann die eigentliche Charakterisierung in Form eines Versuchs.
@@ -32,18 +32,103 @@ Der Sensor wurde auf eine Steckplatine mit entsprechenden Ein- und Ausgängen ges
 
 Da jede der vier zum Sensor gehörenden Wheatstone'schen Messbrücken charakterisiert werden mussten, wurden entsprechende Jumper verwendet, mit denen die einzelnen Messbrücken angesteuert werden konnten. Zu jeder Brücke wurde die Ausgangsspannung für die Drücke 0bar, 0,2bar, 0,4bar, 0,6bar, 0,8bar und 1bar gemessen und festgehalten. Außerdem wurde je eine Messung ohne Anschluss an die Druckversorgung durchgeführt, um einen Messwert unter atmosphärischem Druck zu erhalten. 
 Da eine folgende Aufgabe darin bestand, die gemessenen Werte mit denen einer anderen Laborgruppe zu vergleichen, wurde der Versuch noch mit einem weiteren Sensor durchgeführt. 
-\section{Auswertung}
+\section{Auswertung (Viviane Bremer)}
 \label{sec:pictures}
-Die gemessenen Werte wurden anschließend mit Hilfe von Microsoft Excel ausgewertet.
 
+Die Messergebnisse der zwei verschiedenen Sensoren sind in Abbildung \textbf{blubb} dargestellt. Anhand der Graphen ist deutlich zu erkennen, dass eine t-förmige Anordnung für diese Anwendung nicht zielführend ist. Die Kennlinien für die einzelnen Brücken dieses Designs sind nahezu konstant. Im Gegensatz dazu zeigen die Kennlinien des transversalen Designs einen deutlich linearen Verlauf. Jedoch weicht der errechnete Wert bei der t-förmigen Anordnung nicht so stark vom gemessenen Wert ab, wie bei dem transversalen Design (Abbildung \textbf{blubb}).
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics{figures/empty.jpg}
-  \caption{Einzelne Abbildung}
-  \label{fig:singlepicture}
-\end{figure}
+\subsection{Sensitivitätabschätzung für longitudinales und transversales Sensordesign (Viviane Bremer)}
+\label{sec:Sensitivity}
 
+Mit Hilfe der Ergebnisse aus der FEM-Simulation kann eine erste Abschätzung der Sensorsensitivität für ein longitudinales und ein transversales Sensordesign gemacht. Hierfür wird die maximal auftretende Spannung genutzt. In diesem Fall beträgt $\sigma_{max}\,=$\,\unit[1.78\,$\cdot10^8$]{Pa}. Mit folgender linearen Annäherung für den Spannungsverlauf in der Membran
 
+\begin{equation}
+	\sigma(x)=\sigma_{max}(1-\dfrac{1}{349.5 \mu m}x)	\label{eq:sigma}
+\end{equation}
 
+kann die Spannung an den Widerständen der Wheatstone'schen Brücke bestimmt werden. Die Abstände zur Membrankante sind für die zwei verschiedenen Sensordesigns in Tabelle \ref{tab:Resistors} aufgeführt.
 
+\begin{table}[hb]
+	\centering
+	\caption{Abstände der Widerstände zur Membrankante}\label{tab:Resistors}
+	\begin{tabular}{rcccc}\toprule
+		 & \textbf{$R_1$} & \textbf{$R_2$} & \textbf{$R_3$} & \textbf{$R_4$} \\ \midrule
+		\vspace{3pt} \textbf{longitudinal} &  \unit[100]{$\mu$m} & \unit[100]{$\mu$m} & \unit[599]{$\mu$m} & \unit[599]{$\mu$m}  \\
+		\vspace{3pt} \textbf{transversal} &  \unit[50]{$\mu$m} & \unit[50]{$\mu$m} & \unit[649]{$\mu$m} & \unit[649]{$\mu$m} \\	\bottomrule
+	\end{tabular}
+\end{table}
+
+Für die relative Widerstandsänderung gilt
+
+\begin{equation}
+	\dfrac{\Delta R}{R}=\pi_l \sigma_l + \pi_t \sigma_t. 	\label{eq:Widerstand}
+\end{equation}
+
+$sigma_l$ und $sigma_t$ können für den jeweiligen Dotierungstyp in Tabelle abgelesen werden.
+
+\begin{table}[hb]
+	\centering
+	\caption{Piezoresistive Koeffizienten der Hauptrichtungen für <100>-Silizium in \unit[$10^{-11}$]{$Pa^{-1}$}}\label{tab:Sigma}
+	\begin{tabular}{rcc}\toprule
+		& \textbf{$\pi_l$} & \textbf{$\pi_t$} \\ \midrule
+		\vspace{3pt} \textbf{n-Diffusion} & -9.39 &-5.25   \\
+		\vspace{3pt} \textbf{p-Diffusion} &  21.54 & -19.89  \\	\bottomrule
+	\end{tabular}
+\end{table}
+
+Mit Gleichung \ref{eq:Widerstand} lässt sich die Ausgangsspannung
+
+\begin{equation}
+	U=U_0 \dfrac{\Delta R}{R} \label{eq:Spannung}
+\end{equation}
+
+bestimmen. Je größer dieser Wert bei konstanter mechanischer Spannung ist, desto höher ist die Empfindlichkeit des Sensors.
+
+Für das longitudinale Design ergeben sich mit den Gleichungen \ref{eq:sigma} bis \ref{eq:Sigma} folgende Werte von $R_1$ und $R_2$ für eine n- und p-Diffusion:
+
+\begin{align}
+	\sigma_{l,1/2}&=1.78\cdot 10^8 Pa (1-\dfrac{1}{349.5 \mu m}100 \mu m) = 127 \cdot 10^6 Pa \\
+	\sigma_{l,3/4}&=1.78\cdot 10^8 Pa (1-\dfrac{1}{349.5 \mu m}599 \mu m) = -127 \cdot 10^6 Pa \\
+	\left(\dfrac{\Delta R}{R}\right)_n&=-9.39 \cdot 10^{-11} Pa^{-1} \cdot 127\cdot 10^6 Pa = -11.93 \cdot 10^{-3}\\
+	\left(\dfrac{\Delta R}{R}\right)_p&=21.54 \cdot 10^{-11} Pa^{-1} \cdot 127\cdot 10^6 Pa = 27.35 \cdot 10^{-3}
+\end{align}
+
+Somit ergeben sich die Empfindlichkeiten für ein longitudinales Design zu
+
+\begin{align}
+	U_n &= 1V \cdot (-11.93 \cdot 10^{-3})= -11.93 mV\\
+	U_p &= 1V \cdot 27.35 \cdot 10^{-3}= 27.35 mV.
+\end{align}
+
+Die Widerstände $R_3$ und $R_4$ erzeugen betragsmäßig die gleichen Werte und werden aus diesem Grund nicht weiter ausgeführt.
+
+Analog dazu werden die Werte für das transversale Design bestimmt:
+
+\begin{align}
+	\sigma_{t,1/2}&=1.78\cdot 10^8 Pa (1-\dfrac{1}{349.5 \mu m}50 \mu m) = 152.53 \cdot 10^6 Pa \\
+	\sigma_{t,3/4}&=1.78\cdot 10^8 Pa (1-\dfrac{1}{349.5 \mu m}649 \mu m) = -152.53 \cdot 10^6 Pa \\
+	\left(\dfrac{\Delta R}{R}\right)_n&=-5.25 \cdot 10^{-11} Pa^{-1} \cdot 152.53\cdot 10^6 Pa = -8 \cdot 10^{-3}\\
+	\left(\dfrac{\Delta R}{R}\right)_p&=-19.89 \cdot 10^{-11} Pa^{-1} \cdot 152.53\cdot 10^6 Pa = -30.3 \cdot 10^{-3}\\
+\end{align}
+
+Hier ergeben sich die Empfindlichkeiten zu:
+
+\begin{align}
+	U_n &= 1V \cdot (-8 \cdot 10^{-3})= -8 mV\\
+	U_p &= 1V \cdot -30.3 \cdot 10^{-3}= -30.3 mV.
+\end{align}
+
+\subsection{Comparing calculated sensitivity with measured sensitivity}
+\label{sec:Sensitivity2}
+
+longitudinal:\\
+Bridge 1: 40.47 \\
+Bridge 2: 36.891 \\
+Bridge 3: 39.776 \\
+Bridge 4: 37.878
+
+transversal:\\
+Bridge 1: 35.257 \\
+Bridge 2: 40.263 \\
+Bridge 3: 39.369 \\
+Bridge 4: 43.315 
