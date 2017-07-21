@@ -1,31 +1,55 @@
 \chapter{Circuit Layout}
 \label{sec:CircuitLayout}
 
+\section{Dimensionierung der Widerstände}
+\label{sec:Dimensionierung}
+
+\section{Erstellen der Schaltung in PSpice (Viviane Bremer)}
+\label{sec:PSpice}
+
+Zur weiteren Dimensionierung der Auswerteelektronik ist die Schaltung in PSpice erstellt worden. Diese ist in Abbildung \ref{fig:PSpice1} dargestellt. Der linke Teil bis vor die zwei rechten Operationsverstärker ist zur Offsetkompensation des Sensors gedacht. Der restliche Teil dient zur Signalverstärkung. Für die Widerstände werden zunächst die in Kapitel \ref{sec:Dimensionierung} bestimmten Werte genutzt. In Kapitel \ref{sec:SimReal} werden die gleichen Schritte mit zur Verfügung stehenden Bauteilen durchgeführt.
 
 
-\section{Wert und Einheit}
-\label{sec:Unit}
-Viele Einheiten lassen sich schöner darstellen mit dem "`Tag"' \verb|\unit[]{}| beziehungsweise \verb|\unitfrac[]{}{}|. Siehe den Vergleich: ohne 1~m oder mit \unit[1]{m} bzw. ohne 1~m/sec oder mit \unitfrac[1]{m}{sec}.
-
-\section{Überschrift}
-\label{sec:Quelltext}
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-
-\section{Abbildungen einbinden}
-\label{sec:pictures}
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
-
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics{figures/empty.jpg}
-  \caption{Einzelne Abbildung}
-  \label{fig:singlepicture}
+\begin{figure}[hb]
+	
+	\rotatebox{90}{\includegraphics[trim = 10mm 10mm 50mm 12mm, clip,width=0.9\textheight]{figures/Schaltplan1.pdf}}
+	\caption{Schaltplan der Auswerteelektronik in PSpice}\label{fig:PSpice1}
 \end{figure}
 
 
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+\section{Simulation der Auswerteelektronik mit theoretisch berechneten Werten}
+\label{sec:SimTheor}
+\subsection{Einfluss des Offset-Potentiometers (Viviane Bremer)}
+\label{sec:Offset-Poti}
 
+Zunächst wird nur das Offset-Potentiometer betrachtet. Dafür wird der Wert des Potentiometers Rref von Null auf seinen Endwert erhöht und die Potentialdifferenz von Eingangsspannung am Operationsverstärker Ov\,2 und Eingangsspannung am Operationsverstärker Ov\,4 über den Widerstand geplottet. Wie aus der Abbildung \ref{fig:Offset-Poti1} abzulesen ist, hat die Offsetkompensation einen Stellbereich von \unit[$\pm$12]{mV}.
 
+\begin{figure}[hb]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_1.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Operationsverstärker Ov\,2 und Ov\,4 über dem Widerstand Rref}\label{fig:Offset-Poti1}
+\end{figure}
 
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+\subsection{Einfluss des Verstärkungs-Potentiometers (Viviane Bremer)}
+\label{sec:gain-Poti}
+
+Als nächstes wird der Einfluss des Verstärkungs-Potentiometers  $R1_{var}$ untersucht. Hierbei wird ähnlich vorgegangen, wie beim Offset-Potentiometer. Diesmal wird jedoch der Quotient aus Ausgangsspannung und Eingangsspannungsdifferenz genutzt. Das Ergebnis ist in Abbildung \ref{fig:gain-Poti1} zu sehen. Der Wertebereich der Verstärkung liegt ca zwischen 21.8 und 25.6.
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_2.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+
+\subsection{Abgleichung der Schaltung (Viviane Bremer)}
+\label{sec:Abgleich1}
+Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannung auf \unit[0]{V} gesetzt. Bei \unit[0]{V} sollte die Verstärkung das Signal nicht beeinflussen, wenn der Offset ausgeglichen wurde.  In Abbildung \ref{fig:Abgleich1} ist zur Visualisierung die Ausgangsspannung über dem Widerstand aufgetragen.
+
+\begin{figure}[hb]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_3.pdf}
+	\caption{Verlauf der Ausgangsspannung über dem Widerstand}\label{fig:Abgleich1}
+\end{figure}
+
+\section{Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}
+\label{sec:SimReal}

@@ -1,31 +1,21 @@
 \chapter{Evaluation Circuit}
 \label{sec:EvaluationCircuit}
 
+\section{Leiterplattenlayout mit Eagle (Viviane Bremer)}
+\label{sec:eagle}
 
+Nachdem die Auswerteschaltung in den vorigen Kapiteln dimensioniert worden ist, wird nun die Platine designt. Mit der Software Eagle wird zunächst wieder der Schaltplan erstellt. Dieser ist in Abbildung \ref{fig:Eagle} dargestellt. Die Schaltung von zuvor wurde hier mit einem Sensoranschluss, einem Platinenstecker zur Spannungsversorgung, einer Spannungsstabilisierung für den IC, zwei Jumpern zum Wechseln der Brückenspannung und vier Platinensteckern zum Anschluss von Messgeräten erweitert. 
 
-\section{Wert und Einheit}
-\label{sec:Unit}
-Viele Einheiten lassen sich schöner darstellen mit dem "`Tag"' \verb|\unit[]{}| beziehungsweise \verb|\unitfrac[]{}{}|. Siehe den Vergleich: ohne 1~m oder mit \unit[1]{m} bzw. ohne 1~m/sec oder mit \unitfrac[1]{m}{sec}.
-
-\section{Überschrift}
-\label{sec:Quelltext}
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
-
-\section{including pictures}
-\label{sec:pictures}
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
-
-
-\begin{figure}[htbp]
-  \centering
-  \includegraphics{figures/empty.jpg}
-  \caption{Einzelne Abbildung}
-  \label{fig:singlepicture}
+\begin{figure}
+	\centering
+	\rotatebox{90}{\includegraphics[width=\textheight]{figures/Auswerteelektronik.PNG}}
+	\caption{Eagle-Schaltplan der Auswerteelektronik}\label{fig:Eagle}
 \end{figure}
 
+Mit dem fertigen Schaltplan kann schließlich die Platine erzeugt werden. Hierfür  wird zunächst die Größe \unit[3150x1969]{mil} für die Platine eingestellt. Danach müssen alle Bauteile sinnvoll platziert und verbunden werden. Eine mögliche Lösung ist in Abbildung \ref{fig:EagleBoard} zu sehen.
 
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
-
-
-
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{figures/Auswerteelektronik_Board.PNG}
+	\caption{Platinenlayout der Auswerteelektronik in Eagle mit ausgeblendeter Massefläche}\label{fig:EagleBoard}
+\end{figure}

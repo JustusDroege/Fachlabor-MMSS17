@@ -10,21 +10,23 @@
 \BOOKMARK [1][-]{section.3.2}{Einfluss der Membranabmessungen auf den Spannungsverlauf}{chapter.3}% 10
 \BOOKMARK [2][-]{subsection.3.2.1}{Einfluss der Bossgr\366\337e \(Viviane Bremer\)}{section.3.2}% 11
 \BOOKMARK [0][-]{chapter.4}{Etching Process}{}% 12
-\BOOKMARK [0][-]{chapter.5}{Characterising \(Justus\)}{}% 13
-\BOOKMARK [1][-]{section.5.1}{Allgemeines}{chapter.5}% 14
-\BOOKMARK [1][-]{section.5.2}{Versuchsaufbau und -durchf\374hrung}{chapter.5}% 15
+\BOOKMARK [0][-]{chapter.5}{Characterising}{}% 13
+\BOOKMARK [1][-]{section.5.1}{Allgemeines \(Justus\)}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.2}{Versuchsaufbau und -durchf\374hrung \(Justus\)}{chapter.5}% 15
 \BOOKMARK [1][-]{section.5.3}{Auswertung \(Viviane Bremer\)}{chapter.5}% 16
 \BOOKMARK [2][-]{subsection.5.3.1}{Sensitivit\344tabsch\344tzung f\374r longitudinales und transversales Sensordesign \(Viviane Bremer\)}{section.5.3}% 17
 \BOOKMARK [2][-]{subsection.5.3.2}{Comparing calculated sensitivity with measured sensitivity}{section.5.3}% 18
 \BOOKMARK [0][-]{chapter.6}{Circuit Layout}{}% 19
-\BOOKMARK [1][-]{section.6.1}{Wert und Einheit}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.2}{\334berschrift}{chapter.6}% 21
-\BOOKMARK [1][-]{section.6.3}{Abbildungen einbinden}{chapter.6}% 22
-\BOOKMARK [0][-]{chapter.7}{Evaluation Circuit}{}% 23
-\BOOKMARK [1][-]{section.7.1}{Wert und Einheit}{chapter.7}% 24
-\BOOKMARK [1][-]{section.7.2}{\334berschrift}{chapter.7}% 25
-\BOOKMARK [1][-]{section.7.3}{including pictures}{chapter.7}% 26
-\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 27
-\BOOKMARK [0][-]{chapter*.2}{appendix}{}% 28
-\BOOKMARK [1][-]{section.A.1}{Erster Anhang}{chapter*.2}% 29
-\BOOKMARK [1][-]{section.A.2}{Zweiter Anhang}{chapter*.2}% 30
+\BOOKMARK [1][-]{section.6.1}{Dimensionierung der Widerst\344nde}{chapter.6}% 20
+\BOOKMARK [1][-]{section.6.2}{Erstellen der Schaltung in PSpice \(Viviane Bremer\)}{chapter.6}% 21
+\BOOKMARK [1][-]{section.6.3}{Simulation der Auswerteelektronik mit theoretisch berechneten Werten}{chapter.6}% 22
+\BOOKMARK [2][-]{subsection.6.3.1}{Einfluss des Offset-Potentiometers \(Viviane Bremer\)}{section.6.3}% 23
+\BOOKMARK [2][-]{subsection.6.3.2}{Einfluss des Verst\344rkungs-Potentiometers \(Viviane Bremer\)}{section.6.3}% 24
+\BOOKMARK [2][-]{subsection.6.3.3}{Abgleichung der Schaltung \(Viviane Bremer\)}{section.6.3}% 25
+\BOOKMARK [1][-]{section.6.4}{Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{chapter.6}% 26
+\BOOKMARK [0][-]{chapter.7}{Evaluation Circuit}{}% 27
+\BOOKMARK [1][-]{section.7.1}{Leiterplattenlayout mit Eagle \(Viviane Bremer\)}{chapter.7}% 28
+\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 29
+\BOOKMARK [0][-]{chapter*.2}{appendix}{}% 30
+\BOOKMARK [1][-]{section.A.1}{Erster Anhang}{chapter*.2}% 31
+\BOOKMARK [1][-]{section.A.2}{Zweiter Anhang}{chapter*.2}% 32

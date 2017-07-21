@@ -1,0 +1,61 @@
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.15}
+%\usetikzlibrary{datavisualization}
+%\usetikzlibrary{datavisualization.formats.functions}
+ \usetikzlibrary{plotmarks}
+%Einstellen des plots
+\pgfplotsset{every axis/.append style={thick}}
+\pgfplotsset{every axis title/.style={
+		inner sep=3pt,
+		at={(0.03,1)},anchor=north west,
+		yshift=-3pt,xshift=-3pt,
+		fill=white,}}
+\pgfplotsset{every axis legend/.append style={
+		draw=none, 
+		legend columns=3, 
+		at={(0.5,1)}, 
+		anchor=south,
+		legend cell align=left}}
+	
+
+\definecolor{color1}{RGB}{27,158,119}
+\definecolor{color2}{RGB}{217,95,2}
+\definecolor{color3}{RGB}{117,112,179}
+\definecolor{color4}{RGB}{231,41,138}
+%\pgfplotscreateplotcyclelist{mylist}{%
+%	{color1, solid ,mark=*},
+%	{color2, densely dashed,mark=square*},
+%	{color3, densely dotted,mark=triangle*}}
+
+\pgfplotsset{every mark/.append style={solid,mark=x}} % damit marker alle solid
+
+\pgfplotsset{major grid style={dotted,black!30!white}}	
+
+\pgfplotsset{every axis/.append style={
+%		xtick={-0,0.1,...,1.1},
+		mark=x,
+		xtick distance=0.1,
+		major tick style={semithick,color=gray},
+		minor tick style={thin, color=gray},
+%		minor tick num=1,
+		grid=major,
+		footnotesize,
+		xlabel=p / bar,
+		scale only axis,
+		height=8cm,
+		width=\textwidth, %width=11.3cm,
+%		xmin=-1,xmax=8,
+		unbounded coords=jump, %skip
+}}
+
+\pgfplotsset{every axis/.append style={ %europaeische Darstellung der Zahlen
+		/pgf/number format/.cd,
+		use comma,
+		1000 sep={},
+}}
+	
+
+
