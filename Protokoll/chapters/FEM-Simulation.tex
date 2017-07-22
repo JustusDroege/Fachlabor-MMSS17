@@ -14,9 +14,41 @@ In diesem Abschnitt wird der Einfluss der Membrandicke auf die auftretende mecha
 %	\item[c.] \unit[35]{$\mu m$}	
 %\end{itemize}
 
-Zur Analyse wird der anliegende Druck für alle drei Membrandicken in \unit[0.2]{bar} Schritten von \unit[0.2]{bar} bis \unit[1]{bar} erhöht und die resultierende mechanische Spannung ermittelt. Die Verläufe sind in Abbildung \textbf{blubb} dargestellt. Die Bruchspannung $\sigma_{Br}$ von Silizium beträgt \unit[830]{MPa} und sollte während des Sensorbetriebs nicht überschritten werden. Zur besseren Visualisierung ist sie als Konstante im Graphen dargestellt.
+Zur Analyse wird der anliegende Druck für alle drei Membrandicken in \unit[0.2]{bar}-Schritten von \unit[0.2]{bar} bis \unit[1]{bar} erhöht und die resultierende mechanische Spannung ermittelt. Die Verläufe sind in Abbildung \ref{pl:Membrandicken} dargestellt. Die Bruchspannung $\sigma_{Br}$ von Silizium beträgt \unit[830]{MPa} und sollte während des Sensorbetriebs nicht überschritten werden. Zur besseren Visualisierung ist sie als Konstante im Graphen dargestellt.
 
-Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}, welcher im benötigten Messbereich liegt. Im Falle von Membran b wird sie knapp oberhalb des Messbereichs bei \unit[1.05]{bar} erreicht. Die Bruchspannung bei Membran c entspricht einem anliegenden Druck von \unit[2]{bar}, welcher deutlich oberhalb des Messbereiches ist. Hieraus lassen sich Erkenntnisse für das Sensorverhalten gewinnen. Membran a ist zu dünn für diese Messaufgabe, da sie innerhalb des Messbereichs reißt. Jedoch ist Membran c auch nicht akzeptabel, da niedrige Spannungen auftreten im Vergleich zu Membran b. Diese bildet einen guten Kompromiss für die gewünschte Aufgabe.
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[width=0.8\textwidth, xlabel={p / bar},ylabel={$\sigma$ / Pa},legend pos=north west,legend columns=1,xtick distance=0.2]
+	\pgfplotstableread{chapters/Daten/Membran.dat}\data
+
+	\addplot [red] table [x=p415,y=bruch415] {\data};
+	\addlegendentry{$\sigma_{Br}$}
+	
+	\addplot [color1] table [x=p415, y=sigx415] {\data};
+	\addlegendentry{$\sigma_x$: \unit[35]{$\mu$m}}
+	
+	\addplot [color2] table [x=p415,y=sigz415] {\data};
+	\addlegendentry{$\sigma_z$: \unit[35]{$\mu$m}}
+	
+	\addplot [color4] table [x=p415,y=sigx425] {\data};
+	\addlegendentry{$\sigma_x$: \unit[25]{$\mu$m}}
+
+	\addplot [color3] table [x=p415,y=sigz425] {\data};
+	\addlegendentry{$\sigma_z$: \unit[25]{$\mu$m}}
+	
+	\addplot [blue] table [x=p415,y=sigx435] {\data};
+	\addlegendentry{$\sigma_x$: \unit[15]{$\mu$m}}
+	
+	\addplot [yellow] table [x=p415,y=sigz435] {\data};
+	\addlegendentry{$\sigma_z$: \unit[15]{$\mu$m}}
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Spannungsverlauf der drei Membrandicken}\label{pl:Membrandicken}
+\end{figure}
+
+Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}, welcher im benötigten Messbereich liegt. Im Falle von Membran b wird sie knapp oberhalb des Messbereichs bei \unit[1.05]{bar} erreicht. Die Bruchspannung bei Membran c entspricht einem anliegenden Druck von \unit[2]{bar}, welcher deutlich oberhalb des Messbereiches ist. Hieraus lassen sich Erkenntnisse für das Sensorverhalten gewinnen. Membran a ist zu dünn für diese Messaufgabe, da sie innerhalb des Messbereichs reißt. Jedoch ist Membran c auch nicht akzeptabel, da durch die größere Membrandicke niedrigere Spannungen auftreten im Vergleich zu Membran b. Diese bildet einen guten Kompromiss für die gewünschte Aufgabe.
 
 
 \section{Einfluss der Membranabmessungen auf den Spannungsverlauf}
@@ -27,4 +59,24 @@ Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}
 
 Zur Analyse des Einflusses der Bossgröße wird die Membrangröße auf \unit[3600]{$\mu$m} und die Membrandicke auf \unit[25]{$\mu$m} gesetzt. Die Bossgröße wird folgendermaßen variiert: \unit[800]{$\mu$m}, \unit[1000]{$\mu$m}, \unit[1200]{$\mu$m}.
 
-Die Spannungsverläufe und Verschiebungen sind in Abbildung \textbf{blubb} dargestellt. Bei einer Bossgröße von \unit[800]{$\mu$m} treten Spannungen von bis zu \unit[274]{MPa} auf. Eine Vergrößerung des Bosses auf \unit[1000]{$\mu$m} führt zu einer maximalen Spannung von  \unit[178]{MPa}. Der größte Boss senkt die auftretende Spannung auf \unit[128]{MPa}. Des Weiteren ist zu sehen, dass eine Vergrößerung des Bosses zu einer Angleichung der Spannungsspitzen führt und die Dehnung der Membran von \unit[374]{$\mu$m} auf \unit[77]{$\mu$m} senkt.
+Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dargestellt. Bei einer Bossgröße von \unit[800]{$\mu$m} treten Spannungen von bis zu \unit[274]{MPa} auf. Eine Vergrößerung des Bosses auf \unit[1000]{$\mu$m} führt zu einer maximalen Spannung von  \unit[178]{MPa}. Der größte Boss senkt die auftretende Spannung auf \unit[128]{MPa}. Des Weiteren ist zu sehen, dass eine Vergrößerung des Bosses zu einer Angleichung der Spannungsspitzen führt und die Dehnung der Membran von \unit[374]{$\mu$m} auf \unit[77]{$\mu$m} senkt.
+
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
+	\pgfplotstableread{chapters/Daten/MechSpannung.dat}\data
+	
+	\addplot [color1,mark=x] table [x=X1,y=sigma1] {\data};
+	\addlegendentry{$\sigma$: \unit[800]{$\mu$m}}
+	
+	\addplot [color2] table [x=X2,y=sigma2] {\data};
+	\addlegendentry{$\sigma$: \unit[1000]{$\mu$m}}
+	
+	\addplot [color3] table [x=X3,y=sigma3] {\data};
+	\addlegendentry{$\sigma$: \unit[1200]{$\mu$m}}
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Spannungsverlauf der drei Bossgrößen}\label{pl:Bosssize}
+\end{figure}

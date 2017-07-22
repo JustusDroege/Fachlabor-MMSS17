@@ -2,20 +2,25 @@
 \label{sec:EtchingProcess}
 
 
-(Viviane Bremer)\\
-Für die Erstellung der Sensormembran muss zunächst der Ätzprozess charakterisiert werden. Zur Berechnung des zu ätzenden Volumens wird folgende Volumenformel eines Pyramidenstumpfes, 
+\section{Der Reaktionsprozess beim Siliziumätzen (Viviane Bremer)}
+Für die Erstellung der Sensormembran muss zunächst der Ätzprozess mit KOH charakterisiert werden. Die Reaktion besteht aus der Oxidation und einer Reduktion des Siliziums. Somit ergibt sich die Reaktionsgleichung zu
+
+\begin{equation}
+	Si + 2OH^- + 2H_2O \longrightarrow SiO_2(OH)_2^{2-} + 2H_2. \label{eq:reaction}
+\end{equation}
+
+Zur Berechnung des zu ätzenden Volumens der Membran wird folgende Volumenformel eines Pyramidenstumpfes, 
 
 \begin{equation}
 	V = \frac{h}{3}(A_1 + \sqrt{A_1 A_2} + A_2), \label{eq:Pyramide}
 \end{equation}
  
 
-benötigt. Für die Fertigung wird ein 4"-Wafer mit einer Dicke von \unit[450]{$\mu m$} genutzt. Die zu erzeugende Membran ohne Boss hat eine Breite von \unit[4000]{$\mu m$} und eine Dicke von \unit[25]{$\mu m$}. Dies führt zu einer Ätzhöhe von
+benötigt. Für die Fertigung wird ein 4''-Wafer mit einer Dicke von \unit[450]{$\mu$m} genutzt. Die zu erzeugende Membran ohne Boss hat eine Breite von \unit[4000]{$\mu$m} und eine Dicke von \unit[25]{$\mu$m}. Dies führt zu einer Ätzhöhe von
 
 \begin{equation}
 	h = 450\,\mu m - 25\,\mu m = 425\,\mu m.
 \end{equation}
-
 
 Die Fläche $A_1$ bestimmt sich mit der Membranbreite zu
 
@@ -26,9 +31,9 @@ Die Fläche $A_1$ bestimmt sich mit der Membranbreite zu
 Fläche $A_2$ ergibt sich mit
 
 \begin{align}
-	\tan(54,7°) = \frac{425\,\mu m}{\Delta a} \\
-	\Delta a = \frac{425\,\mu m}{\tan(54,7°)} = 300\,\mu m\\
-	a_2 = a_1 - 2 \Delta a = 3400\,\mu m
+	\tan(54,7°) &= \frac{425\,\mu m}{\Delta a} \\
+	\Delta a &= \frac{425\,\mu m}{\tan(54,7°)} = 300\,\mu m\\
+	a_2 &= a_1 - 2 \Delta a = 3400\,\mu m
 \end{align}
 
 zu
@@ -52,8 +57,39 @@ Die Dichte $\rho_{Si}$ von Silizium beträgt \unitfrac[0.002336]{g}{$mm^3$}. Dies
 Mit der Molmasse von Silizium, $M_{Si} = $\unitfrac[28.09]{g}{mol}, ergibt sich die Stoffmenge zu
 
 \begin{equation}
-	n_{Si} = \frac{m_{Si}}{M_{Si}} = 4.877 \cdot 10^{-4}.
+	n_{Si} = \frac{m_{Si}}{M_{Si}} = 4.877 \cdot 10^{-4} mol.
 \end{equation}
 
+Wie in Gleichung \ref{eq:reaction} zu sehen, entstehen bei der Reaktion zwei Teile Wasserstoff. Somit ergibt sich für die Stoffmenge des Wasserstoffs
 
+\begin{equation}
+	n_{H_2} = 2n_{Si} = 2 \cdot 4.877 \cdot 10^{-4}\,mol = 9.754 \cdot 10^{-4}\,mol.
+\end{equation}
 
+Damit kann das Volumen mit dem molaren Normvolumen des idealen Gases $V_{m,0}=\unitfrac[22.414]{l}{mol}$ zu
+
+\begin{equation}
+	V_{H_2} = V_{m,0} \cdot n_{H_2} = 22.414\,\unitfrac{l}{mol} \cdot 9.754 \cdot 10^{-4}\,mol = 0.0218\,l
+\end{equation}
+
+bestimmt werden. Da dies ein sehr geringes Volumen ist, reicht eine gute Belüftung als Vorsichtsmaßnahme aus. Eine weitere Maßnahme wäre noch die Beseitigung von Zündquellen.
+
+Bei dem Ätzprozess werden des Weiteren zwei Teile Wasser umgesetzt. Das Volumen entspricht somit
+
+\begin{align}
+	n_{H_2O} &= n_{H_2} = 9.754 \cdot 10^{-4}\,mol \\
+	m_{H_2O} &= M_{H_2O} \cdot n_{H_2O} = \unitfrac[18]{g}{mol} \cdot 9.754 \cdot 10^{-4}\,mol = 0.0175\,g\\
+	V_{H_2O} &= \dfrac{m_{H_2O}}{\rho_{H_2O}} = \dfrac{0.0175\,g}{1 \unitfrac{g}{cm^3}} = 0.0175\,cm^3 = 0.0175\,ml.
+\end{align}
+
+Der Ätzprozess soll mit einer 40\%-ige KOH-Lösung auf Basis von zwei Litern Wasser durchgeführt werden. Das bedeutet, dass
+
+\begin{equation}
+	m_{KOH} = 0.4 m_{H_2O} = 0.4 \cdot \unit[2]{kg} = \unit[800]{g}
+\end{equation}
+
+KOH-Salz benötigt wird. Dies entspricht einer Stoffmenge von
+
+\begin{equation}
+	n_{KOH} = \dfrac{m_{KOH}}{M_{KOH}} = \dfrac{\unit[800]{g}}{\unitfrac[56.11]{g}{mol}} = \unit[14.258]{mol}.
+\end{equation}

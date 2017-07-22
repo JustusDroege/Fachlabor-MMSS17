@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.4)  21 JUL 2017 15:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.4)  22 JUL 2017 16:57
 entering extended mode
 **Theses.tex
 (E:\Documents\Studium\Labor\Protokoll\Theses.tex
@@ -1053,7 +1053,7 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.15}).
 
 (E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.tex
-<figures/header.jpg, id=134, 1105.12875pt x 406.51875pt>
+<figures/header.jpg, id=138, 1105.12875pt x 406.51875pt>
 File: figures/header.jpg Graphic file (type jpg)
 
 <use figures/header.jpg>
@@ -1135,35 +1135,45 @@ chapter 2.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 8.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-(E:\Documents\Studium\Labor\Protokoll\chapters/FEM-Simulation.tex [2
+) [2
 
-]
+])
+(E:\Documents\Studium\Labor\Protokoll\chapters/FEM-Simulation.tex [3]
 chapter 3.
-) (E:\Documents\Studium\Labor\Protokoll\chapters/etching-process.tex [3
-
-]
-[4]
-chapter 4.
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
-
-LaTeX Warning: Command \textdegree invalid in math mode on input line 32.
-
+PGFPlots: reading {chapters/Daten/Membran.dat}
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 46.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 46.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 46.
-[5
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 46.
+[4
 
-]) (E:\Documents\Studium\Labor\Protokoll\chapters/characterising.tex [6]
+]
+PGFPlots: reading {chapters/Daten/MechSpannung.dat}
+) (E:\Documents\Studium\Labor\Protokoll\chapters/etching-process.tex
+[5] [6]
+chapter 4.
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
+
+
+LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
+
+[7
+
+] [8]) (E:\Documents\Studium\Labor\Protokoll\chapters/characterising.tex
+[9]
 chapter 5.
-<figures/microscope_sensor/M_11_sensor.jpg, id=237, 1606.0pt x 1204.5pt>
+<figures/microscope_sensor/M_11_sensor.jpg, id=272, 1606.0pt x 1204.5pt>
 File: figures/microscope_sensor/M_11_sensor.jpg Graphic file (type jpg)
 
 <use figures/microscope_sensor/M_11_sensor.jpg>
@@ -1171,7 +1181,7 @@ Package pdftex.def Info: figures/microscope_sensor/M_11_sensor.jpg used on inpu
 t line 14.
 (pdftex.def)             Requested size: 219.08871pt x 164.30974pt.
 
-<figures/microscope_sensor/Justus_Sensor-13_200.jpg, id=238, 1606.0pt x 1204.5p
+<figures/microscope_sensor/Justus_Sensor-13_200.jpg, id=273, 1606.0pt x 1204.5p
 t>
 File: figures/microscope_sensor/Justus_Sensor-13_200.jpg Graphic file (type jpg
 )
@@ -1184,41 +1194,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--18
 
  []
 
-[7
+[10
 
  <E:/Documents/Studium/Labor/Protokoll/figures/microscope_sensor/M_11_sensor.jp
 g> <E:/Documents/Studium/Labor/Protokoll/figures/microscope_sensor/Justus_Senso
-r-13_200.jpg>] <figures/Versuchsaufbau1.jpg, id=248, 4047.12pt x 3035.34pt>
+r-13_200.jpg>] <figures/Versuchsaufbau1.jpg, id=283, 4047.12pt x 3035.34pt>
 File: figures/Versuchsaufbau1.jpg Graphic file (type jpg)
 
 <use figures/Versuchsaufbau1.jpg>
 Package pdftex.def Info: figures/Versuchsaufbau1.jpg used on input line 28.
 (pdftex.def)             Requested size: 312.979pt x 234.72694pt.
- [8 <E:/Documents/Studium/Labor/Protokoll/figures/Versuchsaufbau1.jpg>]
-PGFPlots: reading {chapters/Sensor_13.dat}
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 74.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 74.
-PGFPlots: reading {chapters/Sensor_11.dat}
-
-Overfull \hbox (15.31654pt too wide) in paragraph at lines 121--122
-\T1/lmr/m/n/12 wird die ma-xi-mal auf-tre-ten-de Span-nung ge-nutzt. In die-sem
- Fall be-trägt $\OML/lmm/m/it/12 []  \OT1/lmr/m/n/12 =$\T1/lmr/m/n/12 1.78$\OM
-S/lmsy/m/n/12 \OT1/lmr/m/n/12 10[]$\T1/lmr/m/n/12 Pa.
- []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11]) (E:\Documents\Studium\Labor\Protokoll\chapters/circuit-layout.tex
-[12]
+ [11 <E:/Documents/Studium/Labor/Protokoll/figures/Versuchsaufbau1.jpg>]
+PGFPlots: reading {chapters/Daten/Sensor_11.dat}
+PGFPlots: reading {chapters/Daten/Sensor_13.dat}
+PGFPlots: reading {chapters/Daten/Sensor_11.dat}
+PGFPlots: reading {chapters/Daten/Sensor_13.dat}
+ [12] [13] [14])
+(E:\Documents\Studium\Labor\Protokoll\chapters/circuit-layout.tex [15]
 chapter 6.
-<figures/Schaltplan1.pdf, id=304, 844.65562pt x 596.98032pt>
+<figures/Schaltplan1.pdf, id=337, 844.65562pt x 596.98032pt>
 File: figures/Schaltplan1.pdf Graphic file (type pdf)
 
 <use figures/Schaltplan1.pdf>
@@ -1229,36 +1223,36 @@ Overfull \hbox (27.13213pt too wide) in paragraph at lines 15--16
 [][] 
  []
 
-<figures/Simulation1_1.pdf, id=307, 844.65562pt x 596.98032pt>
+<figures/Simulation1_1.pdf, id=340, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_1.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_1.pdf>
 Package pdftex.def Info: figures/Simulation1_1.pdf used on input line 29.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
 
-<figures/Simulation1_2.pdf, id=310, 844.65562pt x 596.98032pt>
+<figures/Simulation1_2.pdf, id=343, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_2.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_2.pdf>
 Package pdftex.def Info: figures/Simulation1_2.pdf used on input line 40.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
- [13
+ [16
 
 ]
-<figures/Simulation1_3.pdf, id=320, 844.65562pt x 596.98032pt>
+<figures/Simulation1_3.pdf, id=354, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_3.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_3.pdf>
 Package pdftex.def Info: figures/Simulation1_3.pdf used on input line 50.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
 )
-(E:\Documents\Studium\Labor\Protokoll\chapters/evaluation-circuit.tex [14]
-[15 <E:/Documents/Studium/Labor/Protokoll/figures/Schaltplan1.pdf>] [16 <E:/Doc
+(E:\Documents\Studium\Labor\Protokoll\chapters/evaluation-circuit.tex [17]
+[18 <E:/Documents/Studium/Labor/Protokoll/figures/Schaltplan1.pdf>] [19 <E:/Doc
 uments/Studium/Labor/Protokoll/figures/Simulation1_1.pdf> <E:/Documents/Studium
-/Labor/Protokoll/figures/Simulation1_2.pdf>] [17 <E:/Documents/Studium/Labor/Pr
+/Labor/Protokoll/figures/Simulation1_2.pdf>] [20 <E:/Documents/Studium/Labor/Pr
 otokoll/figures/Simulation1_3.pdf>]
 chapter 7.
-<figures/Auswerteelektronik.PNG, id=373, 799.48688pt x 514.92375pt>
+<figures/Auswerteelektronik.PNG, id=406, 799.48688pt x 514.92375pt>
 File: figures/Auswerteelektronik.PNG Graphic file (type png)
 
 <use figures/Auswerteelektronik.PNG>
@@ -1268,7 +1262,7 @@ Package pdftex.def Info: figures/Auswerteelektronik.PNG used on input line 11.
 
 LaTeX Warning: Float too large for page by 28.85004pt on input line 13.
 
-<figures/Auswerteelektronik_Board.PNG, id=376, 772.38562pt x 506.6428pt>
+<figures/Auswerteelektronik_Board.PNG, id=409, 772.38562pt x 506.6428pt>
 File: figures/Auswerteelektronik_Board.PNG Graphic file (type png)
 
 <use figures/Auswerteelektronik_Board.PNG>
@@ -1276,16 +1270,16 @@ Package pdftex.def Info: figures/Auswerteelektronik_Board.PNG used on input lin
 e 19.
 (pdftex.def)             Requested size: 447.11482pt x 293.28096pt.
 )
-(E:\Documents\Studium\Labor\Protokoll\chapters/Zusammenfassung.tex [18
+(E:\Documents\Studium\Labor\Protokoll\chapters/Zusammenfassung.tex [21
 
 ]
-[19 <E:/Documents/Studium/Labor/Protokoll/figures/Auswerteelektronik.PNG>]
-[20 <E:/Documents/Studium/Labor/Protokoll/figures/Auswerteelektronik_Board.PNG>
+[22 <E:/Documents/Studium/Labor/Protokoll/figures/Auswerteelektronik.PNG>]
+[23 <E:/Documents/Studium/Labor/Protokoll/figures/Auswerteelektronik_Board.PNG>
 ]
 chapter 8.
-) [21
+) [24
 
-] (E:\Documents\Studium\Labor\Protokoll\chapters/appendix.tex) [22
+] (E:\Documents\Studium\Labor\Protokoll\chapters/appendix.tex) [25
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
@@ -1296,7 +1290,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Theses.out' has not changed.
-(rerunfilecheck)             Checksum: 196C3D362965C32D5E04ADCFA74C8AB3;2639.
+(rerunfilecheck)             Checksum: 9608ABE0A5822057A55A4D010D16C562;2748.
 
 
 LaTeX Warning: There were undefined references.
@@ -1307,34 +1301,35 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 31575 strings out of 493921
- 753027 string characters out of 3147283
- 1063963 words of memory out of 3000000
- 34162 multiletter control sequences out of 15000+200000
- 81764 words of font info for 66 fonts, out of 3000000 for 9000
+ 31701 strings out of 493921
+ 755507 string characters out of 3147283
+ 1108075 words of memory out of 3000000
+ 34267 multiletter control sequences out of 15000+200000
+ 91750 words of font info for 73 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 76i,19n,119p,8575b,2303s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/M
-iKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec
-.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}<C:/Program 
+ 76i,20n,119p,8575b,2574s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Program Fil
+es/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/e
+nc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathex
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/lm/lmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/lm/lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm
-/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/lm/lmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
-8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Theses.pdf (25 pages, 3022592 bytes).
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi7.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/lm/lmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr1
+2.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/lm/lmr7.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/lm/lmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/
+lmro12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
+7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
+Output written on Theses.pdf (28 pages, 3064881 bytes).
 PDF statistics:
- 489 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 343 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 113 named destinations out of 1000 (max. 500000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 

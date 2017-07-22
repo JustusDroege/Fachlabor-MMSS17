@@ -5,28 +5,29 @@
 \contentsline {section}{\numberline {2.1}Wert und Einheit}{2}{section.2.1}
 \contentsline {section}{\numberline {2.2}\"Uberschrift}{2}{section.2.2}
 \contentsline {section}{\numberline {2.3}Anforderungen an einen Drucksensor (Viviane Bremer)}{2}{section.2.3}
-\contentsline {chapter}{\numberline {3}FEM-Simulation}{3}{chapter.3}
-\contentsline {section}{\numberline {3.1}Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}{3}{section.3.1}
-\contentsline {section}{\numberline {3.2}Einfluss der Membranabmessungen auf den Spannungsverlauf}{3}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Einfluss der Bossgr\"o\IeC {\ss }e (Viviane Bremer)}{3}{subsection.3.2.1}
-\contentsline {chapter}{\numberline {4}Etching Process}{5}{chapter.4}
-\contentsline {chapter}{\numberline {5}Characterising}{7}{chapter.5}
-\contentsline {section}{\numberline {5.1}Allgemeines (Justus)}{7}{section.5.1}
-\contentsline {section}{\numberline {5.2}Versuchsaufbau und -durchf\"uhrung (Justus)}{8}{section.5.2}
-\contentsline {section}{\numberline {5.3}Auswertung (Viviane Bremer)}{8}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Sensitivit\"atabsch\"atzung f\"ur longitudinales und transversales Sensordesign (Viviane Bremer)}{9}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Comparing calculated sensitivity with measured sensitivity}{12}{subsection.5.3.2}
-\contentsline {chapter}{\numberline {6}Circuit Layout}{13}{chapter.6}
-\contentsline {section}{\numberline {6.1}Dimensionierung der Widerst\"ande}{13}{section.6.1}
-\contentsline {section}{\numberline {6.2}Erstellen der Schaltung in PSpice (Viviane Bremer)}{13}{section.6.2}
-\contentsline {section}{\numberline {6.3}Simulation der Auswerteelektronik mit theoretisch berechneten Werten}{13}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Einfluss des Offset-Potentiometers (Viviane Bremer)}{13}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Einfluss des Verst\"arkungs-Potentiometers (Viviane Bremer)}{13}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Abgleichung der Schaltung (Viviane Bremer)}{14}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{14}{section.6.4}
-\contentsline {chapter}{\numberline {7}Evaluation Circuit}{18}{chapter.7}
-\contentsline {section}{\numberline {7.1}Leiterplattenlayout mit Eagle (Viviane Bremer)}{18}{section.7.1}
-\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{21}{chapter.8}
-\contentsline {chapter}{appendix}{22}{chapter*.2}
-\contentsline {section}{\numberline {A.1}Erster Anhang}{22}{section.A.1}
-\contentsline {section}{\numberline {A.2}Zweiter Anhang}{22}{section.A.2}
+\contentsline {chapter}{\numberline {3}FEM-Simulation}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}{4}{section.3.1}
+\contentsline {section}{\numberline {3.2}Einfluss der Membranabmessungen auf den Spannungsverlauf}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Einfluss der Bossgr\"o\IeC {\ss }e (Viviane Bremer)}{5}{subsection.3.2.1}
+\contentsline {chapter}{\numberline {4}Etching Process}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Der Reaktionsprozess beim Silizium\"atzen (Viviane Bremer)}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Characterising}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Allgemeines (Justus)}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}Versuchsaufbau und -durchf\"uhrung (Justus)}{11}{section.5.2}
+\contentsline {section}{\numberline {5.3}Auswertung (Viviane Bremer)}{11}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Sensitivit\"atabsch\"atzung f\"ur longitudinales und transversales Sensordesign (Viviane Bremer)}{12}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Comparing calculated sensitivity with measured sensitivity}{15}{subsection.5.3.2}
+\contentsline {chapter}{\numberline {6}Circuit Layout}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}Dimensionierung der Widerst\"ande}{16}{section.6.1}
+\contentsline {section}{\numberline {6.2}Erstellen der Schaltung in PSpice (Viviane Bremer)}{16}{section.6.2}
+\contentsline {section}{\numberline {6.3}Simulation der Auswerteelektronik mit theoretisch berechneten Werten}{16}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Einfluss des Offset-Potentiometers (Viviane Bremer)}{16}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Einfluss des Verst\"arkungs-Potentiometers (Viviane Bremer)}{16}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Abgleichung der Schaltung (Viviane Bremer)}{17}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{17}{section.6.4}
+\contentsline {chapter}{\numberline {7}Evaluation Circuit}{21}{chapter.7}
+\contentsline {section}{\numberline {7.1}Leiterplattenlayout mit Eagle (Viviane Bremer)}{21}{section.7.1}
+\contentsline {chapter}{\numberline {8}Zusammenfassung und Ausblick}{24}{chapter.8}
+\contentsline {chapter}{appendix}{25}{chapter*.2}
+\contentsline {section}{\numberline {A.1}Erster Anhang}{25}{section.A.1}
+\contentsline {section}{\numberline {A.2}Zweiter Anhang}{25}{section.A.2}
