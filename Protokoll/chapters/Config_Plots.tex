@@ -1,5 +1,6 @@
 
 \usepackage{pgfplots}
+
 \usepgfplotslibrary{groupplots}
 \usepackage{pgfplotstable}
 \pgfplotsset{compat=1.15}
@@ -37,7 +38,7 @@
 \pgfplotsset{every axis/.append style={
 %		xtick={-0,0.1,...,1.1},
 		mark=x,
-%		xtick distance=0.1,
+		xtick distance=0.1,
 		major tick style={semithick,color=gray},
 		minor tick style={thin, color=gray},
 %		minor tick num=1,
@@ -58,4 +59,4 @@
 }}
 	
 
-
+\input{chapters/nan_fix}

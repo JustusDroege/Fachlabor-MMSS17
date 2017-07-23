@@ -1,6 +1,31 @@
 \chapter{FEM-Simulation}
 \label{sec:FEM-Simulation}
 
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
+	\pgfplotstableread{chapters/Daten/ohneBossStat.dat}\data
+	
+	\addplot [color1] table [x=X,y=sigma] {\data};
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Spannungsverlauf einer Membran ohne Boss bei \unit[1]{bar}}\label{pl:ohneBoss}
+\end{figure}
+
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
+	\pgfplotstableread{chapters/Daten/mitBossStat.dat}\data
+	
+	\addplot [color1] table [x=X,y=sigma] {\data};
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Spannungsverlauf einer Membran mit Boss bei \unit[1]{bar}}\label{pl:mitBoss}
+\end{figure}
 
 
 \section{Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}
@@ -67,7 +92,7 @@ Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dar
 	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
 	\pgfplotstableread{chapters/Daten/MechSpannung.dat}\data
 	
-	\addplot [color1,mark=x] table [x=X1,y=sigma1] {\data};
+	\addplot [color1] table [x=X1,y=sigma1] {\data};
 	\addlegendentry{$\sigma$: \unit[800]{$\mu$m}}
 	
 	\addplot [color2] table [x=X2,y=sigma2] {\data};

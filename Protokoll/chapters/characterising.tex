@@ -98,9 +98,12 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	\addlegendentry{$f_{\text{Reg,B2}}=\pgfmathprintnumber{\Slopeb}x\pgfmathprintnumber[print sign]{\Offsetb}$}
 	
 	\addplot [only marks,color3] table [x=p3,y=V3] {\data};
-	\addplot [mark=none, color3] table [x=p3,y={create col/linear regression={y=V3}}] {\data};
+		\addplot [mark=none, color3] table [x=p3,y={create col/linear regression={y=V3}}] {\data};
+%	\pgfplotstablecreatecol[x=p3,y={linear regression={y=V3}}]{regression}{\data}
 	\xdef\Slopec{\pgfplotstableregressiona}
 	\xdef\Offsetc{\pgfplotstableregressionb}
+%	\addplot[mark=none,color3,domain=0:1.1] {\Offsetc+\Slopec*x};
+
 	\addlegendentry{B3}
 	\addlegendentry{$f_{\text{Reg,B3}}=\pgfmathprintnumber{\Slopec}x\pgfmathprintnumber[print sign]{\Offsetc}$}
 	
@@ -125,7 +128,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	xlabel={p / bar},ylabel={U / mV},legend pos=north east,legend columns=1,
 	]
 	
-	\nextgroupplot[ylabel={U / mV},title=Sensor 11, height=3cm,]
+	\nextgroupplot[ylabel={U / mV},title=Sensor 11, height=4cm,ymin=-0.3,ymax=2.5]
 	\pgfplotstableread{chapters/Daten/Sensor_11.dat}\data
 	
 	\addplot [only marks,color1,mark=x] table [x=p1,y=diff1] {\data};
@@ -256,3 +259,42 @@ Bridge 1: 35.257 \\
 Bridge 2: 40.263 \\
 Bridge 3: 39.369 \\
 Bridge 4: 43.315 
+
+\begin{figure}[hb]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[,xlabel={x / bar},ylabel={U / mV},legend pos=south east,legend columns=2,xtick distance=0.1]
+	\pgfplotstableread{chapters/Daten/Sensor_14.dat}\data
+	
+	\addplot [only marks,color1,mark=x] table [x=p1,y=Ub1] {\data};
+	\addplot [mark=none, color1] table [x=p1,y={create col/linear regression={y=Ub1}}] {\data};
+	\xdef\Slopea{\pgfplotstableregressiona}
+	\xdef\Offseta{\pgfplotstableregressionb}
+	\addlegendentry{B1}
+	\addlegendentry{$f_{\text{Reg,B1}}=\pgfmathprintnumber{\Slopea}x\pgfmathprintnumber[print sign]{\Offseta}$}
+	
+	\addplot [only marks,color2] table [x=p2,y=Ub2]{\data};
+	\addplot [mark=none, color2] table [x=p2,y={create col/linear regression={y=Ub2}}]{\data};
+	\xdef\Slopeb{\pgfplotstableregressiona}
+	\xdef\Offsetb{\pgfplotstableregressionb}
+	\addlegendentry{B2}
+	\addlegendentry{$f_{\text{Reg,B2}}=\pgfmathprintnumber{\Slopeb}x\pgfmathprintnumber[print sign]{\Offsetb}$}
+	
+	\addplot [only marks,color3] table [x=p3,y=Ub3] {\data};
+	\addplot [mark=none, color3] table [x=p3,y={create col/linear regression={y=Ub3}}] {\data};
+	\xdef\Slopec{\pgfplotstableregressiona}
+	\xdef\Offsetc{\pgfplotstableregressionb}
+	\addlegendentry{B3}
+	\addlegendentry{$f_{\text{Reg,B3}}=\pgfmathprintnumber{\Slopec}x\pgfmathprintnumber[print sign]{\Offsetc}$}
+	
+	\addplot [only marks,color4] table [x=p4,y=Ub4] {\data};
+	\addplot [mark=none, color4] table [x=p4,y={create col/linear regression={y=Ub4}}] {\data};
+	\xdef\Sloped{\pgfplotstableregressiona}
+	\xdef\Offsetd{\pgfplotstableregressionb}
+	\addlegendentry{B4}
+	\addlegendentry{$f_{\text{Reg,B4}}=\pgfmathprintnumber{\Sloped}x\pgfmathprintnumber[print sign]{\Offsetd}$}
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Messwerte und Regressionsgeraden der Brücken von Sensor 14}\label{pl:Sensor14}
+\end{figure}
