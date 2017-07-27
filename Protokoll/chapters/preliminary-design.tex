@@ -15,9 +15,24 @@ Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text 
 \label{sec:Anforderungen}
 
 %Für die Auswertung des morphologischen Kastens muss zunächst eine Anforderungsliste erstellt werden. 
-Im Rahmen der Entwicklung ist es wichtig, Anforderungen an das Produkt aufzustellen. Dies geschieht mit Hilfe einer Anforderungsliste in der außerdem in Fest-, Mindest- und Wunschanforderungen unterschieden wird. Mit Hilfe der Anforderungsliste kann schließlich der morphologische Kasten ausgewertet werden, um eine mögliche Lösung zu finden. In diesem Fall soll, wie zuvor schon beschrieben, ein Drucksensor zur Überwachung des Gasdrucks in einer Niederdruck-Pneumatikleitung entwickelt werden. Dieser Druck liegt gewöhnlich zwischen \unit[0]{bar} und \unit[1]{bar}, kann jedoch auf maximal \unit[1,2]{bar} ansteigen. Die Messgenauigkeit sollte hierbei mindestens bei \unit[$\pm 50$]{bar} liegen. Eine Änderung des Druckes verläuft im vorliegenden Anwendungsfall sehr langsam und kann somit als quasi-statisch angesehen werden. Da der Sensor in eine bestehendes Gehäuse integriert wird, dürfen seine Abmaße \unit[10x10]{mm} nicht überschreiten. Das Ausgangssignal soll einer Ausgangsspannung von \unit[0]{} bis \unit[1]{V} entsprechen und somit den anliegenden Druck in \unit[]{bar} repräsentieren. Zur Spannungsversorgung steht eine symmetrische Spannung von \unit[12]{V} und eine Referenzspannung von \unit[1]{V} zur Verfügung. Des Weiteren wird mit einem Bedarf von \unit[2.000.000]{Stück} gerechnet. Die Fertigungskosten sollten bezogen auf die Stückzahl so gering wie möglich ausfallen.
+Im Rahmen der Entwicklung ist es wichtig, Anforderungen an das Produkt aufzustellen. Dies geschieht mit Hilfe einer Anforderungsliste in der außerdem in Fest-, Mindest- und Wunschanforderungen unterschieden wird. Mit Hilfe der Anforderungsliste kann schließlich der morphologische Kasten ausgewertet werden, um eine mögliche Lösung zu finden. In diesem Fall soll, wie zuvor schon beschrieben, ein Drucksensor zur Überwachung des Gasdrucks in einer Niederdruck-Pneumatikleitung entwickelt werden. Dieser Druck liegt gewöhnlich zwischen \unit[0]{bar} und \unit[1]{bar}, kann jedoch auf maximal \unit[1,2]{bar} ansteigen. Die Messgenauigkeit sollte hierbei mindestens bei \unit[$\pm 50$]{mbar} liegen. Eine Änderung des Druckes verläuft im vorliegenden Anwendungsfall sehr langsam und kann somit als quasi-statisch angesehen werden. Da der Sensor in eine bestehendes Gehäuse integriert wird, dürfen seine Abmaße \unit[10x10]{mm} nicht überschreiten. Das Ausgangssignal soll einer Ausgangsspannung von \unit[0]{} bis \unit[1]{V} entsprechen und somit den anliegenden Druck in \unit[]{bar} repräsentieren. Zur Spannungsversorgung steht eine symmetrische Spannung von \unit[12]{V} und eine Referenzspannung von \unit[1]{V} zur Verfügung. Des Weiteren wird mit einem Bedarf von \unit[2.000.000]{Stück} gerechnet. Die Fertigungskosten sollten bezogen auf die Stückzahl so gering wie möglich ausfallen.
 
-Diese Anforderungen sind nach Fest-, Mindest- und Wunschanforderung in Tabelle \textbf{blubb} aufgelistet.
+Diese Anforderungen sind nach Fest-, Mindest- und Wunschanforderung in Tabelle \ref{tab:Anforderungen} im Anhang aufgelistet.
 
-\textbf{-->morphologischen Kasten bewerten}
+\begin{table}[h]
+	\centering
+	\caption{Anforderungsliste eines Drucksensors}\label{tab:Anforderungen}
+	\begin{tabular}{rrlp{2.2cm}p{1.2cm}p{3cm}}\toprule
+		\textbf{Gliederung} & \textbf{Nr.} & \textbf{Bezeichnung} & \textbf{Werte,\newline Daten} & \textbf{Anf.-\newline Art} & \textbf{Quelle,\newline Bemerkungen}\\ \midrule
+		\vspace{3pt} Geometrie &  1 & Abmessungen & \unit[10x10]{mm} & F & \\ \midrule
+		\vspace{3pt} Kinematik &  2 & Prozessart & quasistatisch & F &\\ \midrule
+		\vspace{3pt} Signale &  3 & Messbereich & \unit[0-1]{bar} & F &\\	
+		\vspace{3pt}  &  4 & Genauigkeit & \unit[$\pm$50]{mbar} & M &\\
+		\vspace{3pt}  &  5 & Ausgangsspannung & \unit[0-1]{V} & F &\\ \midrule
+		\vspace{3pt} Energie &  6 & Zent. Spannungsvers. & \unit[$\pm$12]{V} & F &\\
+		\vspace{3pt}  &  7 & Referenzspannung & \unit[1]{V} & F &\\ \midrule
+		\vspace{3pt} Kosten &  8 & jährl. Bedarf & \unit[2000000]{St.} & W &\\
+		\vspace{3pt}  &  9 & Fertigungskosten & so gering wie möglich & W &\\ \bottomrule
+	\end{tabular}
+\end{table}
 

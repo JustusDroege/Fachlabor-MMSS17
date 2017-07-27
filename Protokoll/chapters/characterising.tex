@@ -36,7 +36,9 @@ Da eine folgende Aufgabe darin bestand, die gemessenen Werte mit denen einer and
 \section{Auswertung (Viviane Bremer)}
 \label{sec:Auswertung}
 
-Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} dargestellt. Sensor 11 hat eine t-förmige Anordnung der Widerstände und Sensor 13 eine transversale. Anhand der Graphen ist deutlich zu erkennen, dass eine t-förmige Anordnung für diese Anwendung nicht zielführend ist. Die ermittelten Kennlinien für die einzelnen Brücken dieses Designs sind nahezu konstant. Im Gegensatz dazu zeigen die Kennlinien des transversalen Designs einen deutlich lineare steigenden Verlauf. Jedoch weicht der errechnete Wert bei der t-förmigen Anordnung nicht so stark vom gemessenen Wert ab, wie bei dem transversalen Design (Abbildung \ref{pl:Abweichung}).
+Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} dargestellt. Anhand der Graphen ist deutlich zu erkennen, dass eine t-förmige Anordnung für diese Anwendung nicht zielführend ist. Die ermittelten Kennlinien für die einzelnen Brücken dieses Designs sind nahezu konstant. Im Gegensatz dazu zeigen die Kennlinien des transversalen Designs einen deutlich linear steigenden Verlauf. Bei diesem Sensor wurde die Messwerte der Brücke 3 für den Umgebungsdruck und für \unit[0.08]{bar} herausgenommen, da diese einen deutlich größeren Wert vorweisen als der für \unit[0.1]{bar}, was einem unphysikalischen Verhalten entsprechen würde.
+
+% Jedoch weicht der errechnete Wert bei der t-förmigen Anordnung nicht so stark vom gemessenen Wert ab, wie bei dem transversalen Design (Abbildung \ref{pl:Abweichung}).
 
 \begin{figure}[htb]
 	\centering
@@ -47,7 +49,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	xlabel={p / bar},ylabel={U / mV},legend pos=south east,legend columns=2,
 	]
 	
-	\nextgroupplot[ylabel={U / mV},title=Sensor 11, height=7cm,]
+	\nextgroupplot[ylabel={U / mV},title=t-förmiger Sensor, height=7cm,]
 	\pgfplotstableread{chapters/Daten/Sensor_11.dat}\data
 	
 	\addplot [only marks,color1,mark=x] table [x=p1,y=V1] {\data};
@@ -80,7 +82,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	
 	
 	
-	\nextgroupplot[xlabel={p / bar}, ylabel={U / mV},title=Sensor 13, height=7cm,]
+	\nextgroupplot[xlabel={p / bar}, ylabel={U / mV},title=transversaler Sensor, height=7cm,]
 	\pgfplotstableread{chapters/Daten/Sensor_13.dat}\data
 	
 	\addplot [only marks,color1,mark=x] table [x=p1,y=V1] {\data};
@@ -116,8 +118,10 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	
 	\end{groupplot}
 	\end{tikzpicture}
-	\caption{Messwerte und Regressionsgeraden der Brücken von Sensor 11 und 13.} \label{pl:Messwerte}
+	\caption{Messwerte und Regressionsgeraden der Brücken des t-förmigen und transversalen Sensors.} \label{pl:Messwerte}
 \end{figure}
+
+Die Abweichung der Regressionsgeraden von den Messerwerten ist in Abbildung \ref{pl:Abweichung} dargestellt. Bei dem t-förmigen Sensor ist die Abweichung, bis auf bei den ersten Werten von Brücke 1, 2 und 4, sehr gering. Im Gegensatz dazu hat die Abweichung bei dem transversalen Sensor einen parabelförmigen Verlauf mit einem Minimum bei \unit[0.5]{bar}. Hierbei ausgenommen ist Brücke 3, hier ist das Minimum bei \unit[0.6]{bar}. Durch diesen Verlauf liegt die Abweichung zwischen \unit[1.8]{mV} und \unit[-1.4]{mV}. 
 
 \begin{figure}[htb]
 	\centering
@@ -128,7 +132,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	xlabel={p / bar},ylabel={U / mV},legend pos=north east,legend columns=1,
 	]
 	
-	\nextgroupplot[ylabel={U / mV},title=Sensor 11, height=4cm,ymin=-0.3,ymax=2.5]
+	\nextgroupplot[ylabel={U / mV},title=t-förmiger Sensor, height=4cm,ymin=-0.3,ymax=2.5]
 	\pgfplotstableread{chapters/Daten/Sensor_11.dat}\data
 	
 	\addplot [only marks,color1,mark=x] table [x=p1,y=diff1] {\data};
@@ -145,7 +149,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	
 	
 	
-	\nextgroupplot[xlabel={p / bar}, ylabel={U / mV},title=Sensor 13, height=7cm,]
+	\nextgroupplot[xlabel={p / bar}, ylabel={U / mV},title=transversaler Sensor, height=7cm,]
 	\pgfplotstableread{chapters/Daten/Sensor_13.dat}\data
 	
 	\addplot [only marks,color1,mark=x] table [x=p1,y=diff1] {\data};
@@ -163,7 +167,7 @@ Die Messergebnisse der zwei Sensoren sind in Abbildung \ref{pl:Messwerte} darges
 	
 	\end{groupplot}
 	\end{tikzpicture}
-	\caption{Abweichung der Regressionsgeraden der Brücken von Sensor 11 und 13 vom gemessenen Wert.} \label{pl:Abweichung}
+	\caption{Abweichung der Regressionsgeraden der Brücken des t-förmigen und transversalen Sensors vom gemessenen Wert.} \label{pl:Abweichung}
 \end{figure}
 
 
@@ -296,5 +300,5 @@ Bridge 4: 43.315
 	
 	\end{axis}
 	\end{tikzpicture}
-	\caption{Messwerte und Regressionsgeraden der Brücken von Sensor 14}\label{pl:Sensor14}
+	\caption{Data and regression lines of a longitudinal sensor}\label{pl:Sensor14}
 \end{figure}
