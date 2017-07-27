@@ -3,14 +3,35 @@
 
 
 
-\section{Wert und Einheit}
-\label{sec:Unit}
-Viele Einheiten lassen sich schöner darstellen mit dem "`Tag"' \verb|\unit[]{}| beziehungsweise \verb|\unitfrac[]{}{}|. Siehe den Vergleich: ohne 1~m oder mit \unit[1]{m} bzw. ohne 1~m/sec oder mit \unitfrac[1]{m}{sec}.
+\section{Vorüberlegungen (Justus)}
+\label{sec:Vorüberlegungen}
 
-\section{Überschrift}
-\label{sec:Quelltext}
-Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text
+Zum Lösen einer ingenieurwissenschaftlichen Konstruktionsaufgabe sind bereits vor Beginn umfassende Überlegungen anzustellen, um das Erreichen eines zielbringenden und vor allem gewünschten Ergebnisses sicherzustellen. Dies geschah im Rahmen des Labors mit einer umfassenden Literaturrecherche zu den Themen Druckmessung, Messprinzipien, mechano-elektrische Signalwandlung sowie gängigsten Druckmessverfahren. Mit Hilfe dieses ersten groben Überblickes konnte fortgefahren werden. Zu weiteren Vorüberlegungen wurden nun die VDI-Richtlinien 2221 und 2222 herangezogen, die ein methodisches Vorgehen zur Bearbeitung von Konstruktionsaufgaben standardisieren. Die Vorlagen begleiten Projekte jeder Größe von der Ideenfindung bis zur Umsetzung. In unserem Fall sollte zunächst die Kreativtechnik 	\glqq{Erstellung eines morphologischen Kastens}\grqq angewendet werden, bei der Problemstellungen heruntergebrochen und somit vereinfacht werden. Anschließend wird versucht, Teillösungen für jedes einzelne Teilproblem zu ermitteln. Im letzten Schritt werden die bestenfalls voneinander unabhängigen Teillösungen zu einer Gesamtlösung verbunden. Der morphologische Kasten zum Thema 	\glqq{Druckmessung}\grqq wird \ref{sec:Morphologischer Kasten} näher beschrieben. 
+Im Anschluss sollte eine Anforderungsliste erstellt werden. Diese dient zur Spezifizierung von Anforderungen an das fertige Produkt. Für den Hersteller ist eine Anforderungsliste, die aus dem Pflichtenheft des Auftraggebers hervorgeht, unabdingbar für eine erfolgreiche Projektdurchführung. Jene für das Labor erstellte Liste wird näher in Abschnitt \ref{sec:Anforderungen} beleuchtet.
+Aufgrund von Vorgaben und Zeitmangel wurde im Rahmen des Fachlabors nicht die gesamte Breite der Methodiken aus VDI 2222/2221 angewendet.
 
+
+\section{Ideen- und Lösungsgenerierung (Justus)}
+\label{sec:Morphologischer Kasten}
+
+Es sollten zunächst allgemeine Lösungen zum Thema 	\glqq{Druckmessung}\grqq gefunden werden. Diese Prämisse legt also keinen Fokus auf gegebene Randbedingen wie beispielsweise die Tatsache, dass das fertige System ein Mikrosystem sein soll. Die erstellte morphologische Kasten gliedert die Hauptaufgabe der Druckmessung in sinnvolle Teilaufgaben, zu denen jeweils unabhängige Teillösungen gefunden werden sollen. Eine mögliche Ausführung ist in Tabelle \ref{tab:morph} beschrieben. Teilprobleme und Teillösungen ließen sich bei Bedarf beliebig erweitern.
+
+\begin{table}[h]
+\centering
+\caption{Morphologischer Kasten}\label{morph}
+
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+{\color[HTML]{000000} \textbf{Teilproblem}} & \multicolumn{5}{l|}{{\color[HTML]{000000} \textbf{Teillösungen}}} \\ \hline
+Messprinzip                                 &             &             &             &            &            \\ \hline
+Sensorelement                               &             &             &             &            &            \\ \hline
+physikalisches Signal                       &             &             &             &            &            \\ \hline
+aktiv / passiv                              &             &             &             &            &            \\ \hline
+analog / digital                            &             &             &             &            &            \\ \hline
+\end{tabular}
+\end{table}
+
+Zur Generierung von möglichen Gesamtlösungen kann nun aus jeder Zeile ein Punkt ausgewählt werden. Natürlich sollte darauf geachtet werden, möglichst sinnvolle Lösungen zu erarbeiten. Möglich wäre beispielsweise ein aktiver Sensor (benötigt externe Energieversorgung), der analoge Werte ausgibt. Als Sensorelement könnte ein Messstift (Stylus) dienen, der bei Kontakt mit einer dehnbaren Membran aufgrund der Ausdehnung angeben kann, was für ein Druck auf der anderen Seite der Membran herrscht.
 \section{Anforderungen an einen Drucksensor (Viviane Bremer)}
 \label{sec:Anforderungen}
 
