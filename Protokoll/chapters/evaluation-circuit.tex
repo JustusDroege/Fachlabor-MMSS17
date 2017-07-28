@@ -1,21 +1,118 @@
 \chapter{Evaluation Circuit}
 \label{sec:EvaluationCircuit}
 
-\section{Leiterplattenlayout mit Eagle (Viviane Bremer)}
-\label{sec:eagle}
+\section{Schaltplanerstellung mit Eagle (Justus)}
+\label{sec:eaglee}
 
-Nachdem die Auswerteschaltung in den vorigen Kapiteln dimensioniert worden ist, wird nun die Platine designt. Mit der Software Eagle wird zunächst wieder der Schaltplan erstellt. Dieser ist in Abbildung \ref{fig:Eagle} dargestellt. Die zuvor vorgestellte Schaltung wurde hier mit einem Sensoranschluss, einem Platinenstecker zur Spannungsversorgung, einer Spannungsstabilisierung für den IC, zwei Jumpern zum Wechseln der Brückenspannung und vier Platinensteckern zum Anschluss von Messgeräten erweitert. 
-
-\begin{figure}
+Um die in PSpice simulierte Schaltung in ein Platinenlayout zu übertragen, wird die Software Eagle benutzt. Diese ist in Bezug auf die Schaltplanerstellung ähnlich aufgebaut wie PSpice, erlaubt jedoch zusätzlich die Erstellung von realen Designs. Zunächst wird folglich der PSpice-Schaltplan in den Schematics-Editor von Eagle übertragen. Hinzu kommen weitere Bauteile. Dazu zählen \begin{itemize} \item Sensoranschluss \item Platinenstecker zur Spannungsversorgung \item Spannungsstabilisierung für den IC \item zwei Jumper zum Wechseln der Brückenspannung \item sowie vier Platinenstecker zum Anschluss von Messgeräten.
+\end{itemize} 
+%Dabei sind die Platinenstecker für die Messgeräte so platzieren, dass Spannungen an signifikanten Stellen der Elektronik abgegriffen werden können. 
+Der vollständige Schaltplan ist in Abbildung \ref{fig:Eagle} dargestellt.
+\begin{figure}[h]\label{fig:Eagle}%\label{fig:Eagle Schaltplan}
 	\centering
-	\rotatebox{90}{\includegraphics[width=\textheight]{figures/Auswerteelektronik.PNG}}
-	\caption{Eagle-Schaltplan der Auswerteelektronik}\label{fig:Eagle}
+	\includegraphics[width=0.9\textwidth]{figures/Auswerteelektronik.PNG}
+	\caption{Eagle-Schaltplan der Auswerteelektronik}
+\end{figure}
+Im Folgenden wird kurz auf die einzelnen zusätzlichen Elemente eingegangen.
+
+\subsection{Sensoranschluss}
+\label{ssec:1}
+Die Eagle-Bibliotheken des IMT beinhalten bereits den grundlegenden Sensoranschluss, deshalb kann dieser direkt daraus übernommen werden. Beim Wiring ist darauf zu achten, dass später jede einzelne Brücke des Sensors separat ausgewählt werden kann. Deshalb benötigt jede Brücke eine Verbindung zur Brückenspannung (VCC mit 1V) sowie ein Groundpotential. Weiterhin werden pro Brücke zwei Ausgänge benötigt, die mit der Auswertewerteelektronik zu verbinden sind. Diese dienen also der eigentlichen Druckmessung. In Abbildung \ref{fig:sensoranschluss} sind diese mit Bn\_1 und Bn\_2 beschriftet, wobei n als Brückennummer verstanden werden und somit die Werte 1-4 annehmen kann. Die Nummerierung ist dabei frei gewählt und hat keine Bedeutung. 
+\begin{figure}[h]\label{fig:sensoranschluss}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/eagleparts/7_sensorstecker.PNG}
+	\caption{Layout Sensoranschluss}
+\end{figure}
+Um die Auswahl einer Brücke zu ermöglichen, werden die Ausgänge der Brücken zunächst mit einem Jumper mit 8 Eingängen verbunden (vgl. Abbildung \ref{fig:jump1}. 
+\begin{figure}[h]\label{fig:jump1}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/eagleparts/7_jump1.PNG}
+	\caption{Layout Jumper mit Brückenausgängen als Eingang}
+\end{figure}
+Zur Vereinfachung und zur Gewährleistung der Möglichkeit des Vertauschens der Eingangspotentiale wird nun ein weiterer Jumper verwendet (vgl. Abbildung \ref{fig:jump2}).
+\begin{figure}[h]\label{fig:jump2}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_jump2.PNG}
+	\caption{Layout Jumper zum Tausch der Eingangspotentiale}
+\end{figure}
+Nun kann jede Brücke individuell ausgewählt werden und Eingangspotentiale können vertauscht werden.
+
+\subsection{Spannungsversorgung}
+\label{ssec:2}
+Die Versorgung wird durch einen 5-poligen Stecker gewährleistet. Neben Groundpotential und Brückenspannung (VCC) gibt es noch zwei Eingänge für die Spannungsversorgung der Elektronik (V+ und V-, jeweils bis zu 12V Betragsspannung). Über OUT wird wird auf die Messspannung referenziert. Darüber hinaus benötigt die Baugruppe drei Elektrolydkondensatoren, die zur Stabilisierung dienen. Abbildung \ref{fig:versorgung} zeigt die gesamte Baugruppe.
+\begin{figure}[h]\label{fig:versorgung}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_versorgung.PNG}
+	\caption{Layout Spannungsversorgung}
 \end{figure}
 
-Mit dem fertigen Schaltplan kann schließlich die Platine erzeugt werden. Hierfür  wird zunächst die Größe \unit[3150x1969]{mil} für die Platine eingestellt. Danach müssen alle Bauteile sinnvoll platziert und verbunden werden. Eine mögliche Lösung ist in Abbildung \ref{fig:EagleBoard} zu sehen.
-
-\begin{figure}
+\subsection{Spannungsstabilisierung des IC}
+\label{ssec:3}
+Da der verwendete Operationsverstärker sehr empfindlich auf Schwankungen seiner Versorgungsspannung sowie auf hochfrequente Störungen auf den Versorgungsleitungen reagiert, ist es notwendig, jene zu stabilisieren. Dies geschieht über eine Baugruppe aus 4 Keramikkondensatoren. Die Funktionsweise ähnelt jener eines Filters. Durch gezieltes Ausnutzen der Be- und Entladezeit der Kondensatoren wird ein einheitliches und konstantes Eingangssignal erreicht. Abbildung \ref{fig:stabic} zeigt die Anordnung.
+\begin{figure}[h]\label{fig:stabic}
 	\centering
-	\includegraphics[width=\textwidth]{figures/Auswerteelektronik_Board.PNG}
-	\caption{Platinenlayout der Auswerteelektronik in Eagle mit ausgeblendeter Massefläche}\label{fig:EagleBoard}
+	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_stabilisierungic.PNG}
+	\caption{Layout Spannungsstabilisierung Operationsverstärker}
 \end{figure}
+
+\subsection{Stecker zum Spannungsabgriff}
+\label{ssec:4}
+Die Messstecker werden an sinnvollen Stellen im Schaltkreis angebracht. Diese sind \begin{itemize}
+\item am Eingangssignal V1
+\item am Eingangssignal V2
+\item unmittelbar nach der Offsetkompensierung
+\item und am Output vor dem RC-Filter.
+\end{itemize}
+Abbildung \ref{fig:messung} in Verbindung mit Abbildung \ref{fig:Eagle} liefert die Positionen der Messstecker im Schaltplan.
+\begin{figure}[h]\label{fig:messung}
+	\centering
+	\includegraphics[scale=0.6]{figures/eagleparts/7_messstecker.PNG}
+	\caption{Layout Platinenstecker zur Spannungsmessung}
+\end{figure}
+
+\section{Platinenlayout}
+\label{sec:Platinenlayout}
+Nachdem der Schaltplan mit Eagle erstellt worden ist, kann in den Board-Editor der Software gewechselt werden. Dieser stellt jegliche Schaltungssymbole als reale Bauteile dar. Die Herausforderung besteht darin, ein sinnvolles Platinenlayout gemäß gewisser Designregeln (vgl. Skript) zu kreieren. Die Platinengröße muss dabei $5 * 8cm^2$ betragen. Weitere Vorgabe ist die einheitliche Leiterbahnbreite von 3mm und ein Winkel von maximal $45°$. Eine mögliche Lösung stellt Abbildung \ref{fig:board_justus} dar.
+\begin{figure}[h]\label{fig:board_justus}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/Board_justus.PNG}
+	\caption{Mögliches Platinenlayout}
+\end{figure}
+Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine hergestellt werden.
+
+\section{Platinenerstellung}
+\label{platinenerstellung}
+Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist irgendein unststoffzeug. Ist die aske aufgetragen, falgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
+
+\begin{figure}[h]\label{fig:platine_zinn}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/platine_zinn.PNG}
+	\caption{Verzinnte, fertig entwickelte Platine (Rückseite)}
+\end{figure}
+
+Bevor mit dem Löten begonnen werden kann, empfiehlt sich die Überprüfung sämtlicher Leiterbahnen. Dazu kann ein Multimeter herangezogen werden, welches ein akustisches Signal ausgibt, wenn zwei Punkte, an denen je eine ans Multimeter angeschlossene Elektrode anliegt, miteinander verbunden sind. Beim Löten muss vor allem darauf geachtet werden, dass weder zu viel noch zu wenig Lötzinn auf die einzelnen Lötstellen aufgetragen wird. Bei falscher Dosierung kann es leicht zu einem Kurzschluss beziehungsweise einer kalten Lötstelle kommen. Abbildung \ref{fig:platine_r} zeigt ein Ergebnis.
+\begin{figure}[h]\label{fig:platine_r}
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/platine_r.JPG}
+	\caption{Fertige Platine Rückseite}
+		\includegraphics[width=0.7\textwidth]{figures/platine_v.JPG}
+	\caption{Fertige Platine Vorderseite}
+\end{figure}
+
+\section{Evaluation}
+\label{evaluation}
+%Nachdem die Auswerteschaltung in den vorigen Kapiteln dimensioniert worden ist, wird nun die Platine designt. Mit der Software Eagle wird zunächst wieder der Schaltplan erstellt. Dieser ist in Abbildung \ref{fig:Eagle} dargestellt. Die zuvor vorgestellte Schaltung wurde hier mit einem Sensoranschluss, einem Platinenstecker zur Spannungsversorgung, einer Spannungsstabilisierung für den IC, zwei Jumpern zum Wechseln der Brückenspannung und vier Platinensteckern zum Anschluss von Messgeräten erweitert. 
+%
+%\begin{figure}
+%	\centering
+%	\rotatebox{90}{\includegraphics[width=\textheight]{figures/Auswerteelektronik.PNG}}
+%	\caption{Eagle-Schaltplan der Auswerteelektronik}\label{fig:Eagle}
+%\end{figure}
+%
+%Mit dem fertigen Schaltplan kann schließlich die Platine erzeugt werden. Hierfür  wird zunächst die Größe \unit[3150x1969]{mil} für die Platine eingestellt. Danach müssen alle Bauteile sinnvoll platziert und verbunden werden. Eine mögliche Lösung ist in Abbildung \ref{fig:EagleBoard} zu sehen.
+%
+%\begin{figure}
+%	\centering
+%	\includegraphics[width=\textwidth]{figures/Auswerteelektronik_Board.PNG}
+%	\caption{Platinenlayout der Auswerteelektronik in Eagle mit ausgeblendeter Massefläche}\label{fig:EagleBoard}
+%\end{figure}

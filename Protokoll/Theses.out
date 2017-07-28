@@ -2,8 +2,8 @@
 \BOOKMARK [1][-]{section.1.1}{Zielsetzung und Gliederung}{chapter.1}% 2
 \BOOKMARK [1][-]{section.1.2}{Geschichte/Literatur}{chapter.1}% 3
 \BOOKMARK [0][-]{chapter.2}{Preliminary Design}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Vor\374berlegungen}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.2}{Ideen- und L\366sungsgenerierung}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.1}{Vor\374berlegungen \(Justus\)}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{Ideen- und L\366sungsgenerierung \(Justus\)}{chapter.2}% 6
 \BOOKMARK [1][-]{section.2.3}{Anforderungen an einen Drucksensor \(Viviane Bremer\)}{chapter.2}% 7
 \BOOKMARK [0][-]{chapter.3}{FEM-Simulation}{}% 8
 \BOOKMARK [1][-]{section.3.1}{Einfluss der Membrandicke auf die maximale Spannung \(Viviane Bremer\)}{chapter.3}% 9
@@ -26,8 +26,15 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Abgleichung der Schaltung \(Viviane Bremer\)}{section.6.3}% 26
 \BOOKMARK [1][-]{section.6.4}{Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{chapter.6}% 27
 \BOOKMARK [0][-]{chapter.7}{Evaluation Circuit}{}% 28
-\BOOKMARK [1][-]{section.7.1}{Leiterplattenlayout mit Eagle \(Viviane Bremer\)}{chapter.7}% 29
-\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 30
-\BOOKMARK [0][-]{chapter*.2}{appendix}{}% 31
-\BOOKMARK [1][-]{section.A.1}{Morphologischer Kasten}{chapter*.2}% 32
-\BOOKMARK [1][-]{section.A.2}{Anforderungsliste}{chapter*.2}% 33
+\BOOKMARK [1][-]{section.7.1}{Schaltplanerstellung mit Eagle \(Justus\)}{chapter.7}% 29
+\BOOKMARK [2][-]{subsection.7.1.1}{Sensoranschluss}{section.7.1}% 30
+\BOOKMARK [2][-]{subsection.7.1.2}{Spannungsversorgung}{section.7.1}% 31
+\BOOKMARK [2][-]{subsection.7.1.3}{Spannungsstabilisierung des IC}{section.7.1}% 32
+\BOOKMARK [2][-]{subsection.7.1.4}{Stecker zum Spannungsabgriff}{section.7.1}% 33
+\BOOKMARK [1][-]{section.7.2}{Platinenlayout}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.3}{Platinenerstellung}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.4}{Evaluation}{chapter.7}% 36
+\BOOKMARK [0][-]{chapter.8}{Zusammenfassung und Ausblick}{}% 37
+\BOOKMARK [0][-]{chapter*.2}{appendix}{}% 38
+\BOOKMARK [1][-]{section.A.1}{Morphologischer Kasten}{chapter*.2}% 39
+\BOOKMARK [1][-]{section.A.2}{Anforderungsliste}{chapter*.2}% 40
