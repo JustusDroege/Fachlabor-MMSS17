@@ -77,6 +77,12 @@ Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkant
 	\pgfplotstableread{chapters/Daten/mitBossStat.dat}\data
 	
 	\addplot [color1] table [x=X,y=sigma] {\data};
+	\addlegendentry{$\sigma_x$}
+	
+	\pgfplotstableread{chapters/Daten/mitBossStat2.dat}\data
+	
+	\addplot [color2] table [x=z,y=sigma] {\data};
+	\addlegendentry{$\sigma_z$}
 	
 	\end{axis}
 	\end{tikzpicture}
