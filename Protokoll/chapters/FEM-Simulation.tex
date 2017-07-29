@@ -31,7 +31,32 @@ Dazu sollen für das Design mit Boss folgende variable Abmessungen gelten(vgl. Ta
 Um das gewünschte Design zu modellieren, wird folgendermaßen vorgegangen: Zunächst wird die Einheit in SolidWorks von Milimeter auf Mikrometer geändert. Nun kann die Grundfläche, also der Siliziumwafer, skizziert werden. Mit einer Extrusion erreicht man die gewünschte Dicke des Wafers. Anschließend wird die Membran auf dem Wafer skizziert. Dabei hilft es, ein Quadrat über den Mittelpunkt des Wafers zu ziehen. Um den Winkel von 54,7$^\circ$ einzuhalten, muss nun beim extrudieren ein Verjüngungswinkel eingestellt werden. Ist dieser Schritt durchgeführt, kann die Bossstruktur mit gleichem Vorgehen eingefügt werden. \\
 Mit Hilfe der Tabellenfunktion von SolidWorks können Dimensionierungsparameter der Designs in einer Exceltabelle gespeichert und auf Wunsch angepasst werden. Diese Funktion wird dazu benutzt, um die in Tabelle \ref{tab:variabel} vorgestellten Abmessungen durch einen einfachen Befehl auszuwählen und darzustellen. \\
 Für die FEM-Simulation werden die beiden grundlegenden Sensordesigns geviertelt, um durch das Ausnutzen der Symmetrie Rechenzeit zu sparen.
+\section{FEM-Simulation (Justus)}
+\label{sec:FEM}
+Nachdem die CAD-Modelle erstellt sind, wird eine FEM-Simulation der geviertelten Modelle durchgeführt. Dazu wird der Wafer an den Schnittkanten, außer an der Membran, fest eingespannt. Dies kann einfach in SolidWorks eingestellt werden. Weitere Vorgaben sind
+\begin{itemize}
+\item die Elemtentgröße auf der Membran von 60$\mu$m
+\item eine globale Elemtentgröße von 120$\mu$m
+\item vorgegebener Druck von 1bar
+\end{itemize}
+sowie die in Tabelle \ref{tab:materialeig} dargestellten Materialeigenschaften für Silizium, die in die Materialdatenbank von SolidWorks eingepflegt werden können. 
+\begin{table}[h]
+\centering
+\caption{Materialeigenschaften Silizium}
+\label{tab:materialeig}
+\begin{tabular}{|c|c|}
+\hline
+Elastizitätsmodul (E) & 169GPa      \\ \hline
+Poissonzahl ($\nu$)        & 0,279     \\ \hline
+Schubmodul (G)        & 50,85GPa \\ \hline
+Dichte ($\rho$)             &  \SI{2,33}{\gram\per\cubic\centi\meter}     \\ \hline
+Bruchspannung ($\sigma$)      & 380MPa   \\ \hline
+\end{tabular}
+\end{table}
 
+\subsection{Ermittlung der Spannungsverläufe (Justus)}
+\label{subsec:ermittlung der spannungsverläufe}
+Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkanten bestimmt werden. 
 \begin{figure}[hb]
 	\centering
 	\begin{tikzpicture}\centering
@@ -59,8 +84,8 @@ Für die FEM-Simulation werden die beiden grundlegenden Sensordesigns geviertelt,
 \end{figure}
 
 
-\section{Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}
-\label{sec:Membrandicke}
+\subsection{Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}
+\label{subsec:Membrandicke}
 
 In diesem Abschnitt wird der Einfluss der Membrandicke auf die auftretende mechanische Spannung in der Membran betrachtet. Hierfür werden folgende Dicken genutzt: \unit[15]{$\mu$m}, \unit[25]{$\mu$m}, ,\unit[35]{$\mu$m}.
 
@@ -107,8 +132,8 @@ Zur Analyse wird der anliegende Druck für alle drei Membrandicken in \unit[0.2]{
 Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}, welcher im benötigten Messbereich liegt. Im Falle von Membran b wird sie knapp oberhalb des Messbereichs bei \unit[1.05]{bar} erreicht. Die Bruchspannung bei Membran c entspricht einem anliegenden Druck von \unit[2]{bar}, welcher deutlich oberhalb des Messbereiches ist. Hieraus lassen sich Erkenntnisse für das Sensorverhalten gewinnen. Membran a ist zu dünn für diese Messaufgabe, da sie innerhalb des Messbereichs reißt. Jedoch ist Membran c auch nicht akzeptabel, da durch die größere Membrandicke niedrigere Spannungen auftreten im Vergleich zu Membran b. Diese bildet einen guten Kompromiss für die gewünschte Aufgabe.
 
 
-\section{Einfluss der Membranabmessungen auf den Spannungsverlauf}
-\label{sec:Membranabmessungen}
+\subsection{Einfluss der Membranabmessungen auf den Spannungsverlauf}
+\label{subsec:Membranabmessungen}
 
 \subsection{Einfluss der Bossgröße (Viviane Bremer)}
 \label{subsec:Bosssize}
@@ -136,3 +161,5 @@ Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dar
 	\end{tikzpicture}
 	\caption{Spannungsverlauf der drei Bossgrößen}\label{pl:Bosssize}
 \end{figure}
+\section{Zusammenfassung (Justus)}
+\label{sec:zusammenfassung2}

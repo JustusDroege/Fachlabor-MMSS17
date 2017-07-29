@@ -8,9 +8,12 @@
 \contentsline {section}{\numberline {2.4}Zwischenfazit und Wahl eines Designs (Justus)}{3}{section.2.4}
 \contentsline {chapter}{\numberline {3}Actual designing and FEM-Simulation}{5}{chapter.3}
 \contentsline {section}{\numberline {3.1}Sensordesign (Justus)}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Einfluss der Membranabmessungen auf den Spannungsverlauf}{7}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Einfluss der Bossgr\"o\IeC {\ss }e (Viviane Bremer)}{7}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.2}FEM-Simulation (Justus)}{6}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Ermittlung der Spannungsverl\"aufe (Justus)}{6}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}{7}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Einfluss der Membranabmessungen auf den Spannungsverlauf}{7}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Einfluss der Bossgr\"o\IeC {\ss }e (Viviane Bremer)}{7}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Zusammenfassung (Justus)}{7}{section.3.3}
 \contentsline {chapter}{\numberline {4}Etching Process}{10}{chapter.4}
 \contentsline {section}{\numberline {4.1}Der Reaktionsprozess beim Silizium\"atzen (Viviane Bremer)}{10}{section.4.1}
 \contentsline {chapter}{\numberline {5}Characterising}{13}{chapter.5}
