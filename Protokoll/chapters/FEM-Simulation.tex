@@ -1,5 +1,36 @@
-\chapter{FEM-Simulation}
+\chapter{Actual designing and FEM-Simulation}
 \label{sec:FEM-Simulation}
+In diesem Kapitel wird zunächst ein CAD-Modell von verschiedenen Sensordesigns mit variablen Abmessungen erstellt. Dazu wird die Software SolidWorks verwendet. Im Anschluss werden verschiedene Simulationen durchgeführt. 
+
+\section{Sensordesign (Justus)}
+\label{sensordesign}
+Zur Auswahl stehen zwei Designs, die beide für eine Druckmessung geeignet sind. Zum einen eine Anordnung mit Rahmen und einfacher Membran, zum anderen ein Design mit zusätzlich auf der Membran platziertem Boss. Dabei gelten die folgenden Abmessungen.
+\begin{itemize}
+\item Abmessung Grundfläche (Siliziumwafer) beträgt \unit[$6500*6500$]{$\mu$m}
+\item Dicke des Siliziumwafers beträgt 450$\mu$m
+\item Der fertigungsbedingte Winkel beträgt 54,7$^\circ$
+\end{itemize}
+Dazu sollen für das Design mit Boss folgende variable Abmessungen gelten(vgl. Tabelle \ref{tab:variabel}).
+\begin{table}[h]
+\centering
+\caption{Variable Abmessungen mit Boss}
+\label{tab:variabel}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Nr.} & \textbf{Membrandicke{[\textbf{$\mu$}m}{]}} & \textbf{Bossgröße{[\textbf{$\mu$}m}{]}} & \textbf{Membrandicke{[\textbf{$\mu$}m}{]}} \\ \hline
+1            & 3600                        & 1000                     & 25                          \\ \hline
+2            & 3600                        & 800                      & 25                          \\ \hline
+3            & 3600                        & 1200                     & 25                          \\ \hline
+4            & 3200                        & 1000                     & 25                          \\ \hline
+5            & 4000                        & 1000                     & 25                          \\ \hline
+6            & 3600                        & 1000                     & 15                          \\ \hline
+7            & 3600                        & 1000                     & 35                          \\ \hline
+\end{tabular}
+\end{table}
+
+Um das gewünschte Design zu modellieren, wird folgendermaßen vorgegangen: Zunächst wird die Einheit in SolidWorks von Milimeter auf Mikrometer geändert. Nun kann die Grundfläche, also der Siliziumwafer, skizziert werden. Mit einer Extrusion erreicht man die gewünschte Dicke des Wafers. Anschließend wird die Membran auf dem Wafer skizziert. Dabei hilft es, ein Quadrat über den Mittelpunkt des Wafers zu ziehen. Um den Winkel von 54,7$^\circ$ einzuhalten, muss nun beim extrudieren ein Verjüngungswinkel eingestellt werden. Ist dieser Schritt durchgeführt, kann die Bossstruktur mit gleichem Vorgehen eingefügt werden. \\
+Mit Hilfe der Tabellenfunktion von SolidWorks können Dimensionierungsparameter der Designs in einer Exceltabelle gespeichert und auf Wunsch angepasst werden. Diese Funktion wird dazu benutzt, um die in Tabelle \ref{tab:variabel} vorgestellten Abmessungen durch einen einfachen Befehl auszuwählen und darzustellen. \\
+Für die FEM-Simulation werden die beiden grundlegenden Sensordesigns geviertelt, um durch das Ausnutzen der Symmetrie Rechenzeit zu sparen.
 
 \begin{figure}[hb]
 	\centering
