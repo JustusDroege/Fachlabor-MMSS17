@@ -56,8 +56,8 @@ Bruchspannung ($\sigma$)      & 380MPa   \\ \hline
 
 \subsection{Ermittlung der Spannungsverläufe (Justus)}
 \label{subsec:ermittlung der spannungsverläufe}
-Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkanten bestimmt werden. 
-\begin{figure}[hb]
+Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkanten bestimmt werden. Dazu wird für beide Designs die Standardabmessung verwendet. Abbildung \ref{pl:ohneBoss} und Abbildung \ref{pl:mitBoss} illustrieren die Spannungsverläufe $\sigma_z$ und $\sigma_x$ über den Weg x, also den Abstand zum Sensorrand, für das Design ohne und mit Boss.
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}\centering
 	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
@@ -68,9 +68,7 @@ Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkant
 	\end{axis}
 	\end{tikzpicture}
 	\caption{Spannungsverlauf einer Membran ohne Boss bei \unit[1]{bar}/strain curve of a membrane without boss at \unit[1]{bar}}\label{pl:ohneBoss}
-\end{figure}
-
-\begin{figure}[hb]
+%	\vspace{10mm}
 	\centering
 	\begin{tikzpicture}\centering
 	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
@@ -88,6 +86,30 @@ Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkant
 	\end{tikzpicture}
 	\caption{Spannungsverlauf einer Membran mit Boss bei \unit[1]{bar}/ strain curve of a membrane with boss at \unit[1]{bar}}\label{pl:mitBoss}
 \end{figure}
+Da sich die Spannungsverläufe für das Design ohne Boss sehr ähneln, wird lediglich einer der beiden ermittelten im Diagramm aufgetragen. \\
+Beim Vergleich der Verläufe ist zu erkennen, dass die jeweilige Maximalspannungen jeweils am Übergang von der Schrägen zur Membran auftreten. Das bedeutet, dass dort am ehesten ein Versagen zu erwarten ist. Dem kann entgegengewirkt werden, indem entsprechende Bereiche verstärkt werden. Beispielsweise könnte im Herstellungsprozess, also beim Ätzen, eine geeignete Kompensationsstruktur verwendet werden, um einen besseren Übergang zwischen Schräge und Membran zu erzielen. \\
+Weiterhin ist anzumerken, dass die Maximalspannung für den Sensor ohne Boss leicht größer ist als jene für das Design mit Boss. Darüber hinaus ist die Spannung bei dem Design mit Boss besser verteilt, die Belastungen verteilen sich also auf verschiedene Bereiche des Sensors. Durch den Boss wird eine ähnlich hohe Maximalspannung wie beim Design ohne Boss verhindert. Wie in Abbildung \ref{pl:mitBoss} zu erkennen ist, schrumpft die Spannung im Bereich der Bossstruktur auf ein Minimum. \\
+Weiterhin ist zu beobachten, dass $\sigma_x$ für die Struktur mit Boss deutlich höhere Werte aufweist als $\sigma_z$. Außerdem ist $\sigma_z$ gestauchter als $\sigma_x$. \\
+%\\
+%\begin{figure}[h]
+%	\centering
+%	\begin{tikzpicture}\centering
+%	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
+%	\pgfplotstableread{chapters/Daten/mitBossStat.dat}\data
+%	
+%	\addplot [color1] table [x=X,y=sigma] {\data};
+%	\addlegendentry{$\sigma_x$}
+%	
+%	\pgfplotstableread{chapters/Daten/mitBossStat2.dat}\data
+%	
+%	\addplot [color2] table [x=z,y=sigma] {\data};
+%	\addlegendentry{$\sigma_z$}
+%	
+%	\end{axis}
+%	\end{tikzpicture}
+%	\caption{Spannungsverlauf einer Membran mit Boss bei \unit[1]{bar}/ strain curve of a membrane with boss at \unit[1]{bar}}\label{pl:mitBoss}
+%\end{figure}
+
 
 
 \subsection{Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}
@@ -103,7 +125,7 @@ In diesem Abschnitt wird der Einfluss der Membrandicke auf die auftretende mecha
 
 Zur Analyse wird der anliegende Druck für alle drei Membrandicken in \unit[0.2]{bar}-Schritten von \unit[0.2]{bar} bis \unit[1]{bar} erhöht und die resultierende mechanische Spannung ermittelt. Die Verläufe sind in Abbildung \ref{pl:Membrandicken} dargestellt. Die Bruchspannung $\sigma_{Br}$ von Silizium beträgt \unit[830]{MPa} und sollte während des Sensorbetriebs nicht überschritten werden. Zur besseren Visualisierung ist sie als Konstante im Graphen dargestellt.
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}\centering
 	\begin{axis}[width=0.8\textwidth, xlabel={p / bar},ylabel={$\sigma$ / Pa},legend pos=north west,legend columns=1,xtick distance=0.2]
@@ -148,7 +170,7 @@ Zur Analyse des Einflusses der Bossgröße wird die Membrangröße auf \unit[3600]{$
 
 Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dargestellt. Bei einer Bossgröße von \unit[800]{$\mu$m} treten Spannungen von bis zu \unit[274]{MPa} auf. Eine Vergrößerung des Bosses auf \unit[1000]{$\mu$m} führt zu einer maximalen Spannung von  \unit[178]{MPa}. Der größte Boss senkt die auftretende Spannung auf \unit[128]{MPa}. Des Weiteren ist zu sehen, dass eine Vergrößerung des Bosses zu einer Angleichung der Spannungsspitzen führt und die Dehnung der Membran von \unit[374]{$\mu$m} auf \unit[77]{$\mu$m} senkt.
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\begin{tikzpicture}\centering
 	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
@@ -167,5 +189,10 @@ Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dar
 	\end{tikzpicture}
 	\caption{Spannungsverlauf der drei Bossgrößen}\label{pl:Bosssize}
 \end{figure}
-\section{Zusammenfassung (Justus)}
+\subsection{Kritische Betrachtung (Justus)}
+\label{kritische betrachtung}
+Eine FEM-Simulation wird meistens unter idealen Bedingungen durchgeführt, da sich in der Realität auftretende Störeinflüsse schlecht simulieren lassen. Zunächst gibt es, gerade bei Mikrosystemen, welche im häufigsten Fall durch Ätzen hergestellt werden, stets Fertigungstoleranzen. Diese beeinflussen nicht die Simulation, aber ändern das Verhalten des realen Bauteils. Hinzu kommt, dass das Silizium, das für die Simulation verwendet wurde, als isotroper Werkstoff simuliert wird. Dies bedeutet, dass das Materialverhalten in alle Raumrichtungen gleich ist. In der Realität ist Silizium jedoch, unter anderem bedingt durch seine monokristalline Struktur, anisotrop. Anisotropie bedeutet die Richtungsabhängigkeit des Materialverhaltens, die den Rechenaufwand einer Simulation enorm vergrößern würde. Ein Beispiel für die Verwendung von Anisotropie in Bezug auf Silizium ist die Berücksichtigung der Miller'schen Indizes beim Ätzprozess. Als weiterer Grund für eine Abweichung der FEM-Simulation zur Realität ist die gewählte Elementgröße von 60 bzw. 120 $\mu$m. Es besteht zwar die Möglichkeit, die Vorgaben weiter zu verfeinern, jedoch bleiben steht Bereiche, auf denen interpoliert werden muss. Außerdem vergrößert sich bei genaueren Analysen die Rechenzeit enorm.\\
+Abschließend kann behauptet werden, die durchgeführten Simulationen sind lediglich eine grobe Annäherung an das reale Systemverhalten.
+
+\section{Zusammenfassung (Manish)}
 \label{sec:zusammenfassung2}
