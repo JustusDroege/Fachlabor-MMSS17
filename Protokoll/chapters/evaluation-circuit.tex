@@ -1,10 +1,10 @@
 \chapter{Evaluation Circuit}
 \label{sec:EvaluationCircuit}
 
-\section{Schaltplanerstellung mit Eagle (Justus)}
+\section{Schaltplanerstellung mit Eagle (Viviane Bremer)}
 \label{sec:eaglee}
 
-Um die in PSpice simulierte Schaltung in ein Platinenlayout zu übertragen, wird die Software Eagle benutzt. Diese ist in Bezug auf die Schaltplanerstellung ähnlich aufgebaut wie PSpice, erlaubt jedoch zusätzlich die Erstellung von realen Designs. Zunächst wird folglich der PSpice-Schaltplan in den Schematics-Editor von Eagle übertragen. Hinzu kommen weitere Bauteile. Dazu zählen \begin{itemize} \item Sensoranschluss \item Platinenstecker zur Spannungsversorgung \item Spannungsstabilisierung für den IC \item zwei Jumper zum Wechseln der Brückenspannung \item sowie vier Platinenstecker zum Anschluss von Messgeräten.
+Zur Erstellung der Platine wird die in PSpice simulierte Schaltung in  die Software Eagle übertragen. Diese ist in Bezug auf die Schaltplanerstellung ähnlich aufgebaut wie PSpice, erlaubt jedoch zusätzlich die Erstellung von Platinendesigns. Neben den zuvor genutzten Bauteilen kommen noch weitere hinzu. Diese sind die folgenden: \begin{itemize} \item Sensoranschluss \item Platinenstecker zur Spannungsversorgung \item Spannungsstabilisierung für den IC \item zwei Jumper zum Wechseln der Brückenspannung \item sowie vier Platinenstecker zum Anschluss von Messgeräten.
 \end{itemize} 
 %Dabei sind die Platinenstecker für die Messgeräte so platzieren, dass Spannungen an signifikanten Stellen der Elektronik abgegriffen werden können. 
 Der vollständige Schaltplan ist in Abbildung \ref{fig:Eagle} dargestellt.
@@ -23,7 +23,7 @@ Die Eagle-Bibliotheken des IMT beinhalten bereits den grundlegenden Sensoranschl
 	\includegraphics[width=0.7\textwidth]{figures/eagleparts/7_sensorstecker.PNG}
 	\caption{Layout Sensoranschluss}
 \end{figure}
-Um die Auswahl einer Brücke zu ermöglichen, werden die Ausgänge der Brücken zunächst mit einem Jumper mit 8 Eingängen verbunden (vgl. Abbildung \ref{fig:jump1}. 
+Um die Auswahl einer Brücke zu ermöglichen, werden die Ausgänge der Brücken zunächst mit einem Jumper mit 8 Eingängen verbunden (vgl. Abbildung \ref{fig:jump1}). 
 \begin{figure}[h]\label{fig:jump1}
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/eagleparts/7_jump1.PNG}
@@ -39,7 +39,7 @@ Nun kann jede Brücke individuell ausgewählt werden und Eingangspotentiale können
 
 \subsection{Spannungsversorgung}
 \label{ssec:2}
-Die Versorgung wird durch einen 5-poligen Stecker gewährleistet. Neben Groundpotential und Brückenspannung (VCC) gibt es noch zwei Eingänge für die Spannungsversorgung der Elektronik (V+ und V-, jeweils bis zu 12V Betragsspannung). Über OUT wird wird auf die Messspannung referenziert. Darüber hinaus benötigt die Baugruppe drei Elektrolydkondensatoren, die zur Stabilisierung dienen. Abbildung \ref{fig:versorgung} zeigt die gesamte Baugruppe.
+Die Versorgung wird durch einen 5-poligen Stecker gewährleistet. Neben Groundpotential und Brückenspannung (VCC) gibt es noch zwei Eingänge für die Spannungsversorgung der Elektronik (V+ und V-, jeweils bis zu 12V Betragsspannung). Über OUT wird auf die Messspannung referenziert. Darüber hinaus benötigt die Baugruppe drei Elektrolytkondensatoren, die zur Stabilisierung dienen. Abbildung \ref{fig:versorgung} zeigt die gesamte Baugruppe.
 \begin{figure}[h]\label{fig:versorgung}
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_versorgung.PNG}
@@ -48,7 +48,7 @@ Die Versorgung wird durch einen 5-poligen Stecker gewährleistet. Neben Groundpot
 
 \subsection{Spannungsstabilisierung des IC}
 \label{ssec:3}
-Da der verwendete Operationsverstärker sehr empfindlich auf Schwankungen seiner Versorgungsspannung sowie auf hochfrequente Störungen auf den Versorgungsleitungen reagiert, ist es notwendig, jene zu stabilisieren. Dies geschieht über eine Baugruppe aus 4 Keramikkondensatoren. Die Funktionsweise ähnelt jener eines Filters. Durch gezieltes Ausnutzen der Be- und Entladezeit der Kondensatoren wird ein einheitliches und konstantes Eingangssignal erreicht. Abbildung \ref{fig:stabic} zeigt die Anordnung.
+Da der verwendete Operationsverstärker sehr empfindlich auf Schwankungen seiner Versorgungsspannung sowie auf hochfrequente Störungen auf den Versorgungsleitungen reagiert, ist es notwendig, diese zu stabilisieren. Dies geschieht über eine Baugruppe aus 4 Keramikkondensatoren. Die Funktionsweise ähnelt jener eines Filters. Durch gezieltes Ausnutzen der Be- und Entladezeit der Kondensatoren wird ein einheitliches und konstantes Eingangssignal erreicht. Der Aufbau dieser Spannungsstabilisierung ist in Abbildung \ref{fig:stabic} dargestellt.
 \begin{figure}[h]\label{fig:stabic}
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_stabilisierungic.PNG}
@@ -57,7 +57,7 @@ Da der verwendete Operationsverstärker sehr empfindlich auf Schwankungen seiner 
 
 \subsection{Stecker zum Spannungsabgriff}
 \label{ssec:4}
-Die Messstecker werden an sinnvollen Stellen im Schaltkreis angebracht. Diese sind \begin{itemize}
+Die Messstecker werden für eine einfache Kontrolle der Schaltungsspannungen genutzt und an sinnvollen Stellen im Schaltkreis angebracht. Diese sind: \begin{itemize}
 \item am Eingangssignal V1
 \item am Eingangssignal V2
 \item unmittelbar nach der Offsetkompensierung
@@ -70,7 +70,7 @@ Abbildung \ref{fig:messung} in Verbindung mit Abbildung \ref{fig:Eagle} liefert 
 	\caption{Layout Platinenstecker zur Spannungsmessung}
 \end{figure}
 
-\section{Platinenlayout}
+\section{Platinenlayout (Justus)}
 \label{sec:Platinenlayout}
 Nachdem der Schaltplan mit Eagle erstellt worden ist, kann in den Board-Editor der Software gewechselt werden. Dieser stellt jegliche Schaltungssymbole als reale Bauteile dar. Die Herausforderung besteht darin, ein sinnvolles Platinenlayout gemäß gewisser Designregeln (vgl. Skript) zu kreieren. Die Platinengröße muss dabei $5 * 8cm^2$ betragen. Weitere Vorgabe ist die einheitliche Leiterbahnbreite von 3mm und ein Winkel von maximal $45°$. Eine mögliche Lösung stellt Abbildung \ref{fig:board_justus} dar.
 \begin{figure}[h]\label{fig:board_justus}
@@ -116,3 +116,26 @@ Bevor mit dem Löten begonnen werden kann, empfiehlt sich die Überprüfung sämtlic
 %	\includegraphics[width=\textwidth]{figures/Auswerteelektronik_Board.PNG}
 %	\caption{Platinenlayout der Auswerteelektronik in Eagle mit ausgeblendeter Massefläche}\label{fig:EagleBoard}
 %\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[width=0.8\textwidth, xlabel={p / bar},ylabel={U/ mV},legend pos=north west,legend columns=1,xtick distance=0.2]
+	\pgfplotstableread{chapters/Daten/Messung.dat}\data
+	
+	\addplot [color1] table [x=p1,y=V1] {\data};
+	\addlegendentry{B1}
+	
+	\addplot [color2] table [x=p2, y=V2] {\data};
+	\addlegendentry{B2}
+	
+	\addplot [color3] table [x=p3,y=V3] {\data};
+	\addlegendentry{B3}
+	
+	\addplot [color4] table [x=p4,y=V4] {\data};
+	\addlegendentry{B4}
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Measurement with offset compensation and amplification}\label{pl:Measurments}
+\end{figure}
