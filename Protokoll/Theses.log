@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.4)  30 JUL 2017 12:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.4)  1 AUG 2017 17:51
 entering extended mode
 **Theses.tex
 (E:\Documents\Studium\Labor\Protokoll\Theses.tex
@@ -1295,7 +1295,8 @@ tex"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\pgfplots\numtable\pgfplotstable.colty
 pe.code.tex"))) (E:\Documents\Studium\Labor\Protokoll\chapters/nan_fix.tex))
 (E:\Documents\Studium\Labor\Protokoll\Theses.aux
-(E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.aux))
+(E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.aux)
+(E:\Documents\Studium\Labor\Protokoll\chapters/Abstract.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
 LaTeX Font Info:    ... okay on input line 18.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
@@ -1420,7 +1421,7 @@ LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 18.
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 (E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.tex
-<figures/header.jpg, id=194, 1105.12875pt x 406.51875pt>
+<figures/header.jpg, id=198, 1105.12875pt x 406.51875pt>
 File: figures/header.jpg Graphic file (type jpg)
 
 <use figures/header.jpg>
@@ -1440,14 +1441,8 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <E:/Documents/Studium/Labo
-r/Protokoll/figures/header.jpg>]) (E:\Documents\Studium\Labor\Protokoll\Theses.
-toc [2
-
-
-])
-\tf@toc=\write5
- [3]
-(E:\Documents\Studium\Labor\Protokoll\chapters/introduction.tex
+r/Protokoll/figures/header.jpg>]) (E:\Documents\Studium\Labor\Protokoll\chapter
+s/Abstract.tex
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1464,27 +1459,37 @@ Class scrreprt Warning: \float@addtolists detected!
 (scrreprt)              a package that still implements the
 (scrreprt)              deprecated \float@addtolist interface .
 
-
-LaTeX Warning: Citation `MechanikIII' on page 1 undefined on input line 9.
-
-
-LaTeX Warning: Citation `MechanikI' on page 1 undefined on input line 14.
+) [2
 
 
-LaTeX Warning: Citation `MechanikII' on page 1 undefined on input line 14.
 
-) (E:\Documents\Studium\Labor\Protokoll\chapters/preliminary-design.tex
-[1
+] (E:\Documents\Studium\Labor\Protokoll\Theses.toc [3
 
-]
+
+])
+\tf@toc=\write5
+ [4]
+(E:\Documents\Studium\Labor\Protokoll\chapters/introduction.tex
 chapter 2.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 9.
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
+ [1
 
-LaTeX Warning: Reference `tab:morph' on page 2 undefined on input line 17.
+])
+(E:\Documents\Studium\Labor\Protokoll\chapters/preliminary-design.tex [2]
+[3]
+chapter 3.
+
+LaTeX Warning: Reference `tab:morph' on page 4 undefined on input line 17.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2
+[4
 
 ]
 Overfull \hbox (2.87775pt too wide) in paragraph at lines 49--49
@@ -1504,30 +1509,24 @@ Overfull \hbox (1.2651pt too wide) in paragraph at lines 46--58
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[3pdfTeX warning (ext4): destination with the same identifier (name{table.2.1})
+[5pdfTeX warning (ext4): destination with the same identifier (name{table.3.1})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.63 
      ]) (E:\Documents\Studium\Labor\Protokoll\chapters/FEM-Simulation.tex
-[4pdfTeX warning (ext4): destination with the same identifier (name{table.2.2})
+[6pdfTeX warning (ext4): destination with the same identifier (name{table.3.2})
  has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Actual designing and FEM-Simulation}]
-chapter 3.
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 9.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
-File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 9.
- [5
+chapter 4.
+[7
 
-pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) h
 as been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1543,7 +1542,7 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 68.
 PGFPlots: reading {chapters/Daten/mitBossStat.dat}
 PGFPlots: reading {chapters/Daten/mitBossStat2.dat}
- [6pdfTeX warning (ext4): destination with the same identifier (name{table.3.2}
+ [8pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1555,38 +1554,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--112
 
  []
 
-[7pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.112 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
-3.2}) has been already used, duplicate ignored
+4.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.112 
       ]
 PGFPlots: reading {chapters/Daten/Membran.dat}
- [8]
+ [10]
 PGFPlots: reading {chapters/Daten/MechSpannung.dat}
- [9pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
-}) has been already used, duplicate ignored
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.191 \end{figure}
                   ])
-(E:\Documents\Studium\Labor\Protokoll\chapters/etching-process.tex [10pdfTeX wa
-rning (ext4): destination with the same identifier (name{figure.3.4}) has been 
+(E:\Documents\Studium\Labor\Protokoll\chapters/etching-process.tex [12pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.4.4}) has been 
 already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
-            {Etching Process}] [11]
-chapter 4.
+            {Etching Process}] [13]
+chapter 5.
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
 
@@ -1599,25 +1598,25 @@ LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 37.
 
-[12
+[14
 
-] [13]
+] [15]
 
 LaTeX Warning: Command \" invalid in math mode on input line 103.
 
 
 LaTeX Warning: Command \" invalid in math mode on input line 103.
 
-) (E:\Documents\Studium\Labor\Protokoll\chapters/characterising.tex [14pdfTeX w
-arning (ext4): destination with the same identifier (name{table.4.1}) has been 
+) (E:\Documents\Studium\Labor\Protokoll\chapters/characterising.tex [16pdfTeX w
+arning (ext4): destination with the same identifier (name{table.5.1}) has been 
 already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Characterising}]
-chapter 5.
-<figures/microscope_sensor/M_11_sensor.jpg, id=384, 1606.0pt x 1204.5pt>
+chapter 6.
+<figures/microscope_sensor/M_11_sensor.jpg, id=403, 1606.0pt x 1204.5pt>
 File: figures/microscope_sensor/M_11_sensor.jpg Graphic file (type jpg)
 
 <use figures/microscope_sensor/M_11_sensor.jpg>
@@ -1625,7 +1624,7 @@ Package pdftex.def Info: figures/microscope_sensor/M_11_sensor.jpg used on inpu
 t line 14.
 (pdftex.def)             Requested size: 219.08871pt x 164.30974pt.
 
-<figures/microscope_sensor/Justus_Sensor-13_200.jpg, id=385, 1606.0pt x 1204.5p
+<figures/microscope_sensor/Justus_Sensor-13_200.jpg, id=404, 1606.0pt x 1204.5p
 t>
 File: figures/microscope_sensor/Justus_Sensor-13_200.jpg Graphic file (type jpg
 )
@@ -1638,9 +1637,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--18
 
  []
 
-[15
+[17
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1649,13 +1648,13 @@ l.25
       <E:/Documents/Studium/Labor/Protokoll/figures/microscope_sensor/M_11_sens
 or.jpg> <E:/Documents/Studium/Labor/Protokoll/figures/microscope_sensor/Justus_
 Sensor-13_200.jpg>]
-<figures/Versuchsaufbau1.jpg, id=394, 4047.12pt x 3035.34pt>
+<figures/Versuchsaufbau1.jpg, id=413, 4047.12pt x 3035.34pt>
 File: figures/Versuchsaufbau1.jpg Graphic file (type jpg)
 
 <use figures/Versuchsaufbau1.jpg>
 Package pdftex.def Info: figures/Versuchsaufbau1.jpg used on input line 28.
 (pdftex.def)             Requested size: 312.979pt x 234.72694pt.
- [16pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1667,7 +1666,7 @@ PGFPlots: reading {chapters/Daten/Sensor_13.dat}
 PGFPlots: reading {chapters/Daten/Sensor_11.dat}
 PGFPlots: reading {chapters/Daten/Sensor_13.dat}
 
-[17pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.6.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1677,20 +1676,20 @@ l.178
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.199 \end{equation}
-                    ] [19pdfTeX warning (ext4): destination with the same ident
-ifier (name{table.5.1}) has been already used, duplicate ignored
+                    ] [21pdfTeX warning (ext4): destination with the same ident
+ifier (name{table.6.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.237 A
        nalog dazu werden die Werte für das transversale Design bestimmt:pdfTeX 
-warning (ext4): destination with the same identifier (name{table.5.2}) has been
+warning (ext4): destination with the same identifier (name{table.6.2}) has been
  already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1699,16 +1698,16 @@ l.237 A
        nalog dazu werden die Werte für das transversale Design bestimmt:]
 PGFPlots: reading {chapters/Daten/Sensor_14.dat}
 )
-(E:\Documents\Studium\Labor\Protokoll\chapters/circuit-layout.tex [20] [21pdfTe
-X warning (ext4): destination with the same identifier (name{figure.5.5}) has b
+(E:\Documents\Studium\Labor\Protokoll\chapters/circuit-layout.tex [22] [23pdfTe
+X warning (ext4): destination with the same identifier (name{figure.6.5}) has b
 een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Circuit Layout}]
-chapter 6.
-<figures/Schaltplan1.pdf, id=454, 844.65562pt x 596.98032pt>
+chapter 7.
+<figures/Schaltplan1.pdf, id=473, 844.65562pt x 596.98032pt>
 File: figures/Schaltplan1.pdf Graphic file (type pdf)
 
 <use figures/Schaltplan1.pdf>
@@ -1719,68 +1718,68 @@ Overfull \hbox (27.13213pt too wide) in paragraph at lines 15--16
 [][]
  []
 
-<figures/Simulation1_1.pdf, id=457, 844.65562pt x 596.98032pt>
+<figures/Simulation1_1.pdf, id=476, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_1.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_1.pdf>
 Package pdftex.def Info: figures/Simulation1_1.pdf used on input line 29.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
 
-<figures/Simulation1_2.pdf, id=460, 844.65562pt x 596.98032pt>
+<figures/Simulation1_2.pdf, id=479, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_2.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_2.pdf>
 Package pdftex.def Info: figures/Simulation1_2.pdf used on input line 40.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
- [22
+ [24
 
 ]
-<figures/Simulation1_3.pdf, id=471, 844.65562pt x 596.98032pt>
+<figures/Simulation1_3.pdf, id=489, 844.65562pt x 596.98032pt>
 File: figures/Simulation1_3.pdf Graphic file (type pdf)
 
 <use figures/Simulation1_3.pdf>
 Package pdftex.def Info: figures/Simulation1_3.pdf used on input line 50.
 (pdftex.def)             Requested size: 402.4006pt x 283.15506pt.
 )
-(E:\Documents\Studium\Labor\Protokoll\chapters/evaluation-circuit.tex [23]
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.6.1
+(E:\Documents\Studium\Labor\Protokoll\chapters/evaluation-circuit.tex [25]
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Evaluation Circuit} <E:/Documents/Studium/Labor/Protokoll/figures/
-Schaltplan1.pdf>] [25pdfTeX warning (ext4): destination with the same identifie
-r (name{figure.6.2}) has been already used, duplicate ignored
+Schaltplan1.pdf>] [27pdfTeX warning (ext4): destination with the same identifie
+r (name{figure.7.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Evaluation Circuit}pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.6.3}) has been already used, duplicate ignored
+e identifier (name{figure.7.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Evaluation Circuit} <E:/Documents/Studium/Labor/Protokoll/figures/
 Simulation1_1.pdf> <E:/Documents/Studium/Labor/Protokoll/figures/Simulation1_2.
-pdf>] [26pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.6.4}) has been already used, duplicate ignored
+pdf>] [28pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.7.4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
             {Evaluation Circuit} <E:/Documents/Studium/Labor/Protokoll/figures/
 Simulation1_3.pdf>]
-chapter 7.
-<figures/Auswerteelektronik.PNG, id=523, 799.48688pt x 514.92375pt>
+chapter 8.
+<figures/Auswerteelektronik.PNG, id=542, 799.48688pt x 514.92375pt>
 File: figures/Auswerteelektronik.PNG Graphic file (type png)
 
 <use figures/Auswerteelektronik.PNG>
 Package pdftex.def Info: figures/Auswerteelektronik.PNG used on input line 13.
 (pdftex.def)             Requested size: 402.4006pt x 259.17409pt.
 
-<figures/eagleparts/7_sensorstecker.PNG, id=526, 328.22626pt x 184.43906pt>
+<figures/eagleparts/7_sensorstecker.PNG, id=545, 328.22626pt x 184.43906pt>
 File: figures/eagleparts/7_sensorstecker.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_sensorstecker.PNG>
@@ -1788,22 +1787,22 @@ Package pdftex.def Info: figures/eagleparts/7_sensorstecker.PNG used on input l
 ine 23.
 (pdftex.def)             Requested size: 312.979pt x 175.87465pt.
 
-<figures/eagleparts/7_jump1.PNG, id=528, 261.22594pt x 94.10156pt>
+<figures/eagleparts/7_jump1.PNG, id=547, 261.22594pt x 94.10156pt>
 File: figures/eagleparts/7_jump1.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_jump1.PNG>
 Package pdftex.def Info: figures/eagleparts/7_jump1.PNG used on input line 29.
 (pdftex.def)             Requested size: 268.27162pt x 96.64137pt.
 
-<figures/eagleparts/7_jump2.PNG, id=530, 172.39406pt x 63.98906pt>
+<figures/eagleparts/7_jump2.PNG, id=549, 172.39406pt x 63.98906pt>
 File: figures/eagleparts/7_jump2.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_jump2.PNG>
 Package pdftex.def Info: figures/eagleparts/7_jump2.PNG used on input line 35.
 (pdftex.def)             Requested size: 223.5574pt x 82.9807pt.
- [27
+ [29
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7.1}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1813,20 +1812,20 @@ l.39
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/eagleparts/7_versorgung.PNG, id=538, 240.14719pt x 252.945pt>
+<figures/eagleparts/7_versorgung.PNG, id=557, 240.14719pt x 252.945pt>
 File: figures/eagleparts/7_versorgung.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_versorgung.PNG>
 Package pdftex.def Info: figures/eagleparts/7_versorgung.PNG used on input line
  45.
 (pdftex.def)             Requested size: 223.5574pt x 235.47571pt.
- [28pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.48 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.8
 .3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1834,20 +1833,20 @@ l.48
 l.48 
       <E:/Documents/Studium/Labor/Protokoll/figures/eagleparts/7_sensorstecker.
 PNG> <E:/Documents/Studium/Labor/Protokoll/figures/eagleparts/7_jump1.PNG>]
-<figures/eagleparts/7_stabilisierungic.PNG, id=549, 235.63031pt x 149.8097pt>
+<figures/eagleparts/7_stabilisierungic.PNG, id=567, 235.63031pt x 149.8097pt>
 File: figures/eagleparts/7_stabilisierungic.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_stabilisierungic.PNG>
 Package pdftex.def Info: figures/eagleparts/7_stabilisierungic.PNG used on inpu
 t line 54.
 (pdftex.def)             Requested size: 223.5574pt x 142.13551pt.
- [29pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.57 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.8
 .5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1855,7 +1854,7 @@ l.57
 l.57 
       <E:/Documents/Studium/Labor/Protokoll/figures/eagleparts/7_jump2.PNG> <E:
 /Documents/Studium/Labor/Protokoll/figures/eagleparts/7_versorgung.PNG>]
-<figures/eagleparts/7_messstecker.PNG, id=560, 158.09062pt x 194.97844pt>
+<figures/eagleparts/7_messstecker.PNG, id=578, 158.09062pt x 194.97844pt>
 File: figures/eagleparts/7_messstecker.PNG Graphic file (type png)
 
 <use figures/eagleparts/7_messstecker.PNG>
@@ -1866,19 +1865,19 @@ e 69.
 
 LaTeX Warning: Command \textdegree invalid in math mode on input line 75.
 
-<figures/Board_justus.PNG, id=562, 240.4182pt x 145.9854pt>
+<figures/Board_justus.PNG, id=580, 240.4182pt x 145.9854pt>
 File: figures/Board_justus.PNG Graphic file (type png)
 
 <use figures/Board_justus.PNG>
 Package pdftex.def Info: figures/Board_justus.PNG used on input line 78.
 (pdftex.def)             Requested size: 312.979pt x 190.05273pt.
- [30pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.82 
-     pdfTeX warning (ext4): destination with the same identifier (name{figure.7
+     pdfTeX warning (ext4): destination with the same identifier (name{figure.8
 .7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1886,7 +1885,7 @@ l.82
 l.82 
       <E:/Documents/Studium/Labor/Protokoll/figures/eagleparts/7_stabilisierung
 ic.PNG> <E:/Documents/Studium/Labor/Protokoll/figures/eagleparts/7_messstecker.
-PNG>] <figures/platine_zinn.PNG, id=572, 648.17157pt x 444.91219pt>
+PNG>] <figures/platine_zinn.PNG, id=590, 648.17157pt x 444.91219pt>
 File: figures/platine_zinn.PNG Graphic file (type png)
 
 <use figures/platine_zinn.PNG>
@@ -1896,20 +1895,20 @@ Package pdftex.def Info: figures/platine_zinn.PNG used on input line 89.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<figures/platine_r.JPG, id=574, 4047.12pt x 3035.34pt>
+<figures/platine_r.JPG, id=592, 4047.12pt x 3035.34pt>
 File: figures/platine_r.JPG Graphic file (type jpg)
 
 <use figures/platine_r.JPG>
 Package pdftex.def Info: figures/platine_r.JPG used on input line 96.
 (pdftex.def)             Requested size: 312.979pt x 234.72694pt.
 
-<figures/platine_v.JPG, id=575, 4047.12pt x 3035.34pt>
+<figures/platine_v.JPG, id=593, 4047.12pt x 3035.34pt>
 File: figures/platine_v.JPG Graphic file (type jpg)
 
 <use figures/platine_v.JPG>
 Package pdftex.def Info: figures/platine_v.JPG used on input line 98.
 (pdftex.def)             Requested size: 312.979pt x 234.72694pt.
- [31pdfTeX warning (ext4): destination with the same identifier (name{figure.7.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -1921,42 +1920,43 @@ l.101
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 PGFPlots: reading {chapters/Daten/Messung.dat}
-) (E:\Documents\Studium\Labor\Protokoll\chapters/Zusammenfassung.tex [32pdfTeX 
-warning (ext4): destination with the same identifier (name{figure.7.9}) has bee
+) (E:\Documents\Studium\Labor\Protokoll\chapters/Zusammenfassung.tex [34pdfTeX 
+warning (ext4): destination with the same identifier (name{figure.8.9}) has bee
 n already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
-            {Zusammenfassung und Ausblick} <E:/Documents/Studium/Labor/Protokol
-l/figures/platine_zinn.PNG>] [33pdfTeX warning (ext4): destination with the sam
-e identifier (name{figure.7.12}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \chapter
-            {Zusammenfassung und Ausblick}] [34pdfTeX warning (ext4): destinati
-on with the same identifier (name{figure.7.10}) has been already used, duplicat
-e ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.1 \chapter
-            {Zusammenfassung und Ausblick}pdfTeX warning (ext4): destination wi
-th the same identifier (name{figure.7.11}) has been already used, duplicate ign
+            {Zusammenfassung und Ausblick (Manisch)} <E:/Documents/Studium/Labo
+r/Protokoll/figures/platine_zinn.PNG>] [35pdfTeX warning (ext4): destination wi
+th the same identifier (name{figure.8.12}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 \chapter
-            {Zusammenfassung und Ausblick} <E:/Documents/Studium/Labor/Protokol
-l/figures/platine_r.JPG> <E:/Documents/Studium/Labor/Protokoll/figures/platine_
-v.JPG>]
-chapter 8.
-) [35
+            {Zusammenfassung und Ausblick (Manisch)}] [36pdfTeX warning (ext4):
+ destination with the same identifier (name{figure.8.10}) has been already used
+, duplicate ignored
 
-] (E:\Documents\Studium\Labor\Protokoll\chapters/appendix.tex
-<figures/MorphologischerKasten_Bremer.png, id=603, 420.1296pt x 705.3552pt>
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Zusammenfassung und Ausblick (Manisch)}pdfTeX warning (ext4): dest
+ination with the same identifier (name{figure.8.11}) has been already used, dup
+licate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Zusammenfassung und Ausblick (Manisch)} <E:/Documents/Studium/Labo
+r/Protokoll/figures/platine_r.JPG> <E:/Documents/Studium/Labor/Protokoll/figure
+s/platine_v.JPG>]
+chapter 9.
+) [37
+
+] [38] (E:\Documents\Studium\Labor\Protokoll\chapters/appendix.tex
+<figures/MorphologischerKasten_Bremer.png, id=625, 420.1296pt x 705.3552pt>
 File: figures/MorphologischerKasten_Bremer.png Graphic file (type png)
 
 <use figures/MorphologischerKasten_Bremer.png>
@@ -1967,9 +1967,9 @@ Package pdftex.def Info: figures/MorphologischerKasten_Bremer.png used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36
+[39
 
-] <figures/Anforderungsliste_Bremer.png, id=608, 512.6352pt x 678.3744pt>
+] <figures/Anforderungsliste_Bremer.png, id=631, 512.6352pt x 678.3744pt>
 File: figures/Anforderungsliste_Bremer.png Graphic file (type png)
 
 <use figures/Anforderungsliste_Bremer.png>
@@ -1980,18 +1980,19 @@ e 15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [37]
+) [40]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 73.
- [38 <E:/Documents/Studium/Labor/Protokoll/figures/MorphologischerKasten_Bremer
-.png>] [39 <E:/Documents/Studium/Labor/Protokoll/figures/Anforderungsliste_Brem
+ [41 <E:/Documents/Studium/Labor/Protokoll/figures/MorphologischerKasten_Bremer
+.png>] [42 <E:/Documents/Studium/Labor/Protokoll/figures/Anforderungsliste_Brem
 er.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 73.
  (E:\Documents\Studium\Labor\Protokoll\Theses.aux
-(E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.aux))
+(E:\Documents\Studium\Labor\Protokoll\chapters/frontpage.aux)
+(E:\Documents\Studium\Labor\Protokoll\chapters/Abstract.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `Theses.out' has not changed.
-(rerunfilecheck)             Checksum: 4A5CF06A4BDD7FAA7A8A27F23231F468;3926.
+(rerunfilecheck)             Checksum: B36DF1257C25D0E2799C9BE831A6424A;4007.
 
 
 LaTeX Warning: There were undefined references.
@@ -1999,10 +2000,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 41630 strings out of 493921
- 978785 string characters out of 3147283
- 1261632 words of memory out of 3000000
- 44053 multiletter control sequences out of 15000+200000
+ 41645 strings out of 493921
+ 979272 string characters out of 3147283
+ 1262376 words of memory out of 3000000
+ 44056 multiletter control sequences out of 15000+200000
  112668 words of font info for 86 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  76i,20n,119p,10467b,2532s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2024,9 +2025,9 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on Theses.pdf (42 pages, 11908170 bytes).
+Output written on Theses.pdf (46 pages, 11921844 bytes).
 PDF statistics:
- 725 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
- 518 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 749 PDF objects out of 1000 (max. 8388607)
+ 166 named destinations out of 1000 (max. 500000)
+ 526 words of extra memory for PDF output out of 10000 (max. 10000000)
 
