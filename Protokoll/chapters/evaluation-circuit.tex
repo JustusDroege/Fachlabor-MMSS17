@@ -11,48 +11,48 @@ Der vollständige Schaltplan ist in Abbildung \ref{fig:Eagle} dargestellt.
 \begin{figure}[h]\label{fig:Eagle}%\label{fig:Eagle Schaltplan}
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures/Auswerteelektronik.PNG}
-	\caption{Eagle-Schaltplan der Auswerteelektronik}
+	\caption{Eagle-Schaltplan der Auswerteelektronik} 
 \end{figure}
 Im Folgenden wird kurz auf die einzelnen zusätzlichen Elemente eingegangen.
 
 \subsection{Sensoranschluss}
 \label{ssec:1}
 Die Eagle-Bibliotheken des IMT beinhalten bereits den grundlegenden Sensoranschluss, deshalb kann dieser direkt daraus übernommen werden. Beim Wiring ist darauf zu achten, dass später jede einzelne Brücke des Sensors separat ausgewählt werden kann. Deshalb benötigt jede Brücke eine Verbindung zur Brückenspannung (VCC mit 1V) sowie ein Groundpotential. Weiterhin werden pro Brücke zwei Ausgänge benötigt, die mit der Auswertewerteelektronik zu verbinden sind. Diese dienen also der eigentlichen Druckmessung. In Abbildung \ref{fig:sensoranschluss} sind diese mit Bn\_1 und Bn\_2 beschriftet, wobei n als Brückennummer verstanden werden und somit die Werte 1-4 annehmen kann. Die Nummerierung ist dabei frei gewählt und hat keine Bedeutung. 
-\begin{figure}[h]\label{fig:sensoranschluss}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/eagleparts/7_sensorstecker.PNG}
-	\caption{Layout Sensoranschluss}
+	\caption{Layout Sensoranschluss}\label{fig:sensoranschluss}
 \end{figure}
 Um die Auswahl einer Brücke zu ermöglichen, werden die Ausgänge der Brücken zunächst mit einem Jumper mit 8 Eingängen verbunden (vgl. Abbildung \ref{fig:jump1}). 
-\begin{figure}[h]\label{fig:jump1}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.6\textwidth]{figures/eagleparts/7_jump1.PNG}
-	\caption{Layout Jumper mit Brückenausgängen als Eingang}
+	\caption{Layout Jumper mit Brückenausgängen als Eingang}\label{fig:jump1}
 \end{figure}
 Zur Vereinfachung und zur Gewährleistung der Möglichkeit des Vertauschens der Eingangspotentiale wird nun ein weiterer Jumper verwendet (vgl. Abbildung \ref{fig:jump2}).
-\begin{figure}[h]\label{fig:jump2}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_jump2.PNG}
-	\caption{Layout Jumper zum Tausch der Eingangspotentiale}
+	\caption{Layout Jumper zum Tausch der Eingangspotentiale}\label{fig:jump2}
 \end{figure}
 Nun kann jede Brücke individuell ausgewählt werden und Eingangspotentiale können vertauscht werden.
 
 \subsection{Spannungsversorgung}
 \label{ssec:2}
 Die Versorgung wird durch einen 5-poligen Stecker gewährleistet. Neben Groundpotential und Brückenspannung (VCC) gibt es noch zwei Eingänge für die Spannungsversorgung der Elektronik (V+ und V-, jeweils bis zu 12V Betragsspannung). Über OUT wird auf die Messspannung referenziert. Darüber hinaus benötigt die Baugruppe drei Elektrolytkondensatoren, die zur Stabilisierung dienen. Abbildung \ref{fig:versorgung} zeigt die gesamte Baugruppe.
-\begin{figure}[h]\label{fig:versorgung}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_versorgung.PNG}
-	\caption{Layout Spannungsversorgung}
+	\caption{Layout Spannungsversorgung}\label{fig:versorgung}
 \end{figure}
 
 \subsection{Spannungsstabilisierung des IC}
 \label{ssec:3}
 Da der verwendete Operationsverstärker sehr empfindlich auf Schwankungen seiner Versorgungsspannung sowie auf hochfrequente Störungen auf den Versorgungsleitungen reagiert, ist es notwendig, diese zu stabilisieren. Dies geschieht über eine Baugruppe aus 4 Keramikkondensatoren. Die Funktionsweise ähnelt jener eines Filters. Durch gezieltes Ausnutzen der Be- und Entladezeit der Kondensatoren wird ein einheitliches und konstantes Eingangssignal erreicht. Der Aufbau dieser Spannungsstabilisierung ist in Abbildung \ref{fig:stabic} dargestellt.
-\begin{figure}[h]\label{fig:stabic}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.5\textwidth]{figures/eagleparts/7_stabilisierungic.PNG}
-	\caption{Layout Spannungsstabilisierung Operationsverstärker}
+	\caption{Layout Spannungsstabilisierung Operationsverstärker}\label{fig:stabic}
 \end{figure}
 
 \subsection{Stecker zum Spannungsabgriff}
@@ -64,19 +64,19 @@ Die Messstecker werden für eine einfache Kontrolle der Schaltungsspannungen genu
 \item und am Output vor dem RC-Filter.
 \end{itemize}
 Abbildung \ref{fig:messung} in Verbindung mit Abbildung \ref{fig:Eagle} liefert die Positionen der Messstecker im Schaltplan.
-\begin{figure}[h]\label{fig:messung}
+\begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.6]{figures/eagleparts/7_messstecker.PNG}
-	\caption{Layout Platinenstecker zur Spannungsmessung}
+	\caption{Layout Platinenstecker zur Spannungsmessung}\label{fig:messung}
 \end{figure}
 
 \section{Platinenlayout (Justus)}
 \label{sec:Platinenlayout}
 Nachdem der Schaltplan mit Eagle erstellt worden ist, kann in den Board-Editor der Software gewechselt werden. Dieser stellt jegliche Schaltungssymbole als reale Bauteile dar. Die Herausforderung besteht darin, ein sinnvolles Platinenlayout gemäß gewisser Designregeln (vgl. Skript) zu kreieren. Die Platinengröße muss dabei $5 * 8cm^2$ betragen. Weitere Vorgabe ist die einheitliche Leiterbahnbreite von 3mm und ein Winkel von maximal $45°$. Eine mögliche Lösung stellt Abbildung \ref{fig:board_justus} dar.
-\begin{figure}[h]\label{fig:board_justus}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/Board_justus.PNG}
-	\caption{Mögliches Platinenlayout}
+	\caption{Mögliches Platinenlayout}\label{fig:board_justus}
 \end{figure}
 Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine hergestellt werden.
 
@@ -84,19 +84,19 @@ Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine 
 \label{platinenerstellung}
 Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist irgendein unststoffzeug. Ist die aske aufgetragen, falgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
 
-\begin{figure}[h]\label{fig:platine_zinn}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/platine_zinn.PNG}
-	\caption{Verzinnte, fertig entwickelte Platine (Rückseite)}
+	\caption{Verzinnte, fertig entwickelte Platine (Rückseite)}\label{fig:platine_zinn}
 \end{figure}
 
 Bevor mit dem Löten begonnen werden kann, empfiehlt sich die Überprüfung sämtlicher Leiterbahnen. Dazu kann ein Multimeter herangezogen werden, welches ein akustisches Signal ausgibt, wenn zwei Punkte, an denen je eine ans Multimeter angeschlossene Elektrode anliegt, miteinander verbunden sind. Beim Löten muss vor allem darauf geachtet werden, dass weder zu viel noch zu wenig Lötzinn auf die einzelnen Lötstellen aufgetragen wird. Bei falscher Dosierung kann es leicht zu einem Kurzschluss beziehungsweise einer kalten Lötstelle kommen. Abbildung \ref{fig:platine_r} zeigt ein Ergebnis.
-\begin{figure}[h]\label{fig:platine_r}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/platine_r.JPG}
 	\caption{Fertige Platine Rückseite}
 		\includegraphics[width=0.7\textwidth]{figures/platine_v.JPG}
-	\caption{Fertige Platine Vorderseite}
+	\caption{Fertige Platine Vorderseite}\label{fig:platine_r}
 \end{figure}
 
 \section{Evaluation}

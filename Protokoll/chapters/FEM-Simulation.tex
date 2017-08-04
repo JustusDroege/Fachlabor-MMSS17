@@ -111,7 +111,6 @@ Weiterhin ist zu beobachten, dass $\sigma_x$ für die Struktur mit Boss deutlich 
 %\end{figure}
 
 
-
 \subsection{Einfluss der Membrandicke auf die maximale Spannung (Viviane Bremer)}
 \label{subsec:Membrandicke}
 
@@ -162,6 +161,26 @@ Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}
 
 \subsection{Einfluss der Membranabmessungen auf den Spannungsverlauf}
 \label{subsec:Membranabmessungen}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}\centering
+	\begin{axis}[,xlabel={x / $\mu$m},ylabel={$\sigma$ / Pa},legend pos=north east,legend columns=1,xtick distance=500]
+	\pgfplotstableread{chapters/Daten/Membran3200.dat}\data
+	
+	\addplot [color1] table [x=X,y=Wert] {\data};
+	\addlegendentry{$\sigma$: \unit[3200]{$\mu$m}}
+	
+	\pgfplotstableread{chapters/Daten/Membran4000.dat}\data
+	
+	\addplot [color2] table [x=Y,y=Wert] {\data};
+	\addlegendentry{$\sigma$: \unit[4000]{$\mu$m}}
+	
+	
+	\end{axis}
+	\end{tikzpicture}
+	\caption{Spannungsverlauf der Membrangrößen}\label{pl:Membranesize}
+\end{figure}
 
 \subsection{Einfluss der Bossgröße (Viviane Bremer)}
 \label{subsec:Bosssize}
