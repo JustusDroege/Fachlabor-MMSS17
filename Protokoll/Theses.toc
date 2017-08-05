@@ -26,24 +26,26 @@
 \contentsline {subsection}{\numberline {6.3.1}Sensitivit\"atabsch\"atzung f\"ur longitudinales und transversales Sensordesign (Viviane Bremer)}{21}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Comparing calculated sensitivity with measured sensitivity (Manisch)}{23}{subsection.6.3.2}
 \contentsline {chapter}{\numberline {7}Circuit Layout}{25}{chapter.7}
-\contentsline {section}{\numberline {7.1}Dimensionierung der Widerst\"ande}{25}{section.7.1}
-\contentsline {section}{\numberline {7.2}Erstellen der Schaltung in PSpice (Viviane Bremer)}{25}{section.7.2}
-\contentsline {section}{\numberline {7.3}Simulation der Auswerteelektronik mit theoretisch berechneten Werten}{25}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Einfluss des Offset-Potentiometers (Viviane Bremer)}{25}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Einfluss des Verst\"arkungs-Potentiometers (Viviane Bremer)}{25}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Abgleichung der Schaltung (Viviane Bremer)}{26}{subsection.7.3.3}
-\contentsline {section}{\numberline {7.4}Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{26}{section.7.4}
-\contentsline {section}{\numberline {7.5}Filter}{26}{section.7.5}
-\contentsline {chapter}{\numberline {8}Evaluation Circuit}{30}{chapter.8}
-\contentsline {section}{\numberline {8.1}Schaltplanerstellung mit Eagle (Viviane Bremer)}{30}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Sensoranschluss}{31}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Spannungsversorgung}{32}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Spannungsstabilisierung des IC}{32}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Stecker zum Spannungsabgriff}{33}{subsection.8.1.4}
-\contentsline {section}{\numberline {8.2}Platinenlayout (Justus)}{34}{section.8.2}
-\contentsline {section}{\numberline {8.3}Platinenerstellung}{34}{section.8.3}
-\contentsline {section}{\numberline {8.4}Evaluation}{36}{section.8.4}
-\contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manisch)}{38}{chapter.9}
-\contentsline {chapter}{appendix}{40}{chapter*.3}
-\contentsline {section}{\numberline {A.1}Morphologischer Kasten}{40}{section.A.1}
-\contentsline {section}{\numberline {A.2}Anforderungsliste}{41}{section.A.2}
+\contentsline {section}{\numberline {7.1}Dimensionierung der Widerst\"ande (Justus)}{25}{section.7.1}
+\contentsline {section}{\numberline {7.2}Erstellen der Schaltung in PSpice (Viviane Bremer)}{26}{section.7.2}
+\contentsline {section}{\numberline {7.3}Simulation der Auswerteelektronik mit theoretisch berechneten Werten}{28}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Einfluss des Offset-Potentiometers (Viviane Bremer)}{28}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Einfluss des Verst\"arkungs-Potentiometers (Viviane Bremer)}{28}{subsection.7.3.2}
+\contentsline {subsection}{\numberline {7.3.3}Abgleichung der Schaltung (Viviane Bremer)}{29}{subsection.7.3.3}
+\contentsline {section}{\numberline {7.4}Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{31}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Einfluss des Offset-Potentiometers}{31}{subsection.7.4.1}
+\contentsline {section}{\numberline {7.5}Filter}{34}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Transienten-Analyse}{35}{subsection.7.5.1}
+\contentsline {chapter}{\numberline {8}Evaluation Circuit}{40}{chapter.8}
+\contentsline {section}{\numberline {8.1}Schaltplanerstellung mit Eagle (Viviane Bremer)}{40}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Sensoranschluss}{41}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Spannungsversorgung}{42}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Spannungsstabilisierung des IC}{42}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Stecker zum Spannungsabgriff}{43}{subsection.8.1.4}
+\contentsline {section}{\numberline {8.2}Platinenlayout (Justus)}{44}{section.8.2}
+\contentsline {section}{\numberline {8.3}Platinenerstellung}{44}{section.8.3}
+\contentsline {section}{\numberline {8.4}Evaluation}{46}{section.8.4}
+\contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manisch)}{48}{chapter.9}
+\contentsline {chapter}{appendix}{50}{chapter*.3}
+\contentsline {section}{\numberline {A.1}Morphologischer Kasten}{50}{section.A.1}
+\contentsline {section}{\numberline {A.2}Anforderungsliste}{51}{section.A.2}

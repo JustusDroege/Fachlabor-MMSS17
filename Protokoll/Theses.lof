@@ -19,19 +19,29 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Schaltplan der Auswerteelektronik in PSpice}}{27}{figure.7.1}
 \contentsline {figure}{\numberline {7.2}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Operationsverst\"arker Ov\tmspace +\thinmuskip {.1667em}2 und Ov\tmspace +\thinmuskip {.1667em}4 \"uber dem Widerstand Rref}}{28}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{28}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Verlauf der Ausgangsspannung \"uber dem Widerstand}}{29}{figure.7.4}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{29}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Verlauf der Ausgangsspannung \"uber dem Widerstand}}{30}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{31}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{32}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{33}{figure.7.7}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{34}{figure.7.8}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Ausgangsspannung \"uber die Zeit von 0 bis 2 Sekunden}}{35}{figure.7.9}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Ausgangssignal der Schaltung}}{36}{figure.7.10}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Fast Fourier Transformation des Ausgangssignals}}{37}{figure.7.11}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{37}{figure.7.12}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{38}{figure.7.13}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{39}{figure.7.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Eagle-Schaltplan der Auswerteelektronik}}{30}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Layout Sensoranschluss}}{31}{figure.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Layout Jumper mit Br\"uckenausg\"angen als Eingang}}{31}{figure.8.3}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Layout Jumper zum Tausch der Eingangspotentiale}}{32}{figure.8.4}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Layout Spannungsversorgung}}{32}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Layout Spannungsstabilisierung Operationsverst\"arker}}{33}{figure.8.6}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Layout Platinenstecker zur Spannungsmessung}}{33}{figure.8.7}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces M\"ogliches Platinenlayout}}{34}{figure.8.8}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Verzinnte, fertig entwickelte Platine (R\"uckseite)}}{35}{figure.8.9}
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Measurement with offset compensation and amplification}}{36}{figure.8.12}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Fertige Platine R\"uckseite}}{37}{figure.8.10}
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Fertige Platine Vorderseite}}{37}{figure.8.11}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Eagle-Schaltplan der Auswerteelektronik}}{40}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Layout Sensoranschluss}}{41}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Layout Jumper mit Br\"uckenausg\"angen als Eingang}}{41}{figure.8.3}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Layout Jumper zum Tausch der Eingangspotentiale}}{42}{figure.8.4}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Layout Spannungsversorgung}}{42}{figure.8.5}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Layout Spannungsstabilisierung Operationsverst\"arker}}{43}{figure.8.6}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Layout Platinenstecker zur Spannungsmessung}}{43}{figure.8.7}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces M\"ogliches Platinenlayout}}{44}{figure.8.8}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Verzinnte, fertig entwickelte Platine (R\"uckseite)}}{45}{figure.8.9}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Measurement with offset compensation and amplification}}{46}{figure.8.12}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Fertige Platine R\"uckseite}}{47}{figure.8.10}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Fertige Platine Vorderseite}}{47}{figure.8.11}
 \addvspace {10\p@ }

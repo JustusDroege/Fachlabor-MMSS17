@@ -1,8 +1,57 @@
 \chapter{Circuit Layout}
 \label{sec:CircuitLayout}
 
-\section{Dimensionierung der Widerstände}
+\section{Dimensionierung der Widerstände (Justus)}
 \label{sec:Dimensionierung}
+Mit Hilfe der Messwerte, die im Versuch zur Charakterisierung der einzelnen Messbrücken aufgenommen wurden, können nun die Widerstände, die im Folgenden für die Offsetkompensation und die Verstärkung benötigt werden, abgeschätzt werden. Mit Hilfe der Gleichung
+\begin{equation}
+\label{Gleichung 1}
+V_{abgl} = \dfrac{1}{2} * \dfrac{R_3}{R_3 + R_4}* V_{ref}
+\end{equation}
+lassen sich $R_3$ und $R_4$ dimensionieren. $V_{ref}$ ist dabei 1V (Referenzspannung), die Summe aus $R_3$ und $R_4$ soll 1k$\Omega$ entsprechen. Somit vereinfacht sich Gleichung \ref{Gleichung 1} zu
+\begin{equation}
+V_{abgl} = \dfrac{1}{2} * \dfrac{R_3}{1k\Omega}* 1V,
+\end{equation}
+woraus $R_3$ und $R_4$ einfach zu berechnen sind. Als $V_{ref}$ muss der maximal gemessene Offset gewählt werden. Dieser liegt nach Abbildung bei 7,61mV für Brücke 2.
+Somit ergeben sich die Werte 
+\begin{equation}
+R_3 = \dfrac{2* 7,61mV * 10^{-3} *1000\Omega}{1V} = 15,22 \Omega 
+\end{equation}
+\begin{equation}
+R_4 = 1000\Omega - R_3 = 984,78\Omega
+\end{equation}
+für die Widerstände $R_3$ und $R_4$.
+Weiterhin ist der Wert für $R_2$ festgelegt auf 
+\begin{equation}
+R_2 = 10k\Omega.
+\end{equation}
+Der Widerstand $R_1$ ist zu unterteilen in einen festen Wert und einen variablen, da $R_1$ in der Schaltung als Potentiometer auftaucht. Die entsprechenden Werte lassen sich über die Verstärkung A und die Sensorempfindlichkeit S berechnen. Es gilt
+\begin{equation}
+\label{A}
+A = \dfrac{1000\dfrac{mV}{Vbar}}{S} = 2(1+\dfrac{R_2}{R_1}).
+\end{equation}
+Um einen Wert für die Sensorempfindlichkeit S zu erhalten, müssen die Steigungen der Regressionsgeraden zu den vier Wheatstone'schen Brücken betrachtet werden. Diese liegen nach Abbildung bei
+\begin{equation}
+S_{min} = 36,47\dfrac{mV}{Vbar}
+\end{equation}
+\begin{equation}
+S_{max} = 40,89\dfrac{mV}{Vbar}.
+\end{equation}
+Nun wird Gleichung \ref{A} nach $R_1$ umgestellt und berechnet.
+\begin{equation}
+\label{eq:R1fest}
+R_{1,min} = R_{1,fest} = \dfrac{R_2}{\dfrac{\dfrac{1000mV}{Vbar}}{2*S_{min}}-1} = 796,57\Omega
+\end{equation}
+\begin{equation}
+R_{1,max} = \dfrac{R_2}{\dfrac{\dfrac{1000mV}{Vbar}}{2*S_{max}}-1} = 880,68\Omega
+\end{equation}
+Wie in Gleichung \ref{eq:R1fest} beschrieben, wird $R_{min}$ direkt als $R_{1,fest}$ festgelegt. Der variable Anteil $R_{1.var}$ ergibt sich aus der Differenz der berechneten Werte zu
+\begin{equation}
+R_{1,var} = R_{1,max} - R_{1,min} = 84,11\Omega.
+\end{equation}
+Als letzte Dimensionierungsmaßnahme muss $R_{5}$ berechnet werden. Dieser soll den zweifachen Wert von $R_4$ aufweisen und ergibt sich somit zu $1969,56\Omega$. \\
+Die berechneten Widerstandswerte existieren in der Realität nicht. Zwar ist es möglich, vorhandene Widerstände zu addieren, jedoch ist der Platz auf der Platine begrenzt. Es gilt, reale Widerstände zu finden, die die Anforderungen an die Schaltung erfüllen.
+
 
 \section{Erstellen der Schaltung in PSpice (Viviane Bremer)}
 \label{sec:PSpice}
@@ -10,7 +59,7 @@
 Zur weiteren Dimensionierung der Auswerteelektronik ist die Schaltung in PSpice erstellt worden. Diese ist in Abbildung \ref{fig:PSpice1} dargestellt. Der linke Teil bis vor die zwei rechten Operationsverstärker ist zur Offsetkompensation des Sensors gedacht. Der restliche Teil dient zur Signalverstärkung. Für die Widerstände werden als erste Näherung die in Kapitel \ref{sec:Dimensionierung} bestimmten Werte genutzt. In Kapitel \ref{sec:SimReal} werden die gleichen Schritte mit zur Verfügung stehenden Bauteilen durchgeführt.
 
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	
 	\rotatebox{90}{\includegraphics[trim = 10mm 10mm 50mm 12mm, clip,width=0.9\textheight]{figures/Schaltplan1.pdf}}
 	\caption{Schaltplan der Auswerteelektronik in PSpice}\label{fig:PSpice1}
@@ -24,7 +73,7 @@ Zur weiteren Dimensionierung der Auswerteelektronik ist die Schaltung in PSpice 
 
 Zunächst wird nur das Offset-Potentiometer betrachtet. Dafür wird der Wert des Potentiometers Rref von Null auf seinen Endwert erhöht und die Potentialdifferenz von Eingangsspannung am Operationsverstärker Ov\,2 und Eingangsspannung am Operationsverstärker Ov\,4 über den Widerstand geplottet. Wie aus der Abbildung \ref{fig:Offset-Poti1} abzulesen ist, hat die Offsetkompensation einen Stellbereich von \unit[$\pm$12]{mV}.
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_1.pdf}
 	\caption{Verlauf der Spannungsdifferenz zwischen Operationsverstärker Ov\,2 und Ov\,4 über dem Widerstand Rref}\label{fig:Offset-Poti1}
@@ -35,7 +84,7 @@ Zunächst wird nur das Offset-Potentiometer betrachtet. Dafür wird der Wert des P
 
 Als nächstes wird der Einfluss des Verstärkungs-Potentiometers  $R1_{var}$ untersucht. Hierbei wird ähnlich vorgegangen, wie beim Offset-Potentiometer. Diesmal wird jedoch der Quotient aus Ausgangsspannung und Eingangsspannungsdifferenz genutzt. Das Ergebnis ist in Abbildung \ref{fig:gain-Poti1} zu sehen. Der Wertebereich der Verstärkung liegt zwischen 21.8 und 25.6.
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_2.pdf}
 	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
@@ -45,7 +94,7 @@ Als nächstes wird der Einfluss des Verstärkungs-Potentiometers  $R1_{var}$ unter
 \label{sec:Abgleich1}
 Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannung auf \unit[0]{V} gesetzt. Bei \unit[0]{V} sollte die Verstärkung das Signal nicht beeinflussen, wenn der Offset ausgeglichen wurde.  In Abbildung \ref{fig:Abgleich1} ist zur Visualisierung die Ausgangsspannung über dem Widerstand aufgetragen.
 
-\begin{figure}[hb]
+\begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/Simulation1_3.pdf}
 	\caption{Verlauf der Ausgangsspannung über dem Widerstand}\label{fig:Abgleich1}
@@ -53,5 +102,62 @@ Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannun
 
 \section{Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}
 \label{sec:SimReal}
+\subsection{Einfluss des Offset-Potentiometers}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_1a.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_1b.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_2.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_3.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+%\subsection{Einfluss des Offset-Potentiometers}
+%\subsection{Einfluss des Offset-Potentiometers}
 
 \section{Filter}
+Zunächst werden die Spannungsquellen der Schaltung durch die in PSpice vorhandene Spannungsquellen des Typs VLAB ersetzt. Das Nutzsignal von VLAB soll bei $1Hz$ liegen. Die Werte werden so eingestellt, dass die Brückenausgangsspannungen einen Wert von 2mV aufweisen.
+\subsection{Transienten-Analyse}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1.pdf}
+	\caption{Ausgangsspannung über die Zeit von 0 bis 2 Sekunden}\label{fig:aa}
+\end{figure}
+Abbildung \ref{fig:aa} zeigt das Ergebnis der Transient-Analyse bei den beschriebenen Werten. Zu erkennen ist ein Graph mit Störungen im Bereich von leicht über 2V bis leicht unter -2V. Das Ausgangssignal ist dabei kaum zu erkennen. Das bedeutet, dass die Störeinflüsse erheblichen Einfluss auf das Messergebnis hätten. Abbildung \ref{fig:ab} zeigt das gefilterte Ausgangssignal.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1_fil.pdf}
+	\caption{Ausgangssignal der Schaltung}\label{fig:ab}
+\end{figure}
+Mit Hilfe einer Fast Fourier Transformation kann ein digitales Signal in seine Frequenzanteile zerlegt werden. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft.pdf}
+	\caption{Fast Fourier Transformation des Ausgangssignals}\label{fig:ac}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil_zoom.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_zoom.pdf}
+	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+\end{figure}
