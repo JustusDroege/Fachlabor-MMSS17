@@ -53,7 +53,7 @@ Als letzte Dimensionierungsmaßnahme muss $R_{5}$ berechnet werden. Dieser soll d
 Die berechneten Widerstandswerte existieren in der Realität nicht. Zwar ist es möglich, vorhandene Widerstände zu addieren, jedoch ist der Platz auf der Platine begrenzt. Es gilt, reale Widerstände zu finden, die die Anforderungen an die Schaltung erfüllen.
 
 
-\section{Erstellen der Schaltung in PSpice (Viviane Bremer)}
+\section{Erstellen der Schaltung in PSpice (Viviane)}
 \label{sec:PSpice}
 
 Zur weiteren Dimensionierung der Auswerteelektronik ist die Schaltung in PSpice erstellt worden. Diese ist in Abbildung \ref{fig:PSpice1} dargestellt. Der linke Teil bis vor die zwei rechten Operationsverstärker ist zur Offsetkompensation des Sensors gedacht. Der restliche Teil dient zur Signalverstärkung. Für die Widerstände werden als erste Näherung die in Kapitel \ref{sec:Dimensionierung} bestimmten Werte genutzt. In Kapitel \ref{sec:SimReal} werden die gleichen Schritte mit zur Verfügung stehenden Bauteilen durchgeführt.
@@ -66,9 +66,9 @@ Zur weiteren Dimensionierung der Auswerteelektronik ist die Schaltung in PSpice 
 \end{figure}
 
 
-\section{Simulation der Auswerteelektronik mit theoretisch berechneten Werten}
+\section{Simulation der Auswerteelektronik mit theoretisch berechneten Werten (Viviane)}
 \label{sec:SimTheor}
-\subsection{Einfluss des Offset-Potentiometers (Viviane Bremer)}
+\subsection{Einfluss des Offset-Potentiometers}
 \label{sec:Offset-Poti}
 
 Zunächst wird nur das Offset-Potentiometer betrachtet. Dafür wird der Wert des Potentiometers Rref von Null auf seinen Endwert erhöht und die Potentialdifferenz von Eingangsspannung am Operationsverstärker Ov\,2 und Eingangsspannung am Operationsverstärker Ov\,4 über den Widerstand geplottet. Wie aus der Abbildung \ref{fig:Offset-Poti1} abzulesen ist, hat die Offsetkompensation einen Stellbereich von \unit[$\pm$12]{mV}.
@@ -79,7 +79,7 @@ Zunächst wird nur das Offset-Potentiometer betrachtet. Dafür wird der Wert des P
 	\caption{Verlauf der Spannungsdifferenz zwischen Operationsverstärker Ov\,2 und Ov\,4 über dem Widerstand Rref}\label{fig:Offset-Poti1}
 \end{figure}
 
-\subsection{Einfluss des Verstärkungs-Potentiometers (Viviane Bremer)}
+\subsection{Einfluss des Verstärkungs-Potentiometers}
 \label{sec:gain-Poti}
 
 Als nächstes wird der Einfluss des Verstärkungs-Potentiometers  $R1_{var}$ untersucht. Hierbei wird ähnlich vorgegangen, wie beim Offset-Potentiometer. Diesmal wird jedoch der Quotient aus Ausgangsspannung und Eingangsspannungsdifferenz genutzt. Das Ergebnis ist in Abbildung \ref{fig:gain-Poti1} zu sehen. Der Wertebereich der Verstärkung liegt zwischen 21.8 und 25.6.
@@ -90,7 +90,7 @@ Als nächstes wird der Einfluss des Verstärkungs-Potentiometers  $R1_{var}$ unter
 	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
 \end{figure}
 
-\subsection{Abgleichung der Schaltung (Viviane Bremer)}
+\subsection{Abgleichung der Schaltung}
 \label{sec:Abgleich1}
 Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannung auf \unit[0]{V} gesetzt. Bei \unit[0]{V} sollte die Verstärkung das Signal nicht beeinflussen, wenn der Offset ausgeglichen wurde.  In Abbildung \ref{fig:Abgleich1} ist zur Visualisierung die Ausgangsspannung über dem Widerstand aufgetragen.
 
@@ -100,28 +100,34 @@ Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannun
 	\caption{Verlauf der Ausgangsspannung über dem Widerstand}\label{fig:Abgleich1}
 \end{figure}
 
-\section{Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}
+\section{Simulation of evaluation cirquit with real values (Manish)}
 \label{sec:SimReal}
-\subsection{Einfluss des Offset-Potentiometers}
+
+for more information of what to write see tasks in chapter 4.7.2
+\subsection{Influence of Offset-Potentiometer}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_1a.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+	\caption{Curve of voltage deviation between Ov\,2 und Ov\,4 over the resistor Rref}\label{fig:sim2_1}
 \end{figure}
+
+\subsection{Influence of Gain-Potentiometer}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_1b.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+	\caption{Curve of voltage deviation between input and output over the resistor $R1_{var}$}\label{fig:sim2_2}
 \end{figure}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_2.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+	\caption{Curve of voltage deviation between input and output over the resistor $R1_{var}$}\label{fig:sim2_2-2}
 \end{figure}
+
+\subsection{Balancing of circuit}
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation2_3.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+	\caption{Corve of output voltage over the resistor}\label{fig:sim2_3}
 \end{figure}
 %\subsection{Einfluss des Offset-Potentiometers}
 %\subsection{Einfluss des Offset-Potentiometers}
