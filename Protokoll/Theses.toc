@@ -35,17 +35,16 @@
 \contentsline {section}{\numberline {7.4}Simulation der Auswerteelektronik mit Bauteilwerten/Simulation with real values}{31}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}Einfluss des Offset-Potentiometers}{31}{subsection.7.4.1}
 \contentsline {section}{\numberline {7.5}Filter}{34}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Transienten-Analyse}{35}{subsection.7.5.1}
-\contentsline {chapter}{\numberline {8}Evaluation Circuit}{40}{chapter.8}
-\contentsline {section}{\numberline {8.1}Schaltplanerstellung mit Eagle (Viviane Bremer)}{40}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}Sensoranschluss}{41}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}Spannungsversorgung}{42}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}Spannungsstabilisierung des IC}{42}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}Stecker zum Spannungsabgriff}{43}{subsection.8.1.4}
-\contentsline {section}{\numberline {8.2}Platinenlayout (Justus)}{44}{section.8.2}
-\contentsline {section}{\numberline {8.3}Platinenerstellung}{44}{section.8.3}
-\contentsline {section}{\numberline {8.4}Evaluation}{46}{section.8.4}
-\contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manisch)}{48}{chapter.9}
-\contentsline {chapter}{appendix}{50}{chapter*.3}
-\contentsline {section}{\numberline {A.1}Morphologischer Kasten}{50}{section.A.1}
-\contentsline {section}{\numberline {A.2}Anforderungsliste}{51}{section.A.2}
+\contentsline {chapter}{\numberline {8}Evaluation Circuit}{42}{chapter.8}
+\contentsline {section}{\numberline {8.1}Schaltplanerstellung mit Eagle (Viviane Bremer)}{42}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Sensoranschluss}{43}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Spannungsversorgung}{44}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}Spannungsstabilisierung des IC}{44}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}Stecker zum Spannungsabgriff}{45}{subsection.8.1.4}
+\contentsline {section}{\numberline {8.2}Platinenlayout (Justus)}{46}{section.8.2}
+\contentsline {section}{\numberline {8.3}Platinenerstellung}{46}{section.8.3}
+\contentsline {section}{\numberline {8.4}Evaluation}{48}{section.8.4}
+\contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manisch)}{50}{chapter.9}
+\contentsline {chapter}{appendix}{52}{chapter*.3}
+\contentsline {section}{\numberline {A.1}Morphologischer Kasten}{52}{section.A.1}
+\contentsline {section}{\numberline {A.2}Anforderungsliste}{53}{section.A.2}

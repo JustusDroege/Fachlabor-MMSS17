@@ -126,38 +126,74 @@ Zum Schluss werden Rref und $R1_{var}$ zusammen variiert und die Eingangsspannun
 %\subsection{Einfluss des Offset-Potentiometers}
 %\subsection{Einfluss des Offset-Potentiometers}
 
-\section{Filter}
+\section{Filterdimensionierung und -simulation (Justus)}
+\label{Filter}
 Zunächst werden die Spannungsquellen der Schaltung durch die in PSpice vorhandene Spannungsquellen des Typs VLAB ersetzt. Das Nutzsignal von VLAB soll bei $1Hz$ liegen. Die Werte werden so eingestellt, dass die Brückenausgangsspannungen einen Wert von 2mV aufweisen.
-\subsection{Transienten-Analyse}
+
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1.pdf}
 	\caption{Ausgangsspannung über die Zeit von 0 bis 2 Sekunden}\label{fig:aa}
 \end{figure}
-Abbildung \ref{fig:aa} zeigt das Ergebnis der Transient-Analyse bei den beschriebenen Werten. Zu erkennen ist ein Graph mit Störungen im Bereich von leicht über 2V bis leicht unter -2V. Das Ausgangssignal ist dabei kaum zu erkennen. Das bedeutet, dass die Störeinflüsse erheblichen Einfluss auf das Messergebnis hätten. Abbildung \ref{fig:ab} zeigt das gefilterte Ausgangssignal.
-\begin{figure}[H]
-	\centering
-	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1_fil.pdf}
-	\caption{Ausgangssignal der Schaltung}\label{fig:ab}
-\end{figure}
-Mit Hilfe einer Fast Fourier Transformation kann ein digitales Signal in seine Frequenzanteile zerlegt werden. 
+Abbildung \ref{fig:aa} zeigt das Ergebnis der Transient-Analyse bei den beschriebenen Werten. Zu erkennen ist ein Graph mit Störungen im Bereich von leicht über 2V bis leicht unter -2V. Das Ausgangssignal ist dabei kaum zu erkennen. Das bedeutet, dass die Störeinflüsse erheblichen Einfluss auf das Messergebnis hätten.
+
+Mit Hilfe einer Fast Fourier Transformation kann ein digitales Signal in seine Frequenzanteile zerlegt werden. Abbildung \ref{fig:ac} visualisiert diese.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft.pdf}
 	\caption{Fast Fourier Transformation des Ausgangssignals}\label{fig:ac}
 \end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
-\end{figure}
-\begin{figure}[H]
-	\centering
-	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil_zoom.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
-\end{figure}
+Große Frequenzausprägungen sind bei ungefähr 50 Hertz und 1,33 Kilohertz zu erkennen. Die Amplituden liegen bei zirka 1,4 und 0,65 Volt und damit viel zu hoch (Ausgangssignal ist ungefähr 2mV). Bei genauerem Betrachten wird außerdem noch eine weitere Ausprägung sichtbar. Diese liegt bei 75 Hertz und übersteigt mit einer Amplitude von 0,2V des Messsignal ebenfalls deutlich. Im realen Messversuch würden sich diese hochfrequenten Störsignale als ungewolltes Rauschen abzeichnen. Abbildung \ref{fig:ad} verdeutlicht diese Erkenntnisse.
 \begin{figure}[H]
 	\centering
 	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_zoom.pdf}
-	\caption{Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung über dem Widerstand $R1_{var}$}\label{fig:gain-Poti1}
+	\caption{Fast Fourier Transformation (Abbildung \ref{fig:ac}), vergrößert}\label{fig:ad}
+\end{figure}
+Um das Messergebnis zu verbessern, muss das Ausgangssignal gefiltert werden. Ein Tiefpassfilter blockt hochfrequente Signale, lediglich niederfrequente können passieren. Der Filter besteht neben Eingangs- und Ausgangsspannung aus einem Widerstand (R) und einem Kondensator (C), daher werden Tiefpassfilter auch RC-Filter genannt. Um Signale zu Filtern, wird die Verzögerung beim Be- und Entladen des Kondensators ausgenutzt. Wird eine Spannung angelegt, wird der Kondensator geladen. Dies verzögert eine Änderung des Messsignals. Das selbe gilt für den Entladevorgang. Abbildung \ref{fig:rc} zeigt die Umsetzung des Filters in der PSpice-Schaltung (Abbildung \ref{fig:PSpice1}).
+\begin{figure}[H]
+	\centering
+  \includegraphics[width=0.5\textwidth]{figures/RCFilter.PNG}
+	\caption{Aufbau RC-Filter im PSpice-Schaltplan}
+	\label{fig:rc}
+\end{figure}
+Die Dimensionierung der verwendeten Bauteile erfolgt mit Hilfe der Formel zur Grenzfrequenz, 
+\begin{equation}\label{eq:gf}
+f_g = \dfrac{1}{2{\pi}RC}.
+\end{equation}
+Nun liegt das Nutzsignal bei ungefähr 1 Hertz, die geringste Störfrequenz jedoch bei ungefähr 50 Hertz. Deshalb sollte die Grenzfrequenz zwischen diesen beiden Werten liegen. Zur besseren Berechenbarkeit wird eine Grenzfrequenz $f_g$ von 10 Hertz gewählt. Gleichung \ref{eq:gf} wird nun zu 
+\begin{equation}
+RC = \dfrac{1}{2{\pi}10Hz} = 0,01592
+\end{equation}
+umgestellt. Als Kondensatorart wird der Keramikkondesator gewählt, da dieser robuster gegen falsche Beschaltung als ein Elektrolydkondensator ist. Zur Verfügung stehen drei Kondensatoren mit den Kapazitätswerten $1{\mu}F$, $100nF$ und 1nF. Tabelle \ref{tab:WF} zeigt die berechneten Resistorwerte.
+\begin{table}[H]
+\centering
+\caption{Widerstandswerte zu Kapazitätswerten}
+\label{tab:WF}
+\begin{tabular}{|l|l|}
+\hline
+Kapazität {[}F{]} & Widerstand {[$\Omega$}{]} \\ \hline
+1$\mu$                 & 15,9k             \\ \hline
+100n              & 159k              \\ \hline
+1n                & 15,9M             \\ \hline
+\end{tabular}
+\end{table}
+Der berechnete Widerstandswert zu der Kapazität von einem Nanofarad ist am Institut nicht vorhanden und fällt somit aus der Auswahl. Die beiden anderen Werte sind verwendbar, gewählt wird ein Kondensator mit einem Mikrofarad und ein entsprechender Widerstand von 16 Kiloohm. \\
+Nachdem die Werte im PSpice-Schaltplan aktualisiert wurden, kann die Simulation erneut durchgeführt werden. 
+Abbildung \ref{fig:ab} zeigt das gefilterte Ausgangssignal.
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1_fil.pdf}
+	\caption{Gefiltertes Ausgangssignal der Schaltung}\label{fig:ab}
+\end{figure}
+Im Vergleich mit Abbildung \ref{fig:aa} sind stark verkleinerte Amplituden zu erkennen. Diese liegen im Bereich von ungefähr +300mV und -300mV. Weiterhin ist eine Glättung der Amplituden zu erkennen. Ebenfalls wird erneut eine Fast Fourier Transformation durchgeführt (vgl. Abbildung \ref{fig:abfil}).
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil.pdf}
+	\caption{Fast Fourier Transformation des gefilterten Signals}\label{fig:abfil}
+\end{figure}
+Im Vergleich mit Abbildung \ref{fig:ab} ist zu erkennen, dass die hochfrequenten Signale bei 50 und 75 Hertz stark gefiltert sind. Die maximale Amplitude liegt nun bei zirka 250mV bei einer Frequenz von 50 Hertz (vgl. Abbildung \ref{fig:abfilfft}). 
+\begin{figure}[H]
+	\centering
+	\includegraphics[trim = 10mm 10mm 10mm 5mm, clip,width=0.9\textwidth]{figures/simulation4_1fft_fil_zoom.pdf}
+	\caption{Kürzeres Zeitintervall der FFT (Abbildung \ref{fig:abfil})}\label{fig:abfilfft}
 \end{figure}
