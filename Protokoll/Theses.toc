@@ -48,5 +48,3 @@
 \contentsline {section}{\numberline {8.4}Evaluation (Manish)}{48}{section.8.4}
 \contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manish)}{50}{chapter.9}
 \contentsline {chapter}{\numberline {10}Appendix}{52}{chapter.10}
-\contentsline {section}{\numberline {10.1}Morphologischer Kasten}{52}{section.10.1}
-\contentsline {section}{\numberline {10.2}Anforderungsliste}{53}{section.10.2}
