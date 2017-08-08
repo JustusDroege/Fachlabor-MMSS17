@@ -2,53 +2,6 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-<<<<<<< HEAD
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gevierteltes CAD-Modell ohne Boss (links), mit Boss (rechts)}}{8}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Spannungsverlauf einer Membran ohne Boss bei \unit [1]{bar}/strain curve of a membrane without boss at \unit [1]{bar}}}{10}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Spannungsverlauf einer Membran mit Boss bei \unit [1]{bar}/ strain curve of a membrane with boss at \unit [1]{bar}}}{10}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Visualisierung der FEM-Simulation am Bauteil}}{11}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Spannungsverlauf der drei Membrandicken}}{12}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Spannungsverlauf der Membrangr\"o\IeC {\ss }en}}{13}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Spannungsverlauf der drei Bossgr\"o\IeC {\ss }en}}{14}{figure.4.7}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Sensordesigns im \"Uberblick}}{20}{figure.6.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Messbr\"ucke mit t-f\"ormiger Anordnung}}}{20}{figure.6.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Messbr\"ucke mit transversaler Anordnung}}}{20}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Versuchsaufbau zur Charakterisierung}}{20}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Messwerte und Regressionsgeraden der Br\"ucken des t-f\"ormigen und transversalen Sensors.}}{21}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Abweichung der Regressionsgeraden der Br\"ucken des t-f\"ormigen und transversalen Sensors vom gemessenen Wert.}}{22}{figure.6.4}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Data and regression lines of a longitudinal sensor}}{25}{figure.6.5}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Schaltplan der Auswerteelektronik in PSpice}}{29}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Operationsverst\"arker Ov\tmspace +\thinmuskip {.1667em}2 und Ov\tmspace +\thinmuskip {.1667em}4 \"uber dem Widerstand Rref}}{30}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{31}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Verlauf der Ausgangsspannung \"uber dem Widerstand}}{32}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{33}{figure.7.5}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{34}{figure.7.6}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{35}{figure.7.7}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Verlauf der Spannungsdifferenz zwischen Eingangs- und Ausgangsspannung \"uber dem Widerstand $R1_{var}$}}{36}{figure.7.8}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Ausgangsspannung \"uber die Zeit von 0 bis 2 Sekunden}}{37}{figure.7.9}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Fast Fourier Transformation des Ausgangssignals}}{38}{figure.7.10}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Fast Fourier Transformation (Abbildung \ref {fig:ac}), vergr\"o\IeC {\ss }ert}}{39}{figure.7.11}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Aufbau RC-Filter im PSpice-Schaltplan}}{39}{figure.7.12}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Gefiltertes Ausgangssignal der Schaltung}}{41}{figure.7.13}
-\contentsline {figure}{\numberline {7.14}{\ignorespaces Fast Fourier Transformation des gefilterten Signals}}{42}{figure.7.14}
-\contentsline {figure}{\numberline {7.15}{\ignorespaces K\"urzeres Zeitintervall der FFT (Abbildung \ref {fig:abfil})}}{43}{figure.7.15}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Eagle-Schaltplan der Auswerteelektronik}}{44}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Layout Sensoranschluss}}{45}{figure.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Layout Jumper mit Br\"uckenausg\"angen als Eingang}}{45}{figure.8.3}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Layout Jumper zum Tausch der Eingangspotentiale}}{46}{figure.8.4}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Layout Spannungsversorgung}}{46}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Layout Spannungsstabilisierung Operationsverst\"arker}}{47}{figure.8.6}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Layout Platinenstecker zur Spannungsmessung}}{47}{figure.8.7}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces M\"ogliches Platinenlayout}}{48}{figure.8.8}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Verzinnte, fertig entwickelte Platine (R\"uckseite)}}{49}{figure.8.9}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Fertige Platine R\"uckseite}}{50}{figure.8.10}
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Fertige Platine Vorderseite}}{50}{figure.8.11}
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Measurement with offset compensation and amplification}}{51}{figure.8.12}
-=======
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Spannungsverlauf einer Membran ohne Boss bei \unit [1]{bar}/strain curve of a membrane without boss at \unit [1]{bar}}}{9}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Spannungsverlauf einer Membran mit Boss bei \unit [1]{bar}/ strain curve of a membrane with boss at \unit [1]{bar}}}{9}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Spannungsverlauf der drei Membrandicken}}{11}{figure.4.3}
@@ -88,9 +41,8 @@
 \contentsline {figure}{\numberline {8.6}{\ignorespaces Layout Spannungsstabilisierung Operationsverst\"arker}}{45}{figure.8.6}
 \contentsline {figure}{\numberline {8.7}{\ignorespaces Layout Platinenstecker zur Spannungsmessung}}{45}{figure.8.7}
 \contentsline {figure}{\numberline {8.8}{\ignorespaces M\"ogliches Platinenlayout}}{46}{figure.8.8}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Verzinnte, fertig entwickelte Platine (R\"uckseite)}}{48}{figure.8.9}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Verzinnte, fertig entwickelte Platine (R\"uckseite)}}{47}{figure.8.9}
 \contentsline {figure}{\numberline {8.12}{\ignorespaces Measurement with offset compensation and amplification}}{48}{figure.8.12}
 \contentsline {figure}{\numberline {8.10}{\ignorespaces Fertige Platine R\"uckseite}}{49}{figure.8.10}
 \contentsline {figure}{\numberline {8.11}{\ignorespaces Fertige Platine Vorderseite}}{49}{figure.8.11}
->>>>>>> ad83756170798aaccab44976ac7e8e9f28e431f9
 \addvspace {10\p@ }
