@@ -1,7 +1,7 @@
 \chapter{Evaluation Circuit}
 \label{sec:EvaluationCircuit}
 
-\section{Schaltplanerstellung mit Eagle (Viviane Bremer)}
+\section{Schaltplanerstellung mit Eagle (Viviane)}
 \label{sec:eaglee}
 
 Zur Erstellung der Platine wird die in PSpice simulierte Schaltung in  die Software Eagle übertragen. Diese ist in Bezug auf die Schaltplanerstellung ähnlich aufgebaut wie PSpice, erlaubt jedoch zusätzlich die Erstellung von Platinendesigns. Neben den zuvor genutzten Bauteilen kommen noch weitere hinzu. Diese sind die folgenden: \begin{itemize} \item Sensoranschluss \item Platinenstecker zur Spannungsversorgung \item Spannungsstabilisierung für den IC \item zwei Jumper zum Wechseln der Brückenspannung \item sowie vier Platinenstecker zum Anschluss von Messgeräten.
@@ -79,42 +79,38 @@ Nachdem der Schaltplan mit Eagle erstellt worden ist, kann in den Board-Editor d
 	\includegraphics[width=0.7\textwidth]{figures/Board_justus.PNG}
 	\caption{Mögliches Platinenlayout}\label{fig:board_justus}
 \end{figure}
-Abschließend sollte die Anordnung überprüft werden. Anschließend kann die Platine hergestellt werden.
+Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine hergestellt werden.
 
-<<<<<<< HEAD
-\section{Platinenerstellung (Justus)}
-=======
-\section{Designing and Prepration of PCB(Manish kumar)}
-For the purpose of designing task we used software called Eagle. It comprises two different editors: the Schematic Editor for the circuit diagram and the Board Editor for the actual PCB. In order to design actual PCB board, we must firstly create our circuit diagram in Schematic Editor. While creating our circuit in Schematic Editor we are using device libraries which contain a wide range of electronic component. This time our circuit must have all additional electronics. RC low-pass filter is needed to filter high frequency noise as long as pressure signals are quasistatic. However, to keep circuit complexity as minimum, the electronics are implemented to measure only one bridge at the time. To ensure that all bridge signals are evaluated, there must be an option to switch between bridges using jumpers. Using our created circuit diagram from Schematic Editor we are creating a concrete PCB layout. In this process, the circuit diagram symbols are replaced with real devices so-called packages. They can be positioned in PCB anywhere. While connecting packages using PCB tracks so-called wires, continuous consistency check is performed on the diagram and layout. After that our next work is preparation of PCB it consists of sereis of operatio which are described below.
-
-\textbf{Printing}
-The saved board file was sent for printing as PCB. Since the boards to be printed were small, they were printed aside each other on a mask. The Mask was printed and set to the exposure process.
-
-\textbf{Exposure}
-The medium to be printed as the PCB was removed off its protective cover. The printed mask was placed on the medium and exposed to the image-setter for the prescribed time. The main lights were switched off and the medium was immersed into a plastic bowl filled with photographic developer and treated. The board circuits started to appear, whilst the excess layers were removed using sponge. Then the board was readied for the etching process.
-
-\textbf{Etching}
-The PCB was then clamped on and set into an etching bath at 40 ? 50oC for 40-50 minutes. The temperature must be monitored as lower temperatures decrease the rate of etching process. A visual examination of the PCB was conducted using LEDs and removed once the etching was completed, to avoid undercutting.
-
-\textbf{Post processing}
-Then the PCB was removed off of the photoresistive layers using acetone and the side to be tin-plated was wiped with ethanol. The PCB was then tin-plated to prevent corrosion and blow-dried. A generous coating of conformal coating was applied on the PCB to improve the anti-corrosive property and also to aid soldering. Drills were made on the PCB to allow soldering of the components on the board.
-
-\textbf{Soldering}
-The components were soldered on the board according to the schematic and the board design without damaging the board.
+%\section{Designing and Prepration of PCB(Manish kumar)}
+%For the purpose of designing task we used software called Eagle. It comprises two different editors: the Schematic Editor for the circuit diagram and the Board Editor for the actual PCB. In order to design actual PCB board, we must firstly create our circuit diagram in Schematic Editor. While creating our circuit in Schematic Editor we are using device libraries which contain a wide range of electronic component. This time our circuit must have all additional electronics. RC low-pass filter is needed to filter high frequency noise as long as pressure signals are quasistatic. However, to keep circuit complexity as minimum, the electronics are implemented to measure only one bridge at the time. To ensure that all bridge signals are evaluated, there must be an option to switch between bridges using jumpers. Using our created circuit diagram from Schematic Editor we are creating a concrete PCB layout. In this process, the circuit diagram symbols are replaced with real devices so-called packages. They can be positioned in PCB anywhere. While connecting packages using PCB tracks so-called wires, continuous consistency check is performed on the diagram and layout. After that our next work is preparation of PCB it consists of sereis of operatio which are described below.
+%
+%\textbf{Printing}
+%The saved board file was sent for printing as PCB. Since the boards to be printed were small, they were printed aside each other on a mask. The Mask was printed and set to the exposure process.
+%
+%\textbf{Exposure}
+%The medium to be printed as the PCB was removed off its protective cover. The printed mask was placed on the medium and exposed to the image-setter for the prescribed time. The main lights were switched off and the medium was immersed into a plastic bowl filled with photographic developer and treated. The board circuits started to appear, whilst the excess layers were removed using sponge. Then the board was readied for the etching process.
+%
+%\textbf{Etching}
+%The PCB was then clamped on and set into an etching bath at 40 ? 50oC for 40-50 minutes. The temperature must be monitored as lower temperatures decrease the rate of etching process. A visual examination of the PCB was conducted using LEDs and removed once the etching was completed, to avoid undercutting.
+%
+%\textbf{Post processing}
+%Then the PCB was removed off of the photoresistive layers using acetone and the side to be tin-plated was wiped with ethanol. The PCB was then tin-plated to prevent corrosion and blow-dried. A generous coating of conformal coating was applied on the PCB to improve the anti-corrosive property and also to aid soldering. Drills were made on the PCB to allow soldering of the components on the board.
+%
+%\textbf{Soldering}
+%The components were soldered on the board according to the schematic and the board design without damaging the board.
 
 \section{Platinenerstellung}
->>>>>>> ad83756170798aaccab44976ac7e8e9f28e431f9
 \label{platinenerstellung}
-Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist ein Kunststoff. Ist die Maske aufgetragen, folgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
+Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist irgendein unststoffzeug. Ist die aske aufgetragen, falgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/platine_zinn.PNG}
 	\caption{Verzinnte, fertig entwickelte Platine (Rückseite)}\label{fig:platine_zinn}
 \end{figure}
 
 Bevor mit dem Löten begonnen werden kann, empfiehlt sich die Überprüfung sämtlicher Leiterbahnen. Dazu kann ein Multimeter herangezogen werden, welches ein akustisches Signal ausgibt, wenn zwei Punkte, an denen je eine ans Multimeter angeschlossene Elektrode anliegt, miteinander verbunden sind. Beim Löten muss vor allem darauf geachtet werden, dass weder zu viel noch zu wenig Lötzinn auf die einzelnen Lötstellen aufgetragen wird. Bei falscher Dosierung kann es leicht zu einem Kurzschluss beziehungsweise einer kalten Lötstelle kommen. Abbildung \ref{fig:platine_r} zeigt ein Ergebnis.
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/platine_r.JPG}
 	\caption{Fertige Platine Rückseite}
@@ -124,6 +120,8 @@ Bevor mit dem Löten begonnen werden kann, empfiehlt sich die Überprüfung sämtlic
 
 \section{Evaluation (Manish)}
 \label{evaluation}
+
+The measurement value with offset compensation and amplification are shown in figure 8.12.The offset can be compensated by the offset potentiometer. In addition, the gain factor can be adjusted variably, so that for all bridges at a An output voltage of 1 V can be measured.
 
 
 \begin{figure}[H]

@@ -8,7 +8,7 @@
 Nachdem am ersten Labortag der Sensor mit Hilfe von SolidWorks designt und auf theoretischer Grundlage mit verschiedenen Simulationen berechnet wurde, soll nun eine Charakterisierung erfolgen. Aufgrund von Fertigungsabweichungen, die nie vermieden werden können, verhalten sich Sensoren immer unterschiedlich. Dies spiegelt sich unter Anderem in der Sensitivität, dem Offset oder auch in der Messgenauigkeit wider. Um den Abweichungen entgegenzuwirken, müssen bestimmte Eigenschaften des entsprechenden Sensors also zunächst ermittelt werden.
 Am IMT ist eine Reihe von Sensoren verfügbar, die sich mit bloßem Auge nicht unterscheiden lassen. Lediglich bei der Betrachtung unter dem Mikroskop lassen sich Differenzen feststellen. Der Unterschied zwischen den Drucksensoren ergibt sich aus der Anordnung der jeweiligen Resistoren, die stellenweise in die Sensormembran eingearbeitet sind und der piezoresistiven Spannungsmessung dienen.
 %INCLUDE SENSORBILDER UNTER MIKROSKOP
-Abbildung \ref{fig:Sensordesign} a) zeigt eine t-förmige Anordnung der Resistoren, Abbildung \ref{fig:Sensordesign} b) eine transversale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erschließt sich aus Überlegungen. Bei einem Sensor mit t-förmiger Anordnung sind sämtliche Widerstände am Übergang von Membran zum Boss platziert. Da aber auch eine hohe Spannung und Dehnung am Übergang von Waferstruktur zur Membran vorhanden ist, ist die t-förmige Anordnung eher mäßig geeignet. Eine transversale Anordnung hingegen weist je zwei Widerstände an den beiden Übergängen auf und nutzt somit den Spannungs- und Dehnungsverlauf des Sensors besser aus. Der piezoresistive Effekt wird hier also an den am besten geeigneten Stellen verwendet, was ein besseres Messergebnis als bei einer t-förmigen Anordnung liefert. Deshalb fällt die Entscheidung auf das Sensordesign mit transversaler Resistoranordnung. %WARUM ??
+Abbildung \ref{fig:Sensordesign} a) zeigt eine t-förmige Anordnung der Resistoren, Abbildung \ref{fig:Sensordesign} b) eine transversale. Eine Festlegung, welche Anordnung für die gegebenen Anforderungen am besten geeignet sei, erschließt sich aus Überlegungen. %WARUM ??
 \\
 \begin{figure}[h]
     \subfigure[Messbrücke mit t-förmiger Anordnung]{\includegraphics[width=0.49\textwidth]{figures/microscope_sensor/M_11_sensor.jpg}} 
@@ -16,7 +16,7 @@ Abbildung \ref{fig:Sensordesign} a) zeigt eine t-förmige Anordnung der Resistore
 \caption{Sensordesigns im Überblick}\label{fig:Sensordesign}
 \end{figure}\\
 
-Anschließend beginnt die eigentliche Charakterisierung in Form eines Versuchs.
+Anschließend begann die eigentliche Charakterisierung in Form eines Versuchs.
 %Viele Einheiten lassen sich schöner darstellen mit dem "`Tag"' \verb|\unit[]{}| beziehungsweise \verb|\unitfrac[]{}{}|. Siehe den Vergleich: ohne 1~m oder mit \unit[1]{m} bzw. ohne 1~m/sec oder mit \unitfrac[1]{m}{sec}.
 
 \section{Versuchsaufbau und -durchführung (Justus)}
@@ -252,17 +252,19 @@ Hier ergeben sich die Empfindlichkeiten zu:
 \subsection{Comparing calculated sensitivity with measured sensitivity (Manisch)}
 \label{sec:Sensitivity2}
 
-longitudinal:\\
-Bridge 1: 40.47 \\
-Bridge 2: 36.891 \\
-Bridge 3: 39.776 \\
-Bridge 4: 37.878
+%longitudinal:\\
+%Bridge 1: 40.47 \\
+%Bridge 2: 36.891 \\
+%Bridge 3: 39.776 \\
+%Bridge 4: 37.878
+%
+%transversal:\\
+%Bridge 1: 35.257 \\
+%Bridge 2: 40.263 \\
+%Bridge 3: 39.369 \\
+%Bridge 4: 43.315 
 
-transversal:\\
-Bridge 1: 35.257 \\
-Bridge 2: 40.263 \\
-Bridge 3: 39.369 \\
-Bridge 4: 43.315 
+In figure 6.5 our measured values for longitudinal sensors are shown the output voltage for pressure values from 0 bar to 1 bar is measured for increments of 0.1 bar. It is done for all the bridge circuits. The theoretical value for each is also calculated in the equation 6.7 and 6.8 for longitudinal and for transversal are in the equation 6.15 and 6.16 , and then the difference and offset are calculated. The output voltage along with offset is plotted against the pressure.Compared to the real measured values, the sensitivities are lower. A possible error for example, a different doping concentration of the piezoresistive resistors. However The chronological order of the sensitivities and the magnitudes fit.
 
 \begin{figure}[hb]
 	\centering

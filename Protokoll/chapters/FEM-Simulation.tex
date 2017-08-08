@@ -30,13 +30,7 @@ Dazu sollen für das Design mit Boss folgende variable Abmessungen gelten(vgl. Ta
 
 Um das gewünschte Design zu modellieren, wird folgendermaßen vorgegangen: Zunächst wird die Einheit in SolidWorks von Milimeter auf Mikrometer geändert. Nun kann die Grundfläche, also der Siliziumwafer, skizziert werden. Mit einer Extrusion erreicht man die gewünschte Dicke des Wafers. Anschließend wird die Membran auf dem Wafer skizziert. Dabei hilft es, ein Quadrat über den Mittelpunkt des Wafers zu ziehen. Um den Winkel von 54,7$^\circ$ einzuhalten, muss nun beim extrudieren ein Verjüngungswinkel eingestellt werden. Ist dieser Schritt durchgeführt, kann die Bossstruktur mit gleichem Vorgehen eingefügt werden. \\
 Mit Hilfe der Tabellenfunktion von SolidWorks können Dimensionierungsparameter der Designs in einer Exceltabelle gespeichert und auf Wunsch angepasst werden. Diese Funktion wird dazu benutzt, um die in Tabelle \ref{tab:variabel} vorgestellten Abmessungen durch einen einfachen Befehl auszuwählen und darzustellen. \\
-Für die FEM-Simulation werden die beiden grundlegenden Sensordesigns geviertelt, um durch das Ausnutzen der Symmetrie Rechenzeit zu sparen (vgl. Abbildung \ref{fig:viertel}.
-\begin{figure}[H]
-	\centering
-  \includegraphics[width=0.9\textwidth]{figures/viertel.png}
-	\caption{Gevierteltes CAD-Modell ohne Boss (links), mit Boss (rechts)}
-	\label{fig:viertel}
-\end{figure}
+Für die FEM-Simulation werden die beiden grundlegenden Sensordesigns geviertelt, um durch das Ausnutzen der Symmetrie Rechenzeit zu sparen.
 \section{FEM-Simulation (Justus)}
 \label{sec:FEM}
 Nachdem die CAD-Modelle erstellt sind, wird eine FEM-Simulation der geviertelten Modelle durchgeführt. Dazu wird der Wafer an den Schnittkanten, außer an der Membran, fest eingespannt. Dies kann einfach in SolidWorks eingestellt werden. Weitere Vorgaben sind
@@ -62,7 +56,7 @@ Bruchspannung ($\sigma$)      & 380MPa   \\ \hline
 
 \subsection{Ermittlung der Spannungsverläufe (Justus)}
 \label{subsec:ermittlung der spannungsverläufe}
-Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkanten bestimmt werden. Dazu wird für beide Designs die Standardabmessung verwendet. Abbildung \ref{pl:ohneBoss} und Abbildung \ref{pl:mitBoss} illustrieren die Spannungsverläufe $\sigma_z$ und $\sigma_x$ über den Weg x, also den Abstand zum Sensorrand, für das Design ohne und mit Boss. Das Ergebnis ist ist ebenfalls in Abbildung \ref{fig:visualisierung} zu erkennen, die die Spannung am Bauteil selbst visualisiert.
+Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkanten bestimmt werden. Dazu wird für beide Designs die Standardabmessung verwendet. Abbildung \ref{pl:ohneBoss} und Abbildung \ref{pl:mitBoss} illustrieren die Spannungsverläufe $\sigma_z$ und $\sigma_x$ über den Weg x, also den Abstand zum Sensorrand, für das Design ohne und mit Boss.
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}\centering
@@ -91,12 +85,6 @@ Durch eine erste Simulation sollen die Spannungsverläufe entlang der Schnittkant
 	\end{axis}
 	\end{tikzpicture}
 	\caption{Spannungsverlauf einer Membran mit Boss bei \unit[1]{bar}/ strain curve of a membrane with boss at \unit[1]{bar}}\label{pl:mitBoss}
-\end{figure}
-\begin{figure}[H]
-	\centering
-  \includegraphics[width=0.7\textwidth]{figures/10-2_Spannung.JPG}
-	\caption{Visualisierung der FEM-Simulation am Bauteil}
-	\label{fig:visualisierung}
 \end{figure}
 Da sich die Spannungsverläufe für das Design ohne Boss sehr ähneln, wird lediglich einer der beiden ermittelten im Diagramm aufgetragen. \\
 Beim Vergleich der Verläufe ist zu erkennen, dass die jeweilige Maximalspannungen jeweils am Übergang von der Schrägen zur Membran auftreten. Das bedeutet, dass dort am ehesten ein Versagen zu erwarten ist. Dem kann entgegengewirkt werden, indem entsprechende Bereiche verstärkt werden. Beispielsweise könnte im Herstellungsprozess, also beim Ätzen, eine geeignete Kompensationsstruktur verwendet werden, um einen besseren Übergang zwischen Schräge und Membran zu erzielen. \\
@@ -174,6 +162,7 @@ Membran a erreicht die Bruchspannung schon bei einem Druck von \unit[0.439]{bar}
 \subsection{Influence of membrane size on distribution of stress(Manish)}
 \label{subsec:Membranesize}
 
+It is clearly  observed from the figure 4.4 that mechanical stresses are directly proportional to membrane size. So as we increase the membrane size, the stress developed also increases. It is possible that the FEM results might not be same as the real-life results as the pressure varies slightly in real-life applications and is not constant, and various external and other parameters also act and influence the result. As the size of membrane increases, total mechanical stresses also reaches higher values. 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}\centering
@@ -220,9 +209,6 @@ Die Spannungsverläufe und Verschiebungen sind in Abbildung \ref{pl:Bosssize} dar
 	\end{tikzpicture}
 	\caption{Spannungsverlauf der drei Bossgrößen}\label{pl:Bosssize}
 \end{figure}
-\subsection{Platzierung der Widerstände der Messbrücken (Justus)}
-\label{platzierung}
-Bei Messungen mit Messbrücken nach Wheatstone wird der piezoresistive Effekt ausgenutzt. Durch eine Dehnung bzw. Stauchung der verwendeten Resistoren wird eine Widerstandsänderung erzeugt, die die Messspannung beeinflusst. Um diesen Effekt voll ausnutzen zu können, liegt es nahe, die Widerstände in dem Bereich anzubringen, wo die größte Dehnung vorliegt. Durch die FEM-Simulation wurde gezeigt, dass dies an den Übergängen von Membran zu Waferstruktur bzw. zum Boss der Fall ist. Deshalb sollten die Brückenwiderstände auch in diesen Bereichen platziert werden.
 \subsection{Kritische Betrachtung (Justus)}
 \label{kritische betrachtung}
 Eine FEM-Simulation wird meistens unter idealen Bedingungen durchgeführt, da sich in der Realität auftretende Störeinflüsse schlecht simulieren lassen. Zunächst gibt es, gerade bei Mikrosystemen, welche im häufigsten Fall durch Ätzen hergestellt werden, stets Fertigungstoleranzen. Diese beeinflussen nicht die Simulation, aber ändern das Verhalten des realen Bauteils. Hinzu kommt, dass das Silizium, das für die Simulation verwendet wurde, als isotroper Werkstoff simuliert wird. Dies bedeutet, dass das Materialverhalten in alle Raumrichtungen gleich ist. In der Realität ist Silizium jedoch, unter anderem bedingt durch seine monokristalline Struktur, anisotrop. Anisotropie bedeutet die Richtungsabhängigkeit des Materialverhaltens, die den Rechenaufwand einer Simulation enorm vergrößern würde. Ein Beispiel für die Verwendung von Anisotropie in Bezug auf Silizium ist die Berücksichtigung der Miller'schen Indizes beim Ätzprozess. Als weiterer Grund für eine Abweichung der FEM-Simulation zur Realität ist die gewählte Elementgröße von 60 bzw. 120 $\mu$m. Es besteht zwar die Möglichkeit, die Vorgaben weiter zu verfeinern, jedoch bleiben steht Bereiche, auf denen interpoliert werden muss. Außerdem vergrößert sich bei genaueren Analysen die Rechenzeit enorm.\\
@@ -230,3 +216,10 @@ Abschließend kann behauptet werden, die durchgeführten Simulationen sind ledigli
 
 \section{Zusammenfassung (Manish)}
 \label{sec:zusammenfassung2}
+
+Various parameters are set for the simulation of the sensor model. The bearing type is set as Symmetry. Using the Apply mesh control in the Mesh menu, then the mechanical properties of the silicon are set from the given parameters. We did not use the pre-existing silicon in the material library; we used the set parameters to create a new silicon material. We named the material ?silicon isotropic?, we assigned this material as the material for the sensor.  
+
+the material silicon isotropic, we assigned this material as the material for the sensor.  
+Our used silicon is monocrystalline material. In reality load and displacement curve is different with different crystal orientations. For this reason, we need to take that into account when choosing the right membrane thickness. The results of FEM are closed to the crystal orientation of [100].In order to simulate sensors behaviour it must be fixed in place. As a fixed geometry top face of our sensor was chosen, because this surface is used to glue sensor to other part. As a load, pressure of 1 bar is applied to the membrane surface and adjacent54.7º surfaces.The highest mechanical stresses in a sensor occur immediately at the transition from boss to membrane or from membrane to fixation. It is the best option to mount piezoresistors where the highest mechanical stresses occur. Higher stress values makes sensor more sensitive at the same time making it easier to read.
+
+Once the mechanical analysis had been finished on FEM simulation software, the manufacturing process was simulated to determine the type of mask, etch time, concentration to be used. While etching, the etchant tends to act on all exposed surfaces, so it is necessary to provide some sort of compensation to arrive at the desired result. It can be seen that as the membrane size increases, the stresses in the membrane increase. The sensors seem to be smaller Membrane structures to be more efficient. The maximum voltage must be accurate for the application.
