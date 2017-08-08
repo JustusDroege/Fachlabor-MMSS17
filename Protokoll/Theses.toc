@@ -45,5 +45,8 @@
 \contentsline {subsection}{\numberline {8.1.4}Stecker zum Spannungsabgriff}{45}{subsection.8.1.4}
 \contentsline {section}{\numberline {8.2}Platinenlayout (Justus)}{46}{section.8.2}
 \contentsline {section}{\numberline {8.3}Platinenerstellung}{46}{section.8.3}
-\contentsline {section}{\numberline {8.4}Evaluation (Manish)}{47}{section.8.4}
+\contentsline {section}{\numberline {8.4}Evaluation (Manish)}{48}{section.8.4}
 \contentsline {chapter}{\numberline {9}Zusammenfassung und Ausblick (Manish)}{50}{chapter.9}
+\contentsline {chapter}{\numberline {10}Appendix}{52}{chapter.10}
+\contentsline {section}{\numberline {10.1}Morphologischer Kasten}{52}{section.10.1}
+\contentsline {section}{\numberline {10.2}Anforderungsliste}{53}{section.10.2}
