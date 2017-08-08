@@ -79,7 +79,7 @@ Nachdem der Schaltplan mit Eagle erstellt worden ist, kann in den Board-Editor d
 	\includegraphics[width=0.7\textwidth]{figures/Board_justus.PNG}
 	\caption{Mögliches Platinenlayout}\label{fig:board_justus}
 \end{figure}
-Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine hergestellt werden.
+Abschließend sollte die Anordnung überprüft werden. Anschließend kann die Platine hergestellt werden.
 
 %\section{Designing and Prepration of PCB(Manish kumar)}
 %For the purpose of designing task we used software called Eagle. It comprises two different editors: the Schematic Editor for the circuit diagram and the Board Editor for the actual PCB. In order to design actual PCB board, we must firstly create our circuit diagram in Schematic Editor. While creating our circuit in Schematic Editor we are using device libraries which contain a wide range of electronic component. This time our circuit must have all additional electronics. RC low-pass filter is needed to filter high frequency noise as long as pressure signals are quasistatic. However, to keep circuit complexity as minimum, the electronics are implemented to measure only one bridge at the time. To ensure that all bridge signals are evaluated, there must be an option to switch between bridges using jumpers. Using our created circuit diagram from Schematic Editor we are creating a concrete PCB layout. In this process, the circuit diagram symbols are replaced with real devices so-called packages. They can be positioned in PCB anywhere. While connecting packages using PCB tracks so-called wires, continuous consistency check is performed on the diagram and layout. After that our next work is preparation of PCB it consists of sereis of operatio which are described below.
@@ -101,9 +101,9 @@ Nachdem eine abschließende Überprüfung durchgeführt wurde, kann nun die Platine 
 
 \section{Platinenerstellung}
 \label{platinenerstellung}
-Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist irgendein unststoffzeug. Ist die aske aufgetragen, falgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
+Zur Herstellung wird zunächst das entworfene Platinenlayout auf eine Maske gedruckt. Diese Maske kann dann auf die Platine, die mit fotosensitiven Lack überzogen ist, aufgebracht werden. Basismaterial für die Platine ist ein Kunststoff. Ist die Maske aufgetragen, folgt die Belichtung und die Entwicklung. Dazu wird die Platine zunächst für zirka 20 Sekunden belichtet und anschließend in Natriumpersulfat gebadet. Dort, wo kein Fotolack mehr vorhanden ist (durch Belichtung), greift die Ätzlösung an und es entsteht das gewünschte Platinendesign. Der Ätzvorgang dauert in der Regel 10 bis 40 Minuten, je nach Alter des Ätzbades. Ist der Ätzvorgang abgeschlossen, muss noch der übrige Fotolack entfernt werden. Dies geschieht mit Hilfe von Aceton. Als finaler Schritt wird die Platine verzinnt, um sie vor Korrosion zu schützen. Abbildung \ref{fig:platine_zinn} zeigt eine fertige Platine, auf die die entsprechenden Bauteile verlötet werden können.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{figures/platine_zinn.PNG}
 	\caption{Verzinnte, fertig entwickelte Platine (Rückseite)}\label{fig:platine_zinn}
